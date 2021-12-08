@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import Header from "./header"
+import "./../../cssBootstrap/bootstrap.min.css";
 import "./../../style/servicesPage.css";
+import logo from  "./../../img/servicesLogo.png";
 
 export function ServicePage (){
 
@@ -11,7 +13,7 @@ export function ServicePage (){
 
     return (
         <div>
-            <Header name={name}></Header>
+            <Header name={name} logo={logo}></Header>
         </div>
     )
 

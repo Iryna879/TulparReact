@@ -9,7 +9,6 @@ import {ServicePage} from "./components/pages/servicePage";
 function App() {
   return (
       <BrowserRouter className="App">
-        <header> тут заголовок </header>
         <ServicePage></ServicePage>
 
         {/*<Routes>
