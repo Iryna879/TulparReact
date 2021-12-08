@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../font/TTHoves-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Bold";
+    src: url("../font/TTHoves-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-DemiBold";
+    src: url("../font/TTHoves-DemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Medium";
+    src: url("../font/TTHoves-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-ExtraBold";
+    src: url("../font/TTHoves-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    overflow-x: hidden;
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "TT Hoves";
+}
+ul{list-style-type: none;}
+a{
+    text-decoration: none;
+    color: #32495E;
+}
+header.container-fluid {
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/background-fluid.png");
+    background-size: cover;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+}
+.logo {
+     margin-top: 20px;
+ }
+.menu {
+    display: flex;
+    margin-top: 20px;
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 40px;
+}
+.menu li {
+    margin-right: 40px;
+}
+.cardioCentre h6 {
+    font-family: "TTHoves-Bold";
+    margin-top: 135px;
+    margin-left: 170px;
+    width: 428px;
+    height: 72px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #F9F9F9;
+}
+
+.cardioCentre p {
+    font-family: "TTHoves-DemiBold";
+    width: 220px;
+    height: 102px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #F9F9F9;
+    margin-top: 50px;
+    margin-left: 380px;
+}
+
+.cardioCentre .services {
+    width: 137px;
+    height: 17px;
+   margin-top: 29px;
+    margin-left: 472px;
+}
+
+.services li {
+    margin-bottom: 12px;
+    color: #F9F9F9;
+}
+.cardioCentre .services li:after {
+    content: "○";
+    width: 6px;
+    height: 6px;
+    margin-left: 12px;
+}
+.cardioCentre button {
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 180px;
+    margin-left: 440px;
+    width: 160px;
+   height : 50px;
+    background-color: transparent;
+    color: #F9F9F9;
+}
+.cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
+    background-color: #000000;
+}
+
+.traumaCentre h6 {
+    width: 450px;
+    height: 72px;
+    font-family: "TTHoves-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 135px;
+    margin-left: 100px;
+}
+
+.traumaCentre p {
+    font-family: "TTHoves-DemiBold";
+    width: 220px;
+    height: 102px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #32495E;
+    margin-left: 100px ;
+    margin-top: 50px;
+}
+.traumaCentre .services {
+    width: 137px;
+    height: 17px;
+    margin-top: 29px;
+    margin-left: 100px;
+}
+
+.traumaCentre .services li {
+    color: #32495E;
+}
+.traumaCentre .services li:before{
+    content: "○";
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+}
+.traumaCentre button {
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 180px;
+    margin-left: 100px;
+    width: 160px;
+    height : 50px;
+    background-color: transparent;
+    color: #32495E;
+}
+
+.social {
+    display: flex;
+   margin-left: 220px;
+    margin-top: 5px;
+}
+.social li {
+    margin-left: 10px;
+}
+.serv {
+    width: 100%;
+    height: 664px;
+    background-color:  #32495E;
+}
+.ourServices h6 {
+    font-family: "TTHoves-Bold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.photoServ {
+    display: flex;
+}
+
+.redInfo {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+.photoServ li {
+    margin-right: 30px;
+}
+#cardioIndex {
+    width: 279px;
+    height: 240px ;
+}
+.photoServ li  p{
+    font-family: "TTHoves-Bold";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F9F9F9;
+    width: 241px;
+    margin-top: 20px;
+}
+.redInfo .pulse {
+    height: 152px;
+    background: #32495E;
+    opacity: 0.6;
+}
+.redInfo .pulse img {
+    margin-top: 54px ;
+    margin-left: 119px ;
+}
+.redInfo .redInfoText {
+    height: 170px;
+    width: 281px;
+    background-color: #E95258;
+}
+.redInfo .redInfoText p:first-child {
+    font-family: "TTHoves-Bold";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F9F9F9;
+    padding-top: 20px ;
+    margin-left: 20px ;
+    margin-top: 0;
+}
+.redInfo .redInfoText p:last-child {
+    font-family: "TT Hoves";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F9F9F9;
+    margin-top: 20px ;
+    margin-left: 20px ;
+}
+.photoServ li:hover .redInfo{
+    visibility: visible;
+}
+.ourServicesPhoto button {
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 72px;
+    margin-left: 580px;
+    width: 160px;
+    height : 50px;
+    background-color: transparent;
+    color: #F9F9F9;
+}

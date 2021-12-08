@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../font/TTHoves-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Bold";
+    src: url("../font/TTHoves-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-DemiBold";
+    src: url("../font/TTHoves-DemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Medium";
+    src: url("../font/TTHoves-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-ExtraBold";
+    src: url("../font/TTHoves-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    overflow-x: hidden;
+    font-family: "TT Hoves";
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+ul{list-style-type: none;}
+a{
+    text-decoration: none;
+    color: #F9F9F9;
+}
+header.container-fluid {
+    width: 100%;
+    height: 348px;
+    background-image: url("../img/backContact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo {
+    margin-top: 20px;
+}
+.menu {
+    display: flex;
+    margin-top: 20px;
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+}
+.menu li {
+    margin-right: 40px;
+}
+.find h6 {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    margin-top: 100px;
+}
+.map h6 {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.map {
+    margin-bottom: 50px;
+}
+.address, .phone, .email {
+    margin-right: 60px;
+    margin-bottom: 70px;
+}
+.address h3, .phone h3, .email h3 {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    color: #32495E;
+    margin-bottom: 20px;
+
+}
+.address p, .phone p, .email p {
+    font-family: "TT Hoves";
+    font-size: 20px;
+    line-height: 28px;
+    color: #32495E;
+    width: 180px;
+}
+.address p {width: 210px;}
+
+.recommend h6 {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.recommend ul {display: flex}
+.recommend ul li {margin-right: 70px; margin-bottom: 70px;}
+
+
