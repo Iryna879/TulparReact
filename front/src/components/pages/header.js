@@ -22,14 +22,14 @@ const  Header = (props) => {
     return (
         items.map(item => {if(item.name == name){
         return (
-            <header className="container-fluid p-0">
+            <header className={`container-fluid p-0 ${name}_fluid`}>
                 <div className="container">
                     <div className="row  ">
                         <div className="col-xl-3 ">
                             <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
                         </div>
                         <div className="col-xl-6 offset-3">
-                            <ul className="menu">
+                            <ul className={`${name}_menu`}>
                                 <li><Link to="/">Головна</Link></li>
                                 <li><Link to="/services">Наші послуги</Link></li>
                                 <li><Link to="/reports">Звіти</Link></li>
@@ -41,7 +41,7 @@ const  Header = (props) => {
                     </div>
 
                     <div className="row">
-                        <div className="col-xl-12  servText">
+                        <div className={`col-xl-12  ${name}_text`}>
                             <h6>{item.heading}</h6>
                             <p>{item.paragraph}</p>
                         </div>

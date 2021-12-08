@@ -3,17 +3,18 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
 import {ServicePage} from "./components/pages/servicePage";
-
+import {ContactPage} from "./components/pages/contactPage";
 
 
 function App() {
   return (
       <BrowserRouter className="App">
-        <ServicePage></ServicePage>
 
-        {/*<Routes>
-          <Route path="/product/:slug/:id" element={<ProductCard />} />
-        </Routes>*/}
+
+        {<Routes>
+            <Route path="/" element={<ServicePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>}
 
       </BrowserRouter>
   );
