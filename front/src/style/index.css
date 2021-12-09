@@ -1,0 +1,160 @@
+body {
+    overflow-x: hidden;
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "TT Hoves";
+}
+ul{list-style-type: none;}
+a{
+    text-decoration: none;
+    color: #32495E;
+}
+.index_fluid {
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/background-fluid.png");
+    background-size: cover;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+}
+.logo {
+    margin-top: 20px;
+}
+.menu {
+    display: flex;
+    margin-top: 20px;
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 40px;
+}
+.menu li {
+    margin-right: 40px;
+}
+.cardioCentre h6 {
+    font-family: "TTHoves-Bold";
+    margin-top: 135px;
+    margin-left: 170px;
+    width: 428px;
+    height: 72px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #F9F9F9;
+}
+
+.cardioCentre p {
+    font-family: "TTHoves-DemiBold";
+    width: 220px;
+    height: 102px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #F9F9F9;
+    margin-top: 50px;
+    margin-left: 380px;
+}
+
+.cardioCentre .services {
+    width: 137px;
+    height: 17px;
+    margin-top: 29px;
+    margin-left: 472px;
+}
+
+.services li {
+    margin-bottom: 12px;
+    color: #F9F9F9;
+}
+.cardioCentre .services li:after {
+    content: "○";
+    width: 6px;
+    height: 6px;
+    margin-left: 12px;
+}
+.cardioCentre button {
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 180px;
+    margin-left: 440px;
+    width: 160px;
+    height : 50px;
+    background-color: transparent;
+    color: #F9F9F9;
+}
+.cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
+    background-color: #000000;
+}
+
+.traumaCentre h6 {
+    width: 450px;
+    height: 72px;
+    font-family: "TTHoves-Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 135px;
+    margin-left: 100px;
+}
+
+.traumaCentre p {
+    font-family: "TTHoves-DemiBold";
+    width: 220px;
+    height: 102px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #32495E;
+    margin-left: 100px ;
+    margin-top: 50px;
+}
+.traumaCentre .services {
+    width: 137px;
+    height: 17px;
+    margin-top: 29px;
+    margin-left: 100px;
+}
+
+.traumaCentre .services li {
+    color: #32495E;
+}
+.traumaCentre .services li:before{
+    content: "○";
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+}
+.traumaCentre button {
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 180px;
+    margin-left: 100px;
+    width: 160px;
+    height : 50px;
+    background-color: transparent;
+    color: #32495E;
+}
+
+.social {
+    display: flex;
+    margin-left: 220px;
+    margin-top: 5px;
+}
+.social li {
+    margin-left: 10px;
+}
