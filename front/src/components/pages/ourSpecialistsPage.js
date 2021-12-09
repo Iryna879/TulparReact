@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Header from "./header"
 import "./../../style/ourSpecialists.css";
 import logo from  "./../../img/ourSpecialistsLogo.png";
+import {Footer} from "../otherComponents/footer";
 
 export function OurSpecialistsPage (){
 
@@ -11,6 +12,7 @@ export function OurSpecialistsPage (){
     return (
         <div>
             <Header name={name} logo={logo}></Header>
+            <Footer></Footer>
         </div>
     )
 
