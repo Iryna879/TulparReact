@@ -5,8 +5,7 @@ export function ServiceItem (props){
   const services = props.services;
   const department = props.department;
 
-
-    let mass = [];
+  let mass = [];
     services.map(serv => {if(serv.department == department){
         mass.push(serv.title);
     }})
@@ -14,7 +13,7 @@ export function ServiceItem (props){
 
 
     return (
-                    <ul className="services">
+        <ul className="services">
                         {
                             title.map(t => {
                                 return (
@@ -23,8 +22,5 @@ export function ServiceItem (props){
                             })
                         }
                     </ul>
-
                    )
-
-
 }

@@ -1,11 +1,15 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import  {ServiceItem} from "./serviceItem";
-
+import insta from "./../../img/insta.png";
+import call from "./../../img/call.png";
+import write from "./../../img/write.png";
+import whatsApp from "./../../img/whatsapp.png";
+import more from "./../../img/more.png"
 
 export function IndexHeader (props){
 const logo = props.logo;
-    const [services, setServices] = useState([]);
+const [services, setServices] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3001/api/services")
@@ -21,12 +25,9 @@ const logo = props.logo;
                 console.log(err))
     })
 
-    let mass = [];
-    services.map(serv => {if(serv.department == "Кардіо-реабілітаційний центр"){
-        mass.push(serv.title);
-    }})
-    let title = mass.slice(0,4);
-
+   /* onclick (
+        window.location.assign('http://localhost:3000/cardioCentre');
+)*/
 
     return (
         <header className="container-fluid p-0 index_fluid">
@@ -44,7 +45,6 @@ const logo = props.logo;
                             <li><Link to="/news">Новини</Link></li>
                             <li>УКР</li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const logo = props.logo;
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services} department="Кардіо-реабілітаційний центр"></ServiceItem>
-                    <button>Всі послуги</button>
+                    <button onClick={(e) => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
                 </div>
                 <div className="col-xl-6 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
@@ -64,13 +64,13 @@ const logo = props.logo;
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services} department="Травма-реабілітаційний центр"></ServiceItem>
-                    <button>Всі послуги</button>
+                    <button onClick={(e) => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
                     <ul className="social">
-                        <li><a href="#"><img src="img/insta.png" alt="inst"/></a></li>
-                        <li><a href="#"><img src="img/call.png" alt="call"/></a></li>
-                        <li><a href="#"><img src="img/write.png" alt="write"/></a></li>
-                        <li><a href="#"><img src="img/whatsApp.png" alt="whatsApp"/></a></li>
-                        <li><a href="#"><img src="img/more.png" alt="more"/></a></li>
+                        <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>
+                        <li><a href="#"><img src={call} alt="call"/></a></li>
+                        <li><a href="#"><img src={write} alt="write"/></a></li>
+                        <li><a href="#"><img src={whatsApp} alt="whatsApp"/></a></li>
+                        <li><a href="#"><img src={more} alt="more"/></a></li>
                     </ul>
                 </div>
             </div>
