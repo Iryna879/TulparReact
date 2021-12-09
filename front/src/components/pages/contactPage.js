@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Header from "./header"
-/*import "./../../cssBootstrap/bootstrap.min.css";*/
+// import "./../../cssBootstrap/bootstrap.min.css";
 import "./../../style/contactPage.css";
 import logo from  "./../../img/contactLogo.png";
 
