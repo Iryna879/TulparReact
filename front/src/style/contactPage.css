@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "TT Hoves";
     src: url("../font/TTHoves-Regular.ttf") format("truetype");
     font-weight: normal;
@@ -27,7 +27,7 @@
     src: url("../font/TTHoves-ExtraBold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+}*/
 body {
     overflow-x: hidden;
     font-family: "TT Hoves";
@@ -62,7 +62,7 @@ ul{list-style-type: none;}
 .contact_menu li {
     margin-right: 40px;
 }
-contact_menu a{
+.contact_menu li a{
     text-decoration: none;
     color: #F9F9F9;
 }

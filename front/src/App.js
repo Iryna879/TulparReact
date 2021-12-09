@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import {ServicePage} from "./components/pages/servicePage";
 import {ContactPage} from "./components/pages/contactPage";
+import "./style/font.css"; 
 
 
 function App() {
