@@ -1,0 +1,57 @@
+body {
+    overflow-x: hidden;
+    font-family: "TT Hoves";
+}
+body,ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul{list-style-type: none;}
+
+.traumaCenter_fluid {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/traumaCenterBack.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo {
+    margin-top: 20px;
+}
+.traumaCenter_menu {
+    display: flex;
+    margin-top: 20px;
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+    margin-left: 40px;
+}
+.traumaCenter_menu li {
+    margin-right: 40px;
+}
+.traumaCenter_menu li a{
+    text-decoration: none;
+    color: #32495E;
+}
+.traumaCenter_text h6 {
+    width: 672px;
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 100px;
+}
+.traumaCenter_text p {
+    width: 780px;
+    font-family: "TTHoves-DemiBold";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #32495E;
+    margin-top: 20px;
+}

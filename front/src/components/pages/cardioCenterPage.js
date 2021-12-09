@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Header from "./header"
-/*import "./../../cssBootstrap/bootstrap.min.css";*/
 import "./../../style/cardioCenterPage.css";
 import logo from  "./../../img/cardioCenterLogo.png";
 
