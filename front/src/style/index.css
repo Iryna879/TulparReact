@@ -65,10 +65,11 @@ a{
 }
 
 .cardioCentre .services {
-    width: 137px;
+    width: 250px;
     height: 17px;
     margin-top: 29px;
-    margin-left: 472px;
+    text-align: right;
+    margin-left: 350px;
 }
 
 .services li {

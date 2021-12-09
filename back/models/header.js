@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // Опишем нашу модель
 const Header = new Schema({
     name: String,
-    heading: String, // Фрагмент строки для поисковой системы
+    heading: String,
     paragraph: String
 });
 

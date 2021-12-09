@@ -1,9 +1,23 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./../../style/index.css";
 import logo from  "./../../img/cardioCenterLogo.png";
 import {Link} from "react-router-dom";
 
 export function Index (){
+    const [services, setServices] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:3001/api/services")
+            .then(res => {
+                // console.log(res);
+                return res.json()
+            })
+            .then(res => {
+                // console.log(res)
+                setServices(res)
+            })
+            .catch(err =>
+                console.log(err))
+    })
 
     return (
         <header class="container-fluid p-0 index_fluid">
@@ -32,10 +46,23 @@ export function Index (){
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
                     <ul class="services">
+                        {
+                            /* <li>Назва послуги</li>
                         <li>Назва послуги</li>
                         <li>Назва послуги</li>
-                        <li>Назва послуги</li>
-                        <li>Назва послуги</li>
+                        <li>Назва послуги</li>*/
+                            services.map(serv => {if(serv.department == "Кардіо-реабілітаційний центр"){
+                              /*  let mass = services.slice(1, 4);
+                                for(let i = 0; i < mass.length; i++) {
+                                    return (
+                                        <li>{mass[i]}</li>
+                                    )
+                                }*/
+                                return (
+                                    <li>{serv.title}</li>
+                                )
+                            }})
+                        }
                     </ul>
                     <button>Всі послуги</button>
                 </div>
