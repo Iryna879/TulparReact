@@ -55,6 +55,7 @@ ul{list-style-type: none;}
     color: #32495E;
     margin-top: 20px;
 }
+
 .servicesPhoto {
     width: 100%;
     height: 334px;
@@ -62,15 +63,15 @@ ul{list-style-type: none;}
     background-size: cover;
     background-repeat: no-repeat;
 }
-.photoServ {
+.services_photoServ {
     display: flex;
 }
-.redInfo {
+.services_redInfo {
     position: absolute;
     visibility: hidden;
     z-index: 1;
 }
-.photoServ li p{
+.services_photoServ li p{
     position: absolute;
     font-family: "TTHoves-Bold";
     font-weight: 800;
@@ -81,19 +82,19 @@ ul{list-style-type: none;}
     margin-left:25px ;
     width: 241px;
 }
-.redInfo .pulse {
+.services_redInfo .pulse {
     height: 164px;
 }
-.redInfo .pulse img {
+.services_redInfo .pulse img {
     margin-top: 70px ;
     margin-left: 125px ;
 }
-.redInfo .redInfoText {
+.services_redInfo .redInfoText {
      height: 170px;
     width: 293px;
     background-color: #E95258;
 }
-.redInfo .redInfoText p:first-child {
+.services_redInfo .redInfoText p:first-child {
     font-family: "TTHoves-Bold";
     font-weight: 800;
     font-size: 16px;
@@ -102,7 +103,7 @@ ul{list-style-type: none;}
     margin-top: 20px ;
     margin-left: 26px ;
 }
-.redInfo .redInfoText p:last-child {
+.services_redInfo .redInfoText p:last-child {
     font-family: "TT Hoves";
     font-weight: normal;
     font-size: 14px;
@@ -111,7 +112,7 @@ ul{list-style-type: none;}
     margin-top: 80px ;
     margin-left: 26px ;
 }
-.photoServ li:hover .redInfo{
+.services_photoServ li:hover .redInfo{
     visibility: visible;
 }
 .priceList h6 {

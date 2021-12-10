@@ -25,9 +25,6 @@ const [services, setServices] = useState([]);
                 console.log(err))
     })
 
-   /* onclick (
-        window.location.assign('http://localhost:3000/cardioCentre');
-)*/
 
     return (
         <header className="container-fluid p-0 index_fluid">
