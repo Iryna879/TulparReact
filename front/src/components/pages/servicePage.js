@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Header from "./header";
-import {OurServicesRow} from "../otherComponents/ourServicesRow";
+import {ServicesMain} from "../otherComponents/servicesMain";
 import {Footer} from "../otherComponents/footer";
 import "./../../style/servicesPage.css";
 import logo from  "./../../img/servicesLogo.png";
@@ -15,7 +15,7 @@ export function ServicePage (){
     return (
         <div>
             <Header name={name} logo={logo}></Header>
-            <OurServicesRow name={name}></OurServicesRow>
+            <ServicesMain name={name}></ServicesMain>
             <Footer></Footer>
         </div>
     )
