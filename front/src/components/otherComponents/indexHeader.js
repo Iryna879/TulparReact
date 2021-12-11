@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import  {ServiceItem} from "./serviceItem";
+import  {ServicesCollection} from "./servicesCollection";
 import insta from "./../../img/insta.png";
 import call from "./../../img/call.png";
 import write from "./../../img/write.png";
@@ -9,7 +10,7 @@ import more from "./../../img/more.png"
 
 export function IndexHeader (props){
 const logo = props.logo;
-const [services, setServices] = useState([]);
+    const [services, setServices] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3001/api/services")
@@ -24,7 +25,6 @@ const [services, setServices] = useState([]);
             .catch(err =>
                 console.log(err))
     })
-
 
     return (
         <header className="container-fluid p-0 index_fluid">
@@ -52,7 +52,8 @@ const [services, setServices] = useState([]);
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
-                    <ServiceItem services={services} department="Кардіо-реабілітаційний центр"></ServiceItem>
+
+                    <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"></ServiceItem>
                     <button onClick={(e) => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
                 </div>
                 <div className="col-xl-6 traumaCentre">
@@ -60,7 +61,7 @@ const [services, setServices] = useState([]);
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
-                    <ServiceItem services={services} department="Травма-реабілітаційний центр"></ServiceItem>
+                    <ServiceItem services={services}   department="Травма-реабілітаційний центр"></ServiceItem>
                     <button onClick={(e) => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
                     <ul className="social">
                         <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>

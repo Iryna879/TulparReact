@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import {ServicesCollection} from "./servicesCollection";
 
 export function ServiceItem (props){
   const services = props.services;

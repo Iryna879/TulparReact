@@ -12,10 +12,10 @@ import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
 
 
+
 function App() {
   return (
       <BrowserRouter className="App">
-
 
         {<Routes>
             <Route path="/" element={<Index />} />
