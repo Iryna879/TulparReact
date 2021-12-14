@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import "./../../style/whatIsBlock.css";
 
 
 const  WhatIsBlock = (props) => {
@@ -22,7 +22,19 @@ const  WhatIsBlock = (props) => {
     return (
         items.map(item => {if(item.name == name){
             return (
-
+                <div className="container-fluid p-0 centerInfo" style={{'backgroundImage': `url(${"http://localhost:3001" + item.background})`}}>
+                    <div className="container">
+                        <div className="row  ">
+                            <div className="col-xl-6 offset-xl-3">
+                                <div className="textAboutCenter">
+                                    <h6>{item.header}</h6>
+                                    <p>{item.paragraphOne}</p>
+                                    <p>{item.paragraphTwo}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )
         }
 

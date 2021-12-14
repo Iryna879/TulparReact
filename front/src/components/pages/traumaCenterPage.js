@@ -3,6 +3,7 @@ import Header from "./header"
 import "./../../style/traumaCenterPage.css";
 import logo from  "./../../img/traumaCenterLogo.png";
 import {Footer} from "../otherComponents/footer";
+import WhatIsBlock from "../otherComponents/whatIsBlock";
 
 export function TraumaCenterPage (){
 
@@ -12,6 +13,7 @@ export function TraumaCenterPage (){
     return (
         <div>
             <Header name={name} logo={logo}></Header>
+            <WhatIsBlock name={name}></WhatIsBlock>
             <Footer></Footer>
         </div>
     )

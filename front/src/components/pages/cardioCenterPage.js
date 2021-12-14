@@ -3,6 +3,7 @@ import Header from "./header"
 import "./../../style/cardioCenterPage.css";
 import logo from  "./../../img/cardioCenterLogo.png";
 import {Footer} from "../otherComponents/footer";
+import WhatIsBlock from "../otherComponents/whatIsBlock";
 
 export function CardioCenterPage (){
 
@@ -12,6 +13,7 @@ export function CardioCenterPage (){
     return (
         <div>
             <Header name={name} logo={logo}></Header>
+            <WhatIsBlock name={name}></WhatIsBlock>
             <Footer></Footer>
         </div>
     )
