@@ -8,7 +8,7 @@ import sauna from "./../../img/sauna.png";
 export function ServicesMain (props) {
     const name = props.name;
     return (
-        <main>
+
             <div className="container-fluid p-0 servicesPhoto">
                 <div className="container">
                     <div className="row  ">
@@ -77,7 +77,7 @@ export function ServicesMain (props) {
                     </div>
                 </div>
             </div>
-        </main>
+
     )
 
 

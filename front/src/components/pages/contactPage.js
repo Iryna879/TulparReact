@@ -4,6 +4,9 @@ import "./../../style/contactPage.css";
 import logo from  "./../../img/contactLogo.png";
 import {MainContact} from "../otherComponents/mainContact";
 import {Footer} from "../otherComponents/footer";
+import Recommend from "../otherComponents/recommend";
+import Map from "../otherComponents/map";
+import Contact from "../otherComponents/contact";
 
 export function ContactPage (){
 
@@ -13,7 +16,13 @@ export function ContactPage (){
     return (
         <div>
             <Header name={name} logo={logo}></Header>
-            <MainContact></MainContact>
+            <main>
+                <div className="container">
+                    <Map></Map>
+                    <Contact></Contact>
+                    <Recommend></Recommend>
+                </div>
+            </main>
             <Footer></Footer>
         </div>
     )
