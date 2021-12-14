@@ -4,6 +4,7 @@ import "./../../style/traumaCenterPage.css";
 import logo from  "./../../img/traumaCenterLogo.png";
 import {Footer} from "../otherComponents/footer";
 import WhatIsBlock from "../otherComponents/whatIsBlock";
+import Recommend from "../otherComponents/recommend";
 
 export function TraumaCenterPage (){
 
@@ -14,6 +15,7 @@ export function TraumaCenterPage (){
         <div>
             <Header name={name} logo={logo}></Header>
             <WhatIsBlock name={name}></WhatIsBlock>
+            <Recommend></Recommend>
             <Footer></Footer>
         </div>
     )

@@ -4,6 +4,7 @@ import "./../../style/cardioCenterPage.css";
 import logo from  "./../../img/cardioCenterLogo.png";
 import {Footer} from "../otherComponents/footer";
 import WhatIsBlock from "../otherComponents/whatIsBlock";
+import Recommend from "../otherComponents/recommend";
 
 export function CardioCenterPage (){
 
@@ -14,6 +15,7 @@ export function CardioCenterPage (){
         <div>
             <Header name={name} logo={logo}></Header>
             <WhatIsBlock name={name}></WhatIsBlock>
+            <Recommend></Recommend>
             <Footer></Footer>
         </div>
     )
