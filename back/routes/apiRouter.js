@@ -25,6 +25,12 @@ router.post('/api/recommends',cRecommends.post);
 router.put('/api/recommends',cRecommends.put);
 router.delete('api/recommends',cRecommends.delete);
 
+let cContacts = require('../controllers/controllerContacts');
+router.get ('/api/contacts',cContacts.get);
+router.post('/api/contacts',cContacts.post);
+router.put('/api/contacts',cContacts.put);
+router.delete('api/contacts',cContacts.delete);
+
 module.exports = router;
 
 //token - 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

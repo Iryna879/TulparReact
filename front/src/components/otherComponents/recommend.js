@@ -20,7 +20,7 @@ export function Recommend () {
     })
 
     return (
-        <div className="container">
+
             <div className="row  ">
                 <div className="col-xl-12  recommend">
                     <h6>Нас рекомендують</h6>
@@ -34,7 +34,7 @@ export function Recommend () {
                     </ul>
                 </div>
             </div>
-        </div>
+
         )
 
 }
