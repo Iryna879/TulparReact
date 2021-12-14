@@ -17,7 +17,13 @@ let cWhatIsBlocks = require('../controllers/controllerWhatIsBlocks');
 router.get ('/api/whatIsBlocks',cWhatIsBlocks.get);
 router.post('/api/whatIsBlocks',cWhatIsBlocks.post);
 router.put('/api/whatIsBlocks',cWhatIsBlocks.put);
-router.delete('/whatIsBlocks',cWhatIsBlocks.delete);
+router.delete('api/whatIsBlocks',cWhatIsBlocks.delete);
+
+let cRecommends = require('../controllers/controllerRecommends');
+router.get ('/api/recommends',cRecommends.get);
+router.post('/api/recommends',cRecommends.post);
+router.put('/api/recommends',cRecommends.put);
+router.delete('api/recommends',cRecommends.delete);
 
 module.exports = router;
 
