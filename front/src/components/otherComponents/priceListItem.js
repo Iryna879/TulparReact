@@ -1,9 +1,10 @@
+/*
 import React, {useEffect, useState} from "react";
 
 
 export function PriceListItem (props){
     const price = props.price;
-const title = price.map(p =>
+/!*const title = price.map(p =>
     <li key={p.id}>{p.title}</li>
 )
     const priceLi = price.map(p =>
@@ -14,13 +15,13 @@ const li = price.map(p =>
         <li key={p.id}>{p.title}</li>
     <li key={p.id}>{p.price}</li>
     </ul>
-)
-    /*<li>Назва послуги</li>
+)*!/
+    /!*<li>Назва послуги</li>
     <li>Вартість</li>
     <li>Назва послуги</li>
-    <li>Вартість</li>*/
+    <li>Вартість</li>*!/
 return (
-    /*<table className="gridServices">
+    /!*<table className="gridServices">
             <tr>
 
                 {price.map(p =>
@@ -33,21 +34,21 @@ return (
                 <td key={p.id}>{p.price}</td>)}
 
         </tr>
-    </table>*/
+    </table>*!/
     <ul className="gridServices">
         <li>Назва послуги</li>
         <li>Вартість</li>
         <li>Назва послуги</li>
         <li>Вартість</li>
         {
-    price.map(p =>
+    price.map((p) =>
 
             <li key={p.id}>{p.title} </li>
-        <li key={p.id}>{p.price} </li>
+        <li>{p.price} </li>
 
     )
         }
     </ul>
 
 )
-}
+}*/

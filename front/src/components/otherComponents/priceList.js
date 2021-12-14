@@ -36,7 +36,7 @@ export function PriceList (){
                         <li>УЗД</li>
                     </ul>
 
-                        <PriceListItem price={price}></PriceListItem>
+                        {/*<PriceListItem price={price}></PriceListItem>*/}
 
                 </div>
             </div>

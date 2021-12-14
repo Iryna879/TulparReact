@@ -13,6 +13,12 @@ router.post('/api/services',cServices.post);
 router.put('/api/services',cServices.put);
 router.delete('/api/services',cServices.delete);
 
+let cWhatIsBlocks = require('../controllers/controllerWhatIsBlocks');
+router.get ('/api/whatIsBlocks',cWhatIsBlocks.get);
+router.post('/api/whatIsBlocks',cWhatIsBlocks.post);
+router.put('/api/whatIsBlocks',cWhatIsBlocks.put);
+router.delete('/whatIsBlocks',cWhatIsBlocks.delete);
+
 module.exports = router;
 
 //token - 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
