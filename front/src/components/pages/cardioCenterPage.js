@@ -5,6 +5,7 @@ import logo from  "./../../img/cardioCenterLogo.png";
 import {Footer} from "../otherComponents/footer";
 import WhatIsBlock from "../otherComponents/whatIsBlock";
 import Recommend from "../otherComponents/recommend";
+import WhyWe from "../otherComponents/whyWe";
 
 export function CardioCenterPage (){
 
@@ -15,6 +16,7 @@ export function CardioCenterPage (){
         <div>
             <Header name={name} logo={logo}></Header>
             <WhatIsBlock name={name}></WhatIsBlock>
+            <WhyWe></WhyWe>
             <Recommend></Recommend>
             <Footer></Footer>
         </div>
