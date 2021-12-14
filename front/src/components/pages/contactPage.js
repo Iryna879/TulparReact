@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Header from "./header"
 import "./../../style/contactPage.css";
 import logo from  "./../../img/contactLogo.png";
-import {MainContact} from "../otherComponents/mainContact";
 import {Footer} from "../otherComponents/footer";
 import Recommend from "../otherComponents/recommend";
 import Map from "../otherComponents/map";
