@@ -10,13 +10,14 @@ import {CardioCenterPage} from "./components/pages/cardioCenterPage";
 import {TraumaCenterPage} from "./components/pages/traumaCenterPage";
 import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
+import TelegramBot from "./components/TelegramBot/TelegramBot";
 
 
 
 function App() {
   return (
       <BrowserRouter className="App">
-
+<TelegramBot></TelegramBot>
         {<Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<ServicePage />} />
