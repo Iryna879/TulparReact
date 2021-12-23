@@ -12,7 +12,7 @@ export function PriceListItem (props){
     let mass = [];
     price.map(serv => {
 
-        mass.push({id:serv.idIntermediateDepSer, name: serv.service, price: serv.price});
+        mass.push({id:serv._id, name: serv.title, price: serv.price});
     })
 
 

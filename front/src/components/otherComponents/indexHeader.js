@@ -23,7 +23,7 @@ const logo = props.logo;
             })
             .catch(err =>
                 console.log(err))
-    })
+    }, [])
 
     return (
         <header className="container-fluid p-0 index_fluid">

@@ -17,13 +17,13 @@ export function Contact () {
                 )
             /*.catch(err =>
                 console.log(err))*/
-    }, [contacts])
+    } )
     /*contacts.map(c => console.log("con" + c.info));*/
 //console.log("cont" + contacts[0].heading);
     return (
     <div className="row ">
         <div className="col-xl-12 d-flex  contacts">
-            {/*  <div className="address">
+             <div className="address">
                 <h3>{contacts[0].heading}</h3>
                 <p>{contacts[0].info}</p>
             </div>
@@ -34,7 +34,7 @@ export function Contact () {
             <div className="email">
                 <h3>{contacts[2].heading}</h3>
                 <p>{contacts[2].info}</p>
-            </div>*/}
+            </div>
         </div>
     </div>
     )
