@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import  {ServiceItem} from "./serviceItem";
-import  {ServicesCollection} from "./servicesCollection";
 import insta from "./../../img/insta.png";
 import call from "./../../img/call.png";
 import write from "./../../img/write.png";
@@ -31,7 +30,7 @@ const logo = props.logo;
             <div className="container">
                 <div className="row  ">
                     <div className="col-xl-3  logo">
-                        <Link to="/"><img src={logo}/></Link>
+                        <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
                     <div className="col-xl-6 offset-3">
                         <ul className="menu">
@@ -53,7 +52,7 @@ const logo = props.logo;
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
 
-                    <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"></ServiceItem>
+                    <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
                     <button onClick={(e) => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
                 </div>
                 <div className="col-xl-6 traumaCentre">
@@ -61,14 +60,14 @@ const logo = props.logo;
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
-                    <ServiceItem services={services}   department="Травма-реабілітаційний центр"></ServiceItem>
+                    <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
                     <button onClick={(e) => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
                     <ul className="social">
                         <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>
-                        <li><a href="#"><img src={call} alt="call"/></a></li>
-                        <li><a href="#"><img src={write} alt="write"/></a></li>
-                        <li><a href="#"><img src={whatsApp} alt="whatsApp"/></a></li>
-                        <li><a href="#"><img src={more} alt="more"/></a></li>
+                        <li><img src={call} alt="call"/></li>
+                        <li><img src={write} alt="write"/></li>
+                        <li><img src={whatsApp} alt="whatsApp"/></li>
+                        <li><img src={more} alt="more"/></li>
                     </ul>
                 </div>
             </div>

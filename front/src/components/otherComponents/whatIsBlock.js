@@ -20,7 +20,7 @@ const  WhatIsBlock = (props) => {
     })
 
     return (
-        items.map(item => {if(item.name == name){
+        items.map(item => {if(item.name === name){
             return (
                 <div className="container-fluid p-0 centerInfo" style={{'backgroundImage': `url(${"http://localhost:3001" + item.background})`}}>
                     <div className="container">

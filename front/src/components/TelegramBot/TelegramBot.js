@@ -17,7 +17,6 @@ export default class TelegramBot extends React.Component {
 	}
 
 	onChange(el) {
-		// тут формируется оперативная реакция системы на ввод пользователя
 		const message = this.state.message;
 		message[el.target.name] = el.target.value;
 		this.setState({ message: message });

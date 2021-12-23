@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "./../../style/recommend.css";
 
-
 export function Recommend () {
 
     const [recommends, setRecommends] = useState([]);

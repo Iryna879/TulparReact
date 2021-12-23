@@ -1,54 +1,29 @@
-/*
-import React, {useEffect, useState} from "react";
-
+import React from "react";
+import ReactDataGrid from "@inovua/reactdatagrid-community";
+import '@inovua/reactdatagrid-community/index.css';
 
 export function PriceListItem (props){
     const price = props.price;
-/!*const title = price.map(p =>
-    <li key={p.id}>{p.title}</li>
-)
-    const priceLi = price.map(p =>
-        <li key={p.id}>{p.price}</li>
+    const columns = [
+        {name: "name", header:"Назва послуги", minWidth:50, defaultFlex: 2},
+        {name: "price", header:"Вартість", maxWidth: 1000, defaultFlex: 1}
+    ];
+
+    let mass = [];
+    price.map(serv => {
+
+        mass.push({id:serv.idIntermediateDepSer, name: serv.service, price: serv.price});
+    })
+
+
+    const gridStyle = {minHeight: 550}
+
+    return (
+        <ReactDataGrid
+            idProperty="id"
+            columns={columns}
+            dataSource={mass}
+            style={gridStyle}
+        />
     )
-const li = price.map(p =>
-    <ul>
-        <li key={p.id}>{p.title}</li>
-    <li key={p.id}>{p.price}</li>
-    </ul>
-)*!/
-    /!*<li>Назва послуги</li>
-    <li>Вартість</li>
-    <li>Назва послуги</li>
-    <li>Вартість</li>*!/
-return (
-    /!*<table className="gridServices">
-            <tr>
-
-                {price.map(p =>
-                    <td key={p.id}>{p.title}</td>)}
-
-            </tr>
-        <tr>
-
-            {price.map(p =>
-                <td key={p.id}>{p.price}</td>)}
-
-        </tr>
-    </table>*!/
-    <ul className="gridServices">
-        <li>Назва послуги</li>
-        <li>Вартість</li>
-        <li>Назва послуги</li>
-        <li>Вартість</li>
-        {
-    price.map((p) =>
-
-            <li key={p.id}>{p.title} </li>
-        <li>{p.price} </li>
-
-    )
-        }
-    </ul>
-
-)
-}*/
+}

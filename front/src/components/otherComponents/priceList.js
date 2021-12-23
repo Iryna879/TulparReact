@@ -1,8 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 import {PriceListItem} from "./priceListItem"
-
-
 
 export function PriceList (){
 
@@ -36,7 +33,7 @@ export function PriceList (){
                         <li>УЗД</li>
                     </ul>
 
-                        {/*<PriceListItem price={price}></PriceListItem>*/}
+                        <PriceListItem price={price}/>
 
                 </div>
             </div>
