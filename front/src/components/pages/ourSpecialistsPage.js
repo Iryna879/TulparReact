@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "./header"
 import "./../../style/ourSpecialists.css";
 import logo from  "./../../img/ourSpecialistsLogo.png";
@@ -10,21 +10,21 @@ import Contact from "../otherComponents/contact";
 
 export function OurSpecialistsPage (){
 
-    const [name, setName] = useState("ourSpecialists");
+    const name = "ourSpecialists";
 
 
     return (
         <div>
-            <Header name={name} logo={logo}></Header>
+            <Header name={name} logo={logo}/>
             <main>
-                <WhyWe></WhyWe>
+                <WhyWe/>
                 <div className="container">
-                    <Recommend></Recommend>
-                    <Map></Map>
-                    <Contact></Contact>
+                    <Recommend/>
+                    <Map/>
+                    <Contact/>
                 </div>
             </main>
-            <Footer></Footer>
+            <Footer/>
         </div>
     )
 

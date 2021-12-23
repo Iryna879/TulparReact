@@ -20,7 +20,7 @@ const  Header = (props) => {
     })
 
     return (
-        items.map(item => {if(item.name == name){
+        items.map(item => {if(item.name === name){
         return (
             <header className={`container-fluid p-0 ${name}_fluid`}>
                 <div className="container">
@@ -50,10 +50,7 @@ const  Header = (props) => {
                 </div>
             </header>
          )
-    }/*else {
-          return (<div>No found name</div>)
-         }*/
-
+    }
     })
    )
 

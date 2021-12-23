@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "./header"
 import "./../../style/traumaCenterPage.css";
 import logo from  "./../../img/traumaCenterLogo.png";
@@ -11,22 +11,22 @@ import Contact from "../otherComponents/contact";
 
 export function TraumaCenterPage (){
 
-    const [name, setName] = useState("traumaCenter");
+    const name= "traumaCenter";
 
 
     return (
         <div>
-            <Header name={name} logo={logo}></Header>
+            <Header name={name} logo={logo}/>
             <main>
-            <WhatIsBlock name={name}></WhatIsBlock>
-            <WhyWe></WhyWe>
+            <WhatIsBlock name={name}/>
+            <WhyWe/>
             <div className="container">
-            <Recommend></Recommend>
-                <Map></Map>
-                <Contact></Contact>
+            <Recommend/>
+                <Map/>
+                <Contact/>
             </div>
             </main>
-            <Footer></Footer>
+            <Footer/>
         </div>
     )
 

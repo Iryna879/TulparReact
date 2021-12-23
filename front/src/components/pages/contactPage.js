@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "./header"
 import "./../../style/contactPage.css";
 import logo from  "./../../img/contactLogo.png";
@@ -9,20 +9,20 @@ import Contact from "../otherComponents/contact";
 
 export function ContactPage (){
 
-    const [name, setName] = useState("contact");
+    const name = "contact";
 
 
     return (
         <div>
-            <Header name={name} logo={logo}></Header>
+            <Header name={name} logo={logo}/>
             <main>
                 <div className="container">
-                    <Map></Map>
-                    <Contact></Contact>
-                    <Recommend></Recommend>
+                    <Map/>
+                    <Contact/>
+                    <Recommend/>
                 </div>
             </main>
-            <Footer></Footer>
+            <Footer/>
         </div>
     )
 
