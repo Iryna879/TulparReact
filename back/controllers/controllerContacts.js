@@ -28,12 +28,4 @@ exports.get = function (request, response) {
     );
 }
 
-// Update => PUT
-exports.put = function (request, response) {
-    console.log("Run PUT");
-}
 
-// Delete => DELETE
-exports.delete = function (request, response) {
-    console.log("Run DELETE");
-}

@@ -14,7 +14,7 @@ exports.post = function (request, response) {
 	fetchs(url)
 		.then(res => res.json())
 		.then(res => {
-			console.log()})
+			console.log(res)})
 		.catch(e => {
 			console.log(e)})
 
