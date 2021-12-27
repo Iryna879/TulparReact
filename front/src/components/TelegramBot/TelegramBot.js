@@ -1,34 +1,20 @@
-import React from "react";
 
-export default class TelegramBot extends React.Component {
+import React, {useState} from "react";
+import { useForm } from "react-hook-form";
 
-	constructor(props) {
-		super(props);
+import "./../../style/telegramBot.css";
 
-		this.state = {
-			error: null,
-			isLoaded: true,
-			message: {
-				body: "",
-				name: "",
-				tel: ""
-			}
-		}
-	}
+export default function TelegramBot() {
+	const { register, handleSubmit, reset, formState: {errors} } = useForm();
 
-	onChange(el) {
-		const message = this.state.message;
-		message[el.target.name] = el.target.value;
-		this.setState({ message: message });
-	}
-
-	send() {
-		this.setState({ isLoaded: false })
-		fetch("http://localhost:3001/api/sendTelegram/",
+	const [hide, setHide] = useState(false);
+	const onSubmit = (data) => {
+		//alert(JSON.stringify(data));
+		fetch("/api/sendTelegram/",
 			{
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify(this.state.message)
+				body: JSON.stringify(data)
 			}
 		)
 			.then(res => {
@@ -37,46 +23,51 @@ export default class TelegramBot extends React.Component {
 			})
 			.then(data => {
 				console.log(data);
-				this.setState({ isLoaded: true })
 			})
 			.catch(err => {
-				this.setState({ error: err, isLoaded: true })
-			})
-	}
+				console.log(err);
+			});
+		reset({fullName: "", tel: ""});
+	};
+	console.log(errors);
+//+ hide ? 'hide' : 'show'  onClick={() => setHide(true)}
+	return (
+		<div className={`container-fluid formFluid ${hide ? 'hide' : 'show'} ` } >
+			<form onSubmit={handleSubmit(onSubmit)}>
+				<input type="button" className="close"  onClick={() => setHide(true)}  />
 
-	render() {
-		if (this.state.error) return this.renderError();
-		if (!this.state.isLoaded) return this.renderLoading();
-		return this.renderData();
-	}
+				<h1>Залиште свої дані</h1>
 
-	renderData() {
-		return (
-			<div className="row" >
-				<h3>Telegram Bot</h3>
-				<input type="text" name="name" onChange={this.onChange.bind(this)} placeholder="Name" /><br />
-				<input type="text" name="tel" onChange={this.onChange.bind(this)} placeholder="Tel" /><br />
-				<input type="text" name="body" onChange={this.onChange.bind(this)} placeholder="Message" /><br />
-				<input type="button" onClick={this.send.bind(this)} value="Send" />
-			</div>
-		);
-	}
+				<input
+					type="text" placeholder="Введіть ім'я та прізвище"
+					{...register("fullName", { required: true, maxLength: 80,
+						minLength:10,
+						pattern: /^[a-zA-Z_ ]*$/})}
+				/>
+                {errors.fullName && errors.fullName.type === "minLength" &&
+                <p className="formErr">Your name is less than 10 characters</p>}
+                {errors.fullName && errors.fullName.type === "maxLength" &&
+                <p className="formErr">Max length exceeded</p>}
+                {errors.fullName && errors.fullName.type === "pattern" &&
+                <p className="formErr">Only letters</p>}
 
-	renderLoading() {
-		return (
-			<div className="d-flex justify-content-center">
-				<div className="spinner-border" role="status">
-					<span className="sr-only">Loading...</span>
-				</div>
-			</div>
-		)
-	}
 
-	renderError() {
-		return (
-			<div className="alert alert-danger" role="alert">
-				Error: {this.state.error.message}
-			</div>
-		);
-	}
+                <input
+                    type="tel" placeholder="Номер телефону"
+                    {...register("tel", {
+                        required: true,
+                        pattern:  /^\+380\d{9}$/
+                    })}
+                />
+                {errors.tel && errors.tel.type === "pattern" &&
+                <p className="formErr">The phone number is incorrect. Example +380123456789</p>}
+
+
+				<input type="submit" />
+			</form>
+		</div>
+	);
+
 }
+
+

@@ -17,7 +17,7 @@ exports.listenTGBot = function () {
 		})
 		.then(json => {
 			console.log(json);
-			if (json.ok === false) return; //
+			if (json.ok === false) return; 
 			if (json.result.length > 0) {
 				console.log("New Msg");
 				for (let i = 0; i < json.result.length; i++) {

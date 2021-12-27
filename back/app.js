@@ -31,7 +31,12 @@ app.use(multer({dest: "public/upload"}).single("fileData"));*/
 const apiRoute = require("./routes/apiRouter");
 app.use(apiRoute);
 const apiTelegram = require("./routes/apiTelegram");
-app.use(apiTelegram);
+app.use('/api', apiTelegram);
+
+app.get('*', function (req, res) {
+    let indexFile = path.resolve(__dirname, './public/index.html');
+    res.sendFile(indexFile);
+});
 
 module.exports = app
 

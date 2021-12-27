@@ -7,7 +7,8 @@ export function ServiceItem (props){
   let mass = [];
     services.map(serv => {if(serv.department === department){
         mass.push(serv.title);
-    }})
+    }
+    })
     let title = mass.slice(0,4);
 
 
