@@ -25,6 +25,10 @@ let cContacts = require('../controllers/controllerContacts');
 router.get ('/api/contacts',cContacts.get);
 router.post('/api/contacts',cContacts.post);
 
+let cSpecialists = require('../controllers/controllerSpecialists');
+router.get ('/api/specialists',cSpecialists.get);
+router.post('/api/specialists',cSpecialists.post);
+
 
 module.exports = router;
 
