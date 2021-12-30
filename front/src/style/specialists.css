@@ -1,0 +1,50 @@
+.specialists h6 {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #32495E;
+    margin-top: 70px;
+}
+.gridSpecialist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 226px;
+    grid-row-gap: 80px;
+    grid-column-gap: 69px;
+}
+.gridSpecialist img {
+    width: 98px;
+    height: 98px ;
+    border-radius: 50%;
+}
+.gridSpecialist p {
+    font-family: "TTHoves-ExtraBold";
+    font-weight: 800;
+    font-size: 16px;
+    color: #32495E;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.gridSpecialist span {
+    font-size: 14px;
+    line-height: 17px;
+    color: #32495E;
+    width: 241px;
+}
+.specialists button, .priceList button {
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 72px;
+    margin-left: 45%;
+    margin-bottom: 70px;
+    width: 160px;
+    height : 50px;
+    background-color: transparent;
+    color: #32495E;
+}
+

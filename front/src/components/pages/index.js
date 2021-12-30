@@ -7,6 +7,7 @@ import {Footer} from "../otherComponents/footer";
 import Recommend from "../otherComponents/recommend";
 import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
+import {SpecialistsIndex} from "../otherComponents/specialistsIndex";
 
 export function Index (){
     const name = "index";
@@ -14,9 +15,10 @@ export function Index (){
     return (
         <div>
         <IndexHeader logo={logo}/>
+        <main>
         <OurServicesRow name={name}/>
-            <main>
                 <div className="container">
+                    <SpecialistsIndex/>
                     <Recommend/>
                     <Map/>
                     <Contact/>
