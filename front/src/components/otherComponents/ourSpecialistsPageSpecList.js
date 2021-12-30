@@ -5,7 +5,7 @@ import {InfoSpecialists} from "./infoSpecialists";
 
 export function  OurSpecialistsPageSpecList ()  {
     const [specialists, setSpecialists] = useState([]);
-    const [selectedEmp, setSelectedEmp] = useState(0);
+    const [selectedEmp, setSelectedEmp] = useState("61cde943fec7185d7b2ce8cf");
     useEffect(() => {
         fetch("http://localhost:3001/api/specialists")
             .then(res => {

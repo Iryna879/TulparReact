@@ -7,6 +7,7 @@ import WhyWe from "../otherComponents/whyWe";
 import Recommend from "../otherComponents/recommend";
 import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
+import {OurSpecialistsPageSpecList} from "../otherComponents/ourSpecialistsPageSpecList";
 
 export function OurSpecialistsPage (){
 
@@ -17,6 +18,7 @@ export function OurSpecialistsPage (){
         <div>
             <Header name={name} logo={logo}/>
             <main>
+                <OurSpecialistsPageSpecList/>
                 <WhyWe/>
                 <div className="container">
                     <Recommend/>

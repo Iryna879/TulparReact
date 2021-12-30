@@ -42,7 +42,7 @@ export default function TelegramBot() {
 					type="text" placeholder="Введіть ім'я та прізвище"
 					{...register("fullName", { required: true, maxLength: 80,
 						minLength:10,
-						pattern: /^[a-zA-Z_ ]*$/})}
+						pattern: /^[А-Яа-яЁё_ ]*$/})}
 				/>
                 {errors.fullName && errors.fullName.type === "minLength" &&
                 <p className="formErr">Your name is less than 10 characters</p>}
