@@ -30,10 +30,10 @@ export function IndexHeader (props){
         <header className="container-fluid p-0 index_fluid">
             <div className="container">
                 <div className="row  ">
-                    <div className="col-xl-3  logo">
+                    <div className="col-xl-3 col-lg-3 col-md-3  logo">
                         <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
-                    <div className="col-xl-6 offset-3">
+                    <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-1 col-md-8 offset-md-1  ">
                         <ul className="menu">
                             <li><Link to="/">Головна</Link></li>
                             <li><Link to="/services">Послуги</Link></li>

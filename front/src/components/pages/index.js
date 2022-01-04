@@ -1,5 +1,7 @@
 import React from "react";
 import "../../style/indexPage.css";
+import "../../media/mediaIndexPage.css";
+
 import logo from  "./../../img/cardioCenterLogo.png";
 import {IndexHeader} from "../otherComponents/indexHeader";
 import {OurServicesRow} from "../otherComponents/ourServicesRow";
