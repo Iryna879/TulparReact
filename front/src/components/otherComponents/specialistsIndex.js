@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./../../style/specialists.css";
-
+import "./../../media/mediaSpecialists.css";
 
 export function  SpecialistsIndex ()  {
     const [specialists, setSpecialists] = useState([]);
@@ -20,7 +20,7 @@ export function  SpecialistsIndex ()  {
 
     return (
         <div className="row  ">
-            <div className="col-xl-12 specialists">
+            <div className="col-12 specialists">
                 <h6>Наші спеціалісти</h6>
                 <ul className="gridSpecialist">
                     {

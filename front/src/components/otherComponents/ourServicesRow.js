@@ -12,12 +12,12 @@ const name = props.name;
             <div className="container-fluid p-0 serv">
                 <div className="container">
                     <div className="row  ">
-                        <div className="col-xl-12 ourServices">
+                        <div className="col-12 ourServices">
                             <h6>Наші послуги</h6>
                         </div>
                     </div>
                     <div className="row  ourServicesPhoto">
-                        <div className="col-xl-12">
+                        <div className="col-12">
                             <ul className={`${name}_photoServ`}>
                                 <li>
                                     <div className={`${name}_redInfo`}>
@@ -43,7 +43,7 @@ const name = props.name;
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <img src={trauma} alt="trauma"/>
+                                    <img src={trauma} alt="trauma" className="servicesImg"/>
                                         <p>Травма-реабілітаційний центр</p></li>
 
                                 <li>
@@ -56,7 +56,7 @@ const name = props.name;
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <img src={cafe} alt="cafe"/>
+                                    <img src={cafe} alt="cafe" className="servicesImg"/>
                                         <p>Здорова та смачна їжа для відновлення</p></li>
 
 
@@ -70,7 +70,7 @@ const name = props.name;
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <img src={sauna} alt="sauna"/>
+                                    <img src={sauna} alt="sauna" className="servicesImg"/>
                                         <p>Сауна вищого класу для відновлення здоров`я</p></li>
 
                             </ul>

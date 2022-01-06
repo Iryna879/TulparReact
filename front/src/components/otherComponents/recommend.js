@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "./../../style/recommend.css";
-
+import "./../../media/mediaRecommend.css";
 export function Recommend () {
 
     const [recommends, setRecommends] = useState([]);
@@ -21,7 +21,7 @@ export function Recommend () {
     return (
 
             <div className="row  ">
-                <div className="col-xl-12  recommend">
+                <div className="col-12  recommend">
                     <h6>Нас рекомендують</h6>
                     <ul>
                         {
