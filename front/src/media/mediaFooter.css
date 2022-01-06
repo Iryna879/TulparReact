@@ -1,0 +1,21 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    footer.container-fluid {height: 365px;}
+    .logoFooter, .mapSite, .contactUs {margin-top: 60px;}
+    .mapSite h2, .contactUs h2 {
+        font-size: 14px;
+        margin-bottom: 26px;
+    }
+    .mapSite ul li a, .contactUs ul li  {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .up button {margin-top: 60px;}
+    .up p {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+    .copyright p {
+        font-size: 12px;
+        margin-top: 26px;
+    }
+}

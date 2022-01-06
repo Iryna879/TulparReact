@@ -1,6 +1,6 @@
 import React from "react";
 import "./../../style/contact.css";
-
+import "./../../media/mediaContact.css";
 
 export function Map () {
 

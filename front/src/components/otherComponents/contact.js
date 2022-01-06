@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./../../style/contact.css";
-
+import "./../../media/mediaContact.css";
 
 export function Contact () {
     const [contacts, setContacts] = useState([]);
@@ -22,7 +22,7 @@ export function Contact () {
 //console.log("cont" + contacts[0].heading);
     return (
     <div className="row ">
-        <div className="col-xl-12 d-flex  contacts">
+        <div className="col-12 d-flex  contacts">
           {/*   <div className="address">
                 <h3>{contacts[0].heading}</h3>
                 <p>{contacts[0].info}</p>

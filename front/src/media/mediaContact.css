@@ -1,3 +1,25 @@
 @media (max-width: 768px) and (min-width: 480px) {
-
+    iframe {height:260px;}
+    .map h6 {
+        font-size: 34px;
+        margin-top: 60px;
+        margin-bottom: 26px;
+    }
+    .map {
+        margin-bottom: 26px;
+    }
+    .address, .phone, .email {
+        margin-right: 117px;
+        margin-bottom: 60px;
+    }
+    .address h3, .phone h3, .email h3 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 26px;
+    }
+    .address p, .phone p, .email p {
+        font-size: 12px;
+        line-height: 18px;
+        width: 210px;
+    }
 }
