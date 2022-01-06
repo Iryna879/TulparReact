@@ -7,6 +7,7 @@ import whatsApp from "./../../img/whatsapp.png";
 import more from "./../../img/more.png"
 import TelegramBot from "../TelegramBot/TelegramBot";
 import  "./../../style/button.css";
+import "./../../media/mediaButton.css";
 
 export function IndexHeader (props){
     const logo = props.logo;
@@ -44,10 +45,9 @@ export function IndexHeader (props){
                         </ul>
                     </div>
                 </div>
-            </div>
 
             <div className="row">
-                <div className="col-xl-6 cardioCentre">
+                <div className="col-xl-6 col-lg-6 col-md-6 cardioCentre">
                     <h6>Кардіо-реабілітаційний центр</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
@@ -55,7 +55,7 @@ export function IndexHeader (props){
                     <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
                     <button onClick={() => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
                 </div>
-                <div className="col-xl-6 traumaCentre">
+                <div className="col-xl-6 col-lg-6 col-md-6 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
@@ -82,6 +82,7 @@ export function IndexHeader (props){
                         }
                     </div>
                 </div>
+            </div>
             </div>
         </header>
     )

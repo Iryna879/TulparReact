@@ -2,7 +2,7 @@
     body, html{
         width: 100%;
     }
-    .index_fluid {background-size: contain; height: 585px;}
+    .index_fluid {background-size: contain; height: 600px;}
     .container{width: 100%}
     .logo img {
         width: 128px ;
@@ -16,7 +16,7 @@
         margin-right: 38px;
     }
     .cardioCentre h6 {
-        margin-top: 86px;
+        margin-top: 30px;
         margin-left: 46px;
         width: 275px;
         height: 48px;
@@ -35,16 +35,19 @@
 
     .cardioCentre .services {
         width: 205px;
-        height: 96px;
-        margin-top: 26px;
+        /*height: 96px;*/
+        margin-top: 21px;
         margin-left: 116px;
     }
-
+    .cardioCentre .services li, .traumaCentre .services li  {
+        font-size: 12px;
+    }
     .cardioCentre button {
         margin-top: 46px;
         margin-left: 201px;
         width: 120px;
         height : 40px;
+        font-size: 12px;
     }
 
     .traumaCentre h6 {
@@ -52,7 +55,7 @@
         height: 48px;
         font-size: 18px;
         line-height: 24px;
-        margin-top: 86px;
+        margin-top: 30px;
         margin-left: 48px;
     }
 
@@ -67,8 +70,8 @@
     .traumaCentre .services {
         width: 236px;
         height: 96px;
-        margin-top: 41px;
-        margin-left: 100px;
+        margin-top: 21px;
+        margin-left: 48px;
     }
 
     .traumaCentre button {

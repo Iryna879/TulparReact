@@ -3,6 +3,7 @@ import logo from "./../../img/contactLogo.png";
 import {Link} from "react-router-dom";
 import arrow from "./../../img/arrow.png";
 import  "./../../style/footer.css";
+import "./../../media/mediaFooter.css";
 
 export function Footer() {
     return (
