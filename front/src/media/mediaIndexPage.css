@@ -2,7 +2,7 @@
     body, html{
         width: 100%;
     }
-    .index_fluid {background-size: contain; height: 600px;}
+    .index_fluid {background-size: contain; height: 600px; min-width:768px;}
     .container{width: 100%}
     .logo img {
         width: 128px ;
@@ -10,7 +10,6 @@
     }
     .menu {
         font-size: 12px;
-        line-height: 18px;
     }
     .menu li {
         margin-right: 38px;
@@ -18,7 +17,7 @@
     .cardioCentre h6 {
         margin-top: 30px;
         margin-left: 46px;
-        width: 275px;
+        width: 245px;
         height: 48px;
         font-size: 18px;
         line-height: 24px;

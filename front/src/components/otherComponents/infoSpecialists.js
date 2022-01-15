@@ -12,7 +12,7 @@ export function  InfoSpecialists (props)  {
       let activity = "";
   let careerMass = []; let activityMass = [];
   specialist.map(s => {
-      if (s._id == emp) {
+      if (s._id === emp) {
           fullName = s.name + " " + s.surname;
           job = s.jobTitle;
           department = s.specialization;
@@ -25,7 +25,7 @@ export function  InfoSpecialists (props)  {
     activityMass = activity.split(",");
 
     return (
-        <div class="specialistInfo">
+        <div className="specialistInfo">
 
             <p>{fullName}</p>
             <ul className="gridSpecialistInfo">
