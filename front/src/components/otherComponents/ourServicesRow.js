@@ -64,7 +64,7 @@ const name = props.name;
                                     <div className={`${name}_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
-                                            <p>Сауна вищого класу для відновлення здоров`я</p>
+                                            <p>Сауна вищого класу </p>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                 industry.
                                                 Lorem Ipsum has been the industry's standard dummy text</p>

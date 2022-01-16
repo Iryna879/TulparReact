@@ -84,7 +84,7 @@
         height: 38px;
     }
     .serv {
-        /*min-width:768px;*/
+        min-width:768px;
         height: 465px;
     }
     .ourServices h6 {
@@ -104,7 +104,7 @@
         font-size: 12px;
         line-height: 22px;
         width: 141px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .index_redInfo .pulse {
         width: 177px;
@@ -134,8 +134,8 @@
     }
     .ourServicesPhoto button {
         margin-top: 26px;
-        margin-left: 324px;
-        width: 120px;
+        margin-left: 40%;
+        width: 16%;
         height : 40px;
     }
 }
