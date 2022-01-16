@@ -71,7 +71,7 @@ const name = props.name;
                                         </div>
                                     </div>
                                     <img src={sauna} alt="sauna" className="servicesImg"/>
-                                        <p>Сауна вищого класу для відновлення здоров`я</p></li>
+                                        <p>Сауна вищого класу </p></li>
 
                             </ul>
                             <button onClick={(e) => window.location.assign('http://localhost:3000/services') }>
