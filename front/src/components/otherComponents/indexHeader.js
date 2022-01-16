@@ -31,10 +31,11 @@ export function IndexHeader (props){
         <header className="container-fluid p-0 index_fluid">
             <div className="container">
                 <div className="row  ">
-                    <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 logo">
+                    <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 logo">
                         <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
-                    <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-1 col-md-8 offset-md-1 col-sm-8 offset-sm-1  ">
+                    <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-1 col-md-8 offset-md-1
+                    col-sm-8 offset-sm-1 col-8 offset-1 ">
                         <ul className="menu">
                             <li><Link to="/">Головна</Link></li>
                             <li><Link to="/services">Послуги</Link></li>
@@ -47,7 +48,7 @@ export function IndexHeader (props){
                 </div>
 
             <div className="row">
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 cardioCentre">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cardioCentre">
                     <h6>Кардіо-реабілітаційний центр</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
@@ -55,7 +56,7 @@ export function IndexHeader (props){
                     <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
                     <button onClick={() => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
                 </div>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 traumaCentre">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>

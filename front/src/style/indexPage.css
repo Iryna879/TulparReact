@@ -66,7 +66,6 @@ a{
 
 .cardioCentre .services {
     width: 250px;
-    height: 17px;
     margin-top: 29px;
     text-align: right;
     margin-left: 350px;
@@ -86,7 +85,6 @@ a{
     border: 1px solid #F9F9F9;
     box-sizing: border-box;
     border-radius: 25px;
-    margin-top: 180px;
     margin-left: 440px;
     width: 160px;
     height : 50px;
@@ -101,7 +99,6 @@ a{
     width: 450px;
     height: 72px;
     font-family: "TTHoves-Bold";
-    font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 38px;
@@ -115,7 +112,6 @@ a{
     font-family: "TTHoves-DemiBold";
     width: 220px;
     height: 102px;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -125,7 +121,6 @@ a{
 }
 .traumaCentre .services {
     width: 250px;
-    height: 17px;
     margin-top: 29px;
     margin-left: 100px;
 }
@@ -143,7 +138,6 @@ a{
     border: 1px solid #32495E;
     box-sizing: border-box;
     border-radius: 25px;
-    margin-top: 180px;
     margin-left: 100px;
     width: 160px;
     height : 50px;
