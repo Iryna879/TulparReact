@@ -1,0 +1,24 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    body, html{
+        width: 100%;
+    }
+    .container{min-width: 100%}
+    .centerInfo {
+        height: auto;
+        min-width:768px;
+        background-size: contain;
+    }
+    .textAboutCenter h6 {
+        font-size: 34px;
+        line-height: 52px;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+    .textAboutCenter p {
+        width: 63%;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
