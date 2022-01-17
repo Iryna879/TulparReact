@@ -1,15 +1,16 @@
 @media (max-width: 768px) and (min-width: 480px) {
-    iframe {height:260px;}
+    .map {
+        margin-bottom: 26px;
+        min-width: 768px;
+    }
     .map h6 {
         font-size: 34px;
         margin-top: 20px;
         margin-bottom: 26px;
     }
-    .map {
-        margin-bottom: 26px;
-    }
+    iframe {height:260px;}
     .address, .phone, .email {
-        margin-right: 117px;
+        margin-right: 16%;
         margin-bottom: 60px;
     }
     .address h3, .phone h3, .email h3 {
@@ -20,6 +21,6 @@
     .address p, .phone p, .email p {
         font-size: 12px;
         line-height: 18px;
-        width: 210px;
+        width: 28%;
     }
 }

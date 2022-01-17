@@ -9,6 +9,7 @@ import WhyWe from "../otherComponents/whyWe";
 import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 
+
 export function TraumaCenterPage (){
 
     const name= "traumaCenter";

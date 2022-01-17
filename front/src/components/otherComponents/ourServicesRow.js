@@ -8,7 +8,6 @@ import sauna from "./../../img/saunaIndex.png";
 export function OurServicesRow (props) {
 const name = props.name;
     return (
-        <main>
             <div className="container-fluid p-0 serv">
                 <div className="container">
                     <div className="row  ">
@@ -81,9 +80,6 @@ const name = props.name;
                     </div>
                 </div>
             </div>
-        </main>
-
     )
-
 
 }

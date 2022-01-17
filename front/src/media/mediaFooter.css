@@ -1,5 +1,5 @@
 @media (max-width: 768px) and (min-width: 480px) {
-    footer.container-fluid {height: 365px;}
+    footer.container-fluid {height: 365px; min-width: 768px;}
     .logoFooter, .mapSite, .contactUs {margin-top: 60px;}
     .mapSite h2, .contactUs h2 {
         font-size: 14px;

@@ -10,7 +10,7 @@ import {CardioCenterPage} from "./components/pages/cardioCenterPage";
 import {TraumaCenterPage} from "./components/pages/traumaCenterPage";
 import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
-
+import "./media/mediaTraumaAndCardioHeader.css";
 
 function App() {
   return (

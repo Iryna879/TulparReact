@@ -1,0 +1,34 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    body, html{
+        width: 100%;
+    }
+    .cardioCenter_fluid, .traumaCenter_fluid {
+        height: auto;
+        min-width:768px;
+    }
+    .container{min-width: 100%}
+    .logo  {
+        width: 128px ;
+        height: 31px ;
+    }
+    .cardioCenter_menu, .traumaCenter_menu {
+        font-size: 12px;
+        margin-left: 0;
+    }
+    .cardioCenter_menu li, .traumaCenter_menu li {
+        margin-right: 38px;
+    }
+
+    .cardioCenter_text h6, .traumaCenter_text h6 {
+        width: 67.5%;
+        font-size: 34px;
+        margin-top: 50px;
+    }
+    .cardioCenter_text p, .traumaCenter_text  p {
+        width: 67.8%;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 26px;
+        margin-bottom: 60px;
+    }
+}
