@@ -11,7 +11,7 @@ export function ServicesMain () {
             <div className="container-fluid p-0 servicesPhoto">
                 <div className="container">
                     <div className="row  ">
-                        <div className="col-xl-12">
+                        <div className="col-12">
                             <ul className={`services_photoServ`}>
                                 <li>
                                     <div className={`services_redInfo`}>
@@ -61,13 +61,13 @@ export function ServicesMain () {
                                     <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
-                                            <p>Сауна вищого класу для відновлення здоров`я</p>
+                                            <p>Сауна вищого класу для відновлення </p>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                 industry.
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p className="heading">Сауна вищого класу для відновлення здоров`я</p>
+                                    <p className="heading">Сауна вищого класу для відновлення </p>
                                     <img src={sauna} className="servicesImg"  alt="sauna"/>
                                     </li>
 

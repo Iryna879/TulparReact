@@ -12,7 +12,7 @@
         margin-top: 60px;
         margin-bottom: 26px;
     }
-
+    .services_photoServ {margin-bottom: 100px;}
     .index_photoServ li, .services_photoServ li {
         margin-right: 10px;
     }
@@ -49,10 +49,11 @@
     .index_redInfo .redInfoText p:last-child, .services_redInfo .redInfoText p:last-child {
         font-size: 10px;
         line-height: 12px;
-        margin-top: 10px ;
         margin-left: 9px ;
         width: 89%;
     }
+    .index_redInfo .redInfoText p:last-child {margin-top: 10px ;}
+    .services_redInfo .redInfoText p:last-child {margin-top: 50px ;}
     .ourServicesPhoto button {
         margin-top: 26px;
         margin-left: 40%;
