@@ -2,23 +2,29 @@
     body, html{
         width: 100%;
     }
-    .container{min-width: 100%}
     .centerInfo {
         height: auto;
         min-width:768px;
         background-size: contain;
     }
+    .container{min-width: 100%}
+    .textAboutCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .textAboutCenter h6 {
-        font-size: 34px;
+        font-size: 24px;
         line-height: 52px;
-        margin-top: 70px;
-        margin-left: 50px;
+        margin-top: 10px;
+        margin-left: 2%;
     }
     .textAboutCenter p {
-        width: 63%;
-        font-size: 12px;
+        width: 300px;
+        font-size: 7px;
         line-height: 20px;
-        margin-top: 50px;
-        margin-left: 50px;
+        margin-top: 0;
+        margin-left: 0;
     }
 }
