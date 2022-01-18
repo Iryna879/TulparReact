@@ -1,0 +1,32 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    body, html{
+        width: 100%;
+    }
+    .whyWeFluid {
+        height: auto;
+        min-width:768px;
+    }
+    .container{min-width: 100%}
+    .whyWe h6 {
+        font-size: 34px;
+        margin-top: 60px;
+        margin-bottom: 45px;
+    }
+    .benefits {flex-wrap: wrap;}
+    .benefits li {
+        margin-right: 40px;
+    }
+    .benefits h1 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 26px;
+        margin-bottom: 14px;
+    }
+    .benefits p {
+        width: 330px;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+    }
+
+}

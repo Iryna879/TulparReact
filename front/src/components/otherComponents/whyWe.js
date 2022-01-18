@@ -1,6 +1,7 @@
 import React from "react";
 import "./../../style/whyWe.css";
 import ellipse from "./../../img/EllipseWhyWe.png";
+import "./../../media/mediaWhyWe.css";
 
 export function WhyWe () {
 
@@ -8,7 +9,7 @@ export function WhyWe () {
         <div className="container-fluid p-0 whyWeFluid">
             <div className="container">
                 <div className="row  ">
-                    <div className="col-xl-12 whyWe">
+                    <div className="col-12 whyWe">
                         <h6>Чому ми?</h6>
                         <ul className="benefits">
                             <li><img src={ellipse} alt="ellipse"/><h1>Перевага 1</h1>
