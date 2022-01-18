@@ -18,7 +18,7 @@ export function ServicePage (){
         <div>
             <Header name={name} logo={logo}/>
             <main>
-            <ServicesMain name={name}/>
+            <ServicesMain />
             <PriceList/>
                     <WhyWe/>
                     <div className="container">

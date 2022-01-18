@@ -5,8 +5,7 @@ import trauma from "./../../img/traumaIndex.png";
 import cafe from "./../../img/cafeIndex.png";
 import sauna from "./../../img/saunaIndex.png";
 
-export function OurServicesRow (props) {
-const name = props.name;
+export function OurServicesRow () {
     return (
             <div className="container-fluid p-0 serv">
                 <div className="container">

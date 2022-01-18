@@ -11,13 +11,12 @@ import Contact from "../otherComponents/contact";
 import {SpecialistsIndex} from "../otherComponents/specialistsIndex";
 
 export function Index (){
-    const name = "index";
 
     return (
         <div>
         <IndexHeader logo={logo}/>
         <main>
-        <OurServicesRow name={name}/>
+        <OurServicesRow />
                 <div className="container">
                     <SpecialistsIndex/>
                     <Recommend/>

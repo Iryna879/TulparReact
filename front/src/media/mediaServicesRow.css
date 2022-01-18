@@ -1,0 +1,63 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    body, html{
+        width: 100%;
+    }
+
+    .serv, .servicesPhoto {
+        min-width:768px;
+        height: auto; /*465px;*/
+    }
+    .ourServices h6 {
+        font-size: 34px;
+        margin-top: 60px;
+        margin-bottom: 26px;
+    }
+
+    .index_photoServ li, .services_photoServ li {
+        margin-right: 10px;
+    }
+    #cardioIndex, .index_photoServ .servicesImg, .services_photoServ .servicesImg {
+        width: 177px;
+        height: 152px ;
+    }
+    .index_photoServ li  p, .services_photoServ li p{
+        font-size: 12px;
+        line-height: 22px;
+        width: 141px;
+        margin-top: 10px;
+    }
+    .services_photoServ li:hover  p.heading {visibility: hidden;}
+    .index_redInfo .pulse, .services_redInfo .pulse  {
+        width: 177px;
+        height: 93px;
+    }
+    .index_redInfo .pulse img, .services_redInfo .pulse img {
+        margin-top: 35px ;
+        margin-left: 76px ;
+    }
+    .index_redInfo .redInfoText, .services_redInfo .redInfoText {
+        height: 112px;
+        width: 177px;
+    }
+    .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
+        font-size: 12px;
+        line-height: 15px;
+        padding-top: 10px ;
+        margin-left: 9px ;
+        margin-top: 0;
+    }
+    .index_redInfo .redInfoText p:last-child, .services_redInfo .redInfoText p:last-child {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 10px ;
+        margin-left: 9px ;
+        width: 89%;
+    }
+    .ourServicesPhoto button {
+        margin-top: 26px;
+        margin-left: 40%;
+        width: 16%;
+        height : 40px;
+        margin-bottom: 30px;
+    }
+}

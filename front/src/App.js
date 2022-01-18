@@ -12,6 +12,7 @@ import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
 import "./media/mediaHeader.css";
 import "./media/mediaWhatIsBlock.css";
+import "./media/mediaServicesRow.css";
 
 function App() {
   return (

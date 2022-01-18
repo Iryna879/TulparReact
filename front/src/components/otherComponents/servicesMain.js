@@ -5,8 +5,7 @@ import trauma from "./../../img/trauma.png";
 import cafe from "./../../img/cafe.png";
 import sauna from "./../../img/sauna.png";
 
-export function ServicesMain (props) {
-    const name = props.name;
+export function ServicesMain () {
     return (
 
             <div className="container-fluid p-0 servicesPhoto">
@@ -24,8 +23,8 @@ export function ServicesMain (props) {
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p>Кардіо-реабілітаційний центр</p>
-                                    <img src={cardio} alt="cardio"/>
+                                    <p className="heading">Кардіо-реабілітаційний центр</p>
+                                    <img src={cardio} className="servicesImg" alt="cardio"/>
                                     </li>
 
 
@@ -39,8 +38,8 @@ export function ServicesMain (props) {
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p>Травма-реабілітаційний центр</p>
-                                    <img src={trauma} alt="trauma"/>
+                                    <p className="heading">Травма-реабілітаційний центр</p>
+                                    <img src={trauma} className="servicesImg"  alt="trauma"/>
                                     </li>
 
                                 <li>
@@ -53,8 +52,8 @@ export function ServicesMain (props) {
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p>Здорова та смачна їжа для відновлення</p>
-                                    <img src={cafe} alt="cafe"/>
+                                    <p className="heading">Здорова та смачна їжа для відновлення</p>
+                                    <img src={cafe} className="servicesImg"  alt="cafe"/>
                                     </li>
 
 
@@ -68,8 +67,8 @@ export function ServicesMain (props) {
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p>Сауна вищого класу для відновлення здоров`я</p>
-                                    <img src={sauna} alt="sauna"/>
+                                    <p className="heading">Сауна вищого класу для відновлення здоров`я</p>
+                                    <img src={sauna} className="servicesImg"  alt="sauna"/>
                                     </li>
 
                             </ul>

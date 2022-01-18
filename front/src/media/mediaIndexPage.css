@@ -83,59 +83,12 @@
         width: 33px;
         height: 38px;
     }
-    .serv {
-        min-width:768px;
-        height: 465px;
-    }
+
     .ourServices h6 {
         font-size: 34px;
         margin-top: 60px;
         margin-bottom: 26px;
     }
 
-    .index_photoServ li {
-        margin-right: 10px;
-    }
-    #cardioIndex, .index_photoServ .servicesImg {
-        width: 177px;
-       height: 152px ;
-    }
-    .index_photoServ li  p{
-        font-size: 12px;
-        line-height: 22px;
-        width: 141px;
-        margin-top: 10px;
-    }
-    .index_redInfo .pulse {
-        width: 177px;
-        height: 93px;
-    }
-    .index_redInfo .pulse img {
-        margin-top: 35px ;
-        margin-left: 76px ;
-    }
-    .index_redInfo .redInfoText {
-        height: 112px;
-        width: 177px;
-    }
-    .index_redInfo .redInfoText p:first-child {
-        font-size: 12px;
-        line-height: 15px;
-        padding-top: 10px ;
-        margin-left: 9px ;
-        margin-top: 0;
-    }
-    .index_redInfo .redInfoText p:last-child {
-        font-size: 10px;
-        line-height: 12px;
-        margin-top: 10px ;
-        margin-left: 9px ;
-        width: 89%;
-    }
-    .ourServicesPhoto button {
-        margin-top: 26px;
-        margin-left: 40%;
-        width: 16%;
-        height : 40px;
-    }
+
 }
