@@ -13,9 +13,9 @@ export function ServicesMain (props) {
                 <div className="container">
                     <div className="row  ">
                         <div className="col-xl-12">
-                            <ul className={`${name}_photoServ`}>
+                            <ul className={`services_photoServ`}>
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Кардіо-реабілітаційний центр</p>
@@ -30,7 +30,7 @@ export function ServicesMain (props) {
 
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Травма-реабілітаційний центр</p>
@@ -44,7 +44,7 @@ export function ServicesMain (props) {
                                     </li>
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Здорова та смачна їжа для відновлення</p>
@@ -59,7 +59,7 @@ export function ServicesMain (props) {
 
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Сауна вищого класу для відновлення здоров`я</p>

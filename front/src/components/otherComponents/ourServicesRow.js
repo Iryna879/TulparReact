@@ -17,9 +17,9 @@ const name = props.name;
                     </div>
                     <div className="row  ourServicesPhoto">
                         <div className="col-12">
-                            <ul className={`${name}_photoServ`}>
+                            <ul className={`index_photoServ`}>
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`index_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Кардіо-реабілітаційний центр</p>
@@ -33,7 +33,7 @@ const name = props.name;
 
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`index_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Травма-реабілітаційний центр</p>
@@ -46,7 +46,7 @@ const name = props.name;
                                         <p>Травма-реабілітаційний центр</p></li>
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`index_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Здорова та смачна їжа для відновлення</p>
@@ -60,7 +60,7 @@ const name = props.name;
 
 
                                 <li>
-                                    <div className={`${name}_redInfo`}>
+                                    <div className={`index_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Сауна вищого класу </p>
