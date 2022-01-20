@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./../../style/specialistsInfo.css";
 import {InfoSpecialists} from "./infoSpecialists";
+import "./../../media/mediaSpecialistsInfo.css";
 
 
 export function  OurSpecialistsPageSpecList ()  {
