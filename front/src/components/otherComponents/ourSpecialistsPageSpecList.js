@@ -24,7 +24,7 @@ export function  OurSpecialistsPageSpecList ()  {
     return (
         <div className="container">
             <div className="row  ">
-                <div className="col-xl-12 ">
+                <div className="col-12 ">
                     <ul className="specialistsListPage">
                         {
                             specialists.map((s, index) => {
@@ -32,7 +32,7 @@ export function  OurSpecialistsPageSpecList ()  {
                                     return(
                                         <li key={s._id} onClick={() => setSelectedEmp(s._id)}>
                                             <img src={"http://localhost:3001" + s.photo} alt="doctor"/>
-                                            <p>Доктор {s.surname} {s.name}</p>
+                                            <p>{s.surname} {s.name}</p>
                                         </li>
                                     )
                                 }

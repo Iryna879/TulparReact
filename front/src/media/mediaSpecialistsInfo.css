@@ -2,7 +2,7 @@
     .container { min-width: 100%;}
     .specialistsListPage {
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     .specialistsListPage li {
         margin-right: 30px;
@@ -12,16 +12,16 @@
         height: 90px ;
     }
     .specialistsListPage p {
-        font-weight: 700;
-        font-size: 18px;
-        margin-top: 20px;
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: 26px;
     }
     .specialistInfo {
         min-height: 450px;
     }
     .specialistInfo p {
-        font-size: 24px;
-        margin-bottom: 0;
+        font-size: 18px;
+        margin-bottom: 26px;
     }
 
     .gridSpecialistInfo {
