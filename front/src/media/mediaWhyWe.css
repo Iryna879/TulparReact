@@ -4,27 +4,32 @@
     }
     .whyWeFluid {
         height: auto;
-        min-width:768px;
+        min-width: 100%; /*768px;*/
     }
     .container{min-width: 100%}
     .whyWe h6 {
-        font-size: 34px;
+        font-size: 212.5%; /*34px;*/
         margin-top: 60px;
         margin-bottom: 45px;
     }
     .benefits {flex-wrap: wrap;}
     .benefits li {
-        margin-right: 40px;
+        width: 45%;
+        margin-right: 5% /*40px*/;
+    }
+    .benefits li img {
+        width: 50px;
+        height: 50px;
     }
     .benefits h1 {
-        font-size: 14px;
+        font-size: 87.5% /*14px*/;
         line-height: 17px;
         margin-top: 26px;
         margin-bottom: 14px;
     }
     .benefits p {
-        width: 330px;
-        font-size: 12px;
+        width: 100% /*330px*/;
+        font-size: 75% /*12px*/;
         line-height: 15px;
         text-align: left;
     }

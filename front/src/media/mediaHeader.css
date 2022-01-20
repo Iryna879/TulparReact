@@ -4,7 +4,7 @@
     }
     .cardioCenter_fluid, .traumaCenter_fluid, .services_fluid, .ourSpecialists_fluid, .contact_fluid  {
         height: auto;
-        min-width:768px;
+        min-width: 100% /*768px*/;
     }
     .container{min-width: 100%}
     .logo  {
@@ -12,21 +12,21 @@
         height: 31px ;
     }
     .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
-        font-size: 12px;
+        font-size: 75% /*12px*/;
         margin-left: 0;
     }
     .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
-        margin-right: 38px;
+        margin-right: 5% /*38px*/;
     }
 
     .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
         width: 67.5%;
-        font-size: 34px;
+        font-size: 212.5% /*34px*/;
         margin-top: 50px;
     }
     .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
         width: 67.8%;
-        font-size: 12px;
+        font-size: 75% /*12px*/;
         line-height: 15px;
         margin-top: 26px;
         margin-bottom: 60px;
