@@ -4,11 +4,11 @@
     }
 
     .serv, .servicesPhoto {
-        min-width:768px;
+        min-width:100%;
         height: auto; /*465px;*/
     }
     .ourServices h6 {
-        font-size: 34px;
+        font-size: 212.5% /*34px*/;
         margin-top: 60px;
         margin-bottom: 26px;
     }
@@ -21,9 +21,9 @@
         height: 152px ;
     }
     .index_photoServ li  p, .services_photoServ li p{
-        font-size: 12px;
+        font-size: 75%;
         line-height: 22px;
-        width: 141px;
+        width: 19% /*141px*/;
         margin-top: 10px;
     }
     .services_photoServ li:hover  p.heading {visibility: hidden;}
@@ -33,21 +33,21 @@
     }
     .index_redInfo .pulse img, .services_redInfo .pulse img {
         margin-top: 35px ;
-        margin-left: 76px ;
+        margin-left: 43% /*76px*/ ;
     }
     .index_redInfo .redInfoText, .services_redInfo .redInfoText {
         height: 112px;
         width: 177px;
     }
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
-        font-size: 12px;
+        font-size: 75%;
         line-height: 15px;
         padding-top: 10px ;
         margin-left: 9px ;
         margin-top: 0;
     }
     .index_redInfo .redInfoText p:last-child, .services_redInfo .redInfoText p:last-child {
-        font-size: 10px;
+        font-size: 62.5% /*10px*/;
         line-height: 12px;
         margin-left: 9px ;
         width: 89%;

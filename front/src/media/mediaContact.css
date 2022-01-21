@@ -1,10 +1,10 @@
 @media (max-width: 768px) and (min-width: 480px) {
     .map {
         margin-bottom: 26px;
-        min-width: 768px;
+        min-width: 100% /*768px*/;
     }
     .map h6 {
-        font-size: 34px;
+        font-size: 212.5% /*34px*/;
         margin-top: 20px;
         margin-bottom: 26px;
     }
@@ -14,12 +14,12 @@
         margin-bottom: 60px;
     }
     .address h3, .phone h3, .email h3 {
-        font-size: 14px;
+        font-size: 87.5% /*14px*/;
         line-height: 17px;
         margin-bottom: 26px;
     }
     .address p, .phone p, .email p {
-        font-size: 12px;
+        font-size: 75% /* 12px*/;
         line-height: 18px;
         width: 28%;
     }
