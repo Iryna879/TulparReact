@@ -7,10 +7,10 @@
         min-width: 100% /*768px*/;
     }
     .container{min-width: 100%}
-    .logo  {
+   /* .logo  {
         width: 128px ;
         height: 31px ;
-    }
+    }*/
     .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
         font-size: 75% /*12px*/;
         margin-left: 0;
