@@ -6,7 +6,7 @@
     }
     .recommend ul li {margin-right: 6% /*44px*/;}
     .recommend ul li img {
-        width: 112px;
-        height: 112px;
+        width: 100%;
+        height: auto;
     }
 }
