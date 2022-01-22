@@ -6,13 +6,11 @@ import write from "./../../img/write.png";
 import whatsApp from "./../../img/whatsapp.png";
 import more from "./../../img/more.png"
 import TelegramBot from "../TelegramBot/TelegramBot";
-import  "./../../style/button.css";
-import "./../../media/mediaButton.css";
 
 export function IndexHeader (props){
     const logo = props.logo;
     const [services, setServices] = useState([]);
-    const [click, setClick] = useState(false);
+
     useEffect(() => {
         fetch("http://localhost:3001/api/services")
             .then(res => {
@@ -63,12 +61,6 @@ export function IndexHeader (props){
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
                     <button onClick={() => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
 
-                    <div type="button" className="callback-bt">
-                        <div className="text-call" onClick={() => click ? setClick(false) : setClick(true)}>
-                            <i className="fa fa-phone"/>
-                            <span>Замовити<br/>дзвінок</span>
-                        </div>
-                    </div>
                     <ul className="social">
                         <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>
                         <li><a href="#"><img src={write} alt="write"/></a></li>
@@ -76,11 +68,6 @@ export function IndexHeader (props){
                         <li><a href="#"><img src={more} alt="more"/></a></li>
                     </ul>
 
-                    <div>
-                        {
-                            click ?  <TelegramBot /> : ""
-                        }
-                    </div>
                 </div>
             </div>
             </div>

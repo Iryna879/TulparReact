@@ -13,11 +13,12 @@ import "./style/font.css";
 import "./media/mediaHeader.css";
 import "./media/mediaWhatIsBlock.css";
 import "./media/mediaServicesRow.css";
+import ButtonCallback from "./components/otherComponents/buttonCallback";
 
 function App() {
   return (
       <BrowserRouter className="App">
-
+       <ButtonCallback/>
         {<Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<ServicePage />} />
