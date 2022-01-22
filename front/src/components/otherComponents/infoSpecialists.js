@@ -8,7 +8,7 @@ export function  InfoSpecialists (props)  {
   return(  specialist.map(s =>  {
         if (s._id === emp) {
             return (
-                <div className="specialistInfo">
+                <div key={s._id} className="specialistInfo">
 
                     <p>{s.name + " " + s.surname}</p>
                     <ul className="gridSpecialistInfo">
