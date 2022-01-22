@@ -47,7 +47,7 @@ a{
     line-height: 38px;
     text-align: right;
     text-transform: uppercase;
-    color: #F9F9F9;
+    color: #000000 /*#F9F9F9*/;
 }
 
 .cardioCentre p {
@@ -59,7 +59,7 @@ a{
     font-size: 14px;
     line-height: 20px;
     text-align: right;
-    color: #F9F9F9;
+    color: #000000 /* #F9F9F9*/;
     margin-top: 50px;
     margin-left: 380px;
 }
@@ -71,9 +71,9 @@ a{
     margin-left: 350px;
 }
 
-.services li {
+ .services li {
     margin-bottom: 12px;
-    color: #F9F9F9;
+    color: #000000 /*#F9F9F9*/;
 }
 .cardioCentre .services li:after {
     content: "○";
@@ -82,7 +82,7 @@ a{
     margin-left: 12px;
 }
 .cardioCentre button {
-    border: 1px solid #F9F9F9;
+    border: 1px solid #000000 /*#F9F9F9*/;
     box-sizing: border-box;
     border-radius: 25px;
     margin-left: 440px;
@@ -92,7 +92,10 @@ a{
     color: #F9F9F9;
 }
 .cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
-    background-color: #000000;
+    background-color: #F9F9F9 /*#000000*/;
+}
+.cardioCentre button, .traumaCentre button {
+    margin-top: 20px;
 }
 
 .traumaCentre h6 {

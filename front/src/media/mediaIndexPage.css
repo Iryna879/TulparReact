@@ -32,14 +32,11 @@
         margin-top: 26px;
         margin-left: 25%;
     }
-
-    .cardioCentre .services {
-        width: 57%;
-        /*height: 96px;*/
+    .cardioCentre .services, .traumaCentre .services {
+        width: 100%;
         margin-top: 21px;
-        margin-left: 36%;
-
     }
+    .cardioCentre .services {margin-left: -8%;}
     .cardioCentre .services li, .traumaCentre .services li  {
         font-size: 75%;
     }
@@ -68,12 +65,7 @@
         margin-left: 7% ;
         margin-top: 26px;
     }
-    .traumaCentre .services {
-        width: 57%;
-        /*height: 96px;*/
-        margin-top: 21px;
-        margin-left: 7%;
-    }
+    .traumaCentre .services {margin-left: 7%;}
 
     .traumaCentre button {margin-left: 7%;}
 
