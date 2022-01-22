@@ -15,11 +15,11 @@ export function ServiceItem (props){
     return (
         <ul className="services">
                         {
-                            title.map(t => {
-                                return (
-                                    <li key={t._id}>{t}</li>
-                                )
-                            })
+                            title.map((t,index) => {
+                                    return(
+                                        <li key={index}>{t}</li>
+                                    )
+                        })
                         }
                     </ul>
                    )
