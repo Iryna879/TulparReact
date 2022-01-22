@@ -5,7 +5,7 @@
     .centerInfo {
         height: auto;
         min-width:100%;
-        background-size: contain;
+        background-size: 100% 100%;
     }
     .container{min-width: 100%}
     .textAboutCenter {
@@ -15,13 +15,13 @@
         align-items: center;
     }
     .textAboutCenter h6 {
-        font-size: 150% /* 24px*/;
+        font-size: 100% /* 24px*/;
         line-height: 52px;
         margin-top: 10px;
-        margin-left: 2%;
+        margin-left: 5%;
     }
     .textAboutCenter p {
-        width: 40.3% /* 300px*/;
+        width: 75% /* 300px*/;
         font-size: 43.75% /* 7px*/;
         line-height: 20px;
         margin-top: 0;
