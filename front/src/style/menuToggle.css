@@ -1,0 +1,30 @@
+#menu__toggle {
+    opacity: 1;
+}
+.menu__btn {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color:#8A8A8A;
+    border-radius: 5px;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -20px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 20px;
+}

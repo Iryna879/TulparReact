@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 
-
 const  Header = (props) => {
     const {name, logo} = props;
     const [items, setItems] = useState([]);
@@ -28,6 +27,10 @@ const  Header = (props) => {
                     </div>
                     <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-1 col-md-6 offset-md-3
                     col-sm-6 offset-sm-3 col-9 ">
+                        <input id="menu__toggle" type="checkbox"/>
+                        <label className="menu__btn" htmlFor="menu__toggle">
+                            <span></span>
+                        </label>
                         <ul className={`${name}_menu`}>
                             <li><Link to="/">Головна</Link></li>
                             <li><Link to="/services">Послуги</Link></li>

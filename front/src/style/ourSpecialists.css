@@ -21,7 +21,7 @@ ul{list-style-type: none;}
 }
 .ourSpecialists_menu {
     display: flex;
-    margin-top: 20px;
+    margin-top: -65px;
     font-family: "TTHoves-Medium";
     font-size: 18px;
     font-style: normal;

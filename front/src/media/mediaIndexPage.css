@@ -77,6 +77,33 @@
         width: 33px;
         height: 38px;
     }
+}
 
+@media (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        width: 68%;
+        height: 416px;
+        margin: 0;
+        background-color: #32495E;
+        opacity: 97%;
+        left: 50%;
+    }
+    .menu li:first-child{ margin-top:60px;}
+    .menu  li {margin-bottom:  26px;}
+    .menu  li a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 55%;
+    }
 
+    #menu__toggle:checked ~ .menu {
+        visibility: visible;
+        z-index: 2;
+        right: 0;
+    }
 }
