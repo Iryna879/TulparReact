@@ -17,7 +17,7 @@
     .menu__btn {
         display: flex;
         align-items: center;
-        width: 60px;
+        width: 40px;
         height: 40px;
         cursor: pointer;
         position: absolute;
@@ -87,7 +87,6 @@
         margin: 0;
         background-color: #32495E;
         opacity: 97%;
-        left: 50%;
     }
     .cardioCenter_menu  li, .traumaCenter_menu  li, .services_menu li,
     .ourSpecialists_menu li, .contact_menu li  {margin-bottom:  26px;}
@@ -96,14 +95,13 @@
         color: #fff;
         font-weight: 500;
         font-size: 16px;
-        margin-left: 55%;
+        margin-left: 40%;
         margin-bottom:  26px;
     }
     .cardioCenter_menu  li:first-child, .traumaCenter_menu  li:first-child,
     .services_menu  li:first-child, .ourSpecialists_menu  li:first-child,
     .contact_menu li:first-child{ margin-top:60px;}
     .menu__btn{
-        left: 520px;
         top: 20px;
         visibility: visible;
         z-index: 3;
