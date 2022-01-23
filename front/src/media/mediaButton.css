@@ -14,3 +14,20 @@
         line-height: 35px;
     }
 }
+
+@media all and (max-width: 575px) {
+    .callback-bt {
+        left: 38%;
+        bottom: 80%;
+        height:40px;
+        width:40px;
+    }
+    .callback-bt .text-call, .callback-bt i {
+        height:40px;
+        width:40px;
+    }
+    .callback-bt i {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
