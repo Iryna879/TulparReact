@@ -54,7 +54,7 @@ export function IndexHeader (props){
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
-                    <button onClick={() => window.location.assign('http://localhost:3000/cardioCenter') }>Всі послуги</button>
+                    <button onClick={() => window.location.assign('http://localhost:5000/cardioCenter') }>Всі послуги</button>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
@@ -62,7 +62,7 @@ export function IndexHeader (props){
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
-                    <button onClick={() => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
+                    <button onClick={() => window.location.assign('http://localhost:5000/traumaCenter') }>Всі послуги</button>
 
                     {/*<ul className="social">
                         <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>

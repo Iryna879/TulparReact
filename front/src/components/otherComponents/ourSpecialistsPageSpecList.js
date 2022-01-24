@@ -31,7 +31,7 @@ export function  OurSpecialistsPageSpecList ()  {
                                 .filter ((item, index) => index < 6)
                                 .map(s  =>
                                         <li key={s._id} onClick={() => setSelectedEmp(s._id)}>
-                                            <img src={"http://localhost:3001" + s.photo} alt="doctor"/>
+                                            <img src={"http://localhost:5000" + s.photo} alt="doctor"/>
                                             <p>{s.surname} {s.name}</p>
                                         </li>
                             )

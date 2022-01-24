@@ -27,7 +27,7 @@ export function Recommend () {
                         {
                      recommends.map(recom =>
 
-                      <li key={recom._id}><img src={"http://localhost:3001" + recom.img} alt={recom.name}/></li>
+                      <li key={recom._id}><img src={"http://localhost:5000" + recom.img} alt={recom.name}/></li>
                      )
                         }
                     </ul>

@@ -21,9 +21,9 @@ app.use(cookieParser());
 // Разрешение забирать статические файлы из папки
 var path = require('path');
 app.use(express.static(path.join(__dirname, './public')));
-app.use(express.static(path.join(__dirname, 'public/build')));
+//app.use(express.static(path.join(__dirname, 'public/build')));
 app.get('!*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/build', 'index.html'));
+    res.sendFile(path.join(__dirname, './public', 'index.html'));
 });
 
 

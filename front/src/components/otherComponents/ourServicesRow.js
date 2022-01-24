@@ -72,7 +72,7 @@ export function OurServicesRow () {
                                         <p>Сауна вищого класу </p></li>
 
                             </ul>
-                            <button onClick={(e) => window.location.assign('http://localhost:3000/services') }>
+                            <button onClick={(e) => window.location.assign('http://localhost:5000/services') }>
                                 Всі послуги
                             </button>
                         </div>

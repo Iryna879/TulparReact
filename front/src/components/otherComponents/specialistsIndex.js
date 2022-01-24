@@ -28,7 +28,7 @@ export function  SpecialistsIndex ()  {
                         .filter((item, index) => index < 8)
                         .map(s  =>
                             <li key={s._id}>
-                                <img src={"http://localhost:3001" + s.photo} alt="doctor"/>
+                                <img src={"http://localhost:5000" + s.photo} alt="doctor"/>
                                 <p>Доктор {s.surname} {s.name}</p>
                                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text</span>
@@ -36,7 +36,7 @@ export function  SpecialistsIndex ()  {
                     )
                    }
                 </ul>
-                <button onClick={() => window.location.assign('http://localhost:3000/ourSpecialists') }>Детальніше</button>
+                <button onClick={() => window.location.assign('http://localhost:5000/ourSpecialists') }>Детальніше</button>
             </div>
         </div>
     )
