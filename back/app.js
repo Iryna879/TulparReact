@@ -21,16 +21,10 @@ app.use(cookieParser());
 // Разрешение забирать статические файлы из папки
 var path = require('path');
 app.use(express.static(path.join(__dirname, './public')));
-//app.use(express.static(path.join(__dirname, 'public/build')));
-app.get('!*', (req, res) => {
+app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, './public', 'index.html'));
 });
 
-
-/*// С файлами
-const multer = require("multer");
-// Сообщим верменную папку для хранения файлов
-app.use(multer({dest: "public/upload"}).single("fileData"));*/
 
 // Маршруты
 const apiRoute = require("./routes/apiRouter");
