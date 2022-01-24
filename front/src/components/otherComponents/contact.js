@@ -5,7 +5,7 @@ import "./../../media/mediaContact.css";
 export function Contact () {
     const [contacts, setContacts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/api/contacts")
+        fetch("/api/contacts")
             .then(res =>res.json())
             .then(result => {
                 //console.log(result);

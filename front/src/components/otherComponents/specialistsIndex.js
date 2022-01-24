@@ -5,7 +5,7 @@ import "./../../media/mediaSpecialists.css";
 export function  SpecialistsIndex ()  {
     const [specialists, setSpecialists] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/api/specialists")
+        fetch("/api/specialists")
             .then(res => {
                 // console.log(res);
                 return res.json()
@@ -24,21 +24,19 @@ export function  SpecialistsIndex ()  {
                 <h6>Наші спеціалісти</h6>
                 <ul className="gridSpecialist">
                     {
-                    specialists.map((s, index) => {
-                        while (index < 8) {
-                            return(
+                    specialists
+                        .filter((item, index) => index < 8)
+                        .map(s  =>
                             <li key={s._id}>
                                 <img src={"http://localhost:3001" + s.photo} alt="doctor"/>
                                 <p>Доктор {s.surname} {s.name}</p>
                                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text</span>
                             </li>
-                            )
-                        }
-                    })
+                    )
                    }
                 </ul>
-                <button onClick={(e) => window.location.assign('http://localhost:3000/ourSpecialists') }>Детальніше</button>
+                <button onClick={() => window.location.assign('http://localhost:3000/ourSpecialists') }>Детальніше</button>
             </div>
         </div>
     )

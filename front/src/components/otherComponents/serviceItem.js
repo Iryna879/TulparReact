@@ -5,7 +5,7 @@ export function ServiceItem (props){
   const department = props.department;
 
   let mass = [];
-    services.map(serv => {if(serv.department === department){
+    services.forEach(serv => {if(serv.department === department){
         mass.push(serv.title);
     }
     })

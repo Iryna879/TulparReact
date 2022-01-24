@@ -6,7 +6,7 @@ export function PriceList (){
     const [price, setPrice] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/api/services")
+        fetch("/api/services")
             .then(res => {
                 // console.log(res);
                 return res.json()

@@ -5,9 +5,9 @@ import React from "react";
 export function  InfoSpecialists (props)  {
   const specialist = props.specialist;
   const emp = props.selected;
-  return(  specialist.map(s =>  {
-        if (s._id === emp) {
-            return (
+  return(  specialist
+          .filter(sId => sId._id === emp )
+          .map(s =>
                 <div key={s._id} className="specialistInfo">
 
                     <p>{s.name + " " + s.surname}</p>
@@ -36,9 +36,6 @@ export function  InfoSpecialists (props)  {
                         </li>
                     </ul>
                 </div> )
-            }
-       }
-       )
   )
 }
 

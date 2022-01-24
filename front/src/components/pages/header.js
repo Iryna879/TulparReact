@@ -5,7 +5,7 @@ const  Header = (props) => {
     const {name, logo} = props;
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/api/header")
+        fetch("http://localhost:5000/api/header")
             .then(res => {
                 // console.log(res);
                 return res.json()

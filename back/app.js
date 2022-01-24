@@ -20,7 +20,12 @@ app.use(cookieParser());
 
 // Разрешение забирать статические файлы из папки
 var path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, 'public/build')));
+app.get('!*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/build', 'index.html'));
+});
+
 
 /*// С файлами
 const multer = require("multer");
@@ -32,11 +37,6 @@ const apiRoute = require("./routes/apiRouter");
 app.use(apiRoute);
 const apiTelegram = require("./routes/apiTelegram");
 app.use('/api', apiTelegram);
-
-app.get('*', function (req, res) {
-    let indexFile = path.resolve(__dirname, './public/index.html');
-    res.sendFile(indexFile);
-});
 
 module.exports = app
 

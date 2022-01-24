@@ -5,7 +5,7 @@ export function Recommend () {
 
     const [recommends, setRecommends] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/api/recommends")
+        fetch("/api/recommends")
             .then(res => {
                 // console.log(res);
                 return res.json()

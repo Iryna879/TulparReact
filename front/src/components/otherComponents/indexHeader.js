@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import  {ServiceItem} from "./serviceItem";
-import insta from "./../../img/insta.png";
+/*import insta from "./../../img/insta.png";
 import write from "./../../img/write.png";
 import whatsApp from "./../../img/whatsapp.png";
-import more from "./../../img/more.png"
+import more from "./../../img/more.png";*/
 
 export function IndexHeader (props){
     const logo = props.logo;
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/api/services")
+        fetch("/api/services")
             .then(res => {
                 // console.log(res);
                 return res.json()
@@ -64,12 +64,12 @@ export function IndexHeader (props){
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
                     <button onClick={() => window.location.assign('http://localhost:3000/traumaCenter') }>Всі послуги</button>
 
-                    <ul className="social">
+                    {/*<ul className="social">
                         <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>
                         <li><a href="#"><img src={write} alt="write"/></a></li>
                         <li><a href="#"><img src={whatsApp} alt="whatsApp"/></a></li>
                         <li><a href="#"><img src={more} alt="more"/></a></li>
-                    </ul>
+                    </ul>*/}
 
                 </div>
             </div>

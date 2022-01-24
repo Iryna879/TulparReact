@@ -6,7 +6,7 @@ const  WhatIsBlock = (props) => {
     const {name} = props;
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/api/whatIsBlocks")
+        fetch("/api/whatIsBlocks")
             .then(res => {
                 // console.log(res);
                 return res.json()
@@ -20,8 +20,9 @@ const  WhatIsBlock = (props) => {
     }, [])
 
     return (
-        items.map(item => {if(item.name === name){
-            return (
+        items
+            .filter(itemName => itemName.name === name)
+            .map (item =>
                 <div className="container-fluid p-0 centerInfo" style={{'backgroundImage': `url(${"http://localhost:3001" + item.background})`}}>
                     <div className="container">
                         <div className="row  ">
@@ -36,10 +37,6 @@ const  WhatIsBlock = (props) => {
                     </div>
                 </div>
             )
-        }
-
-        })
     )
-
 }
 export default WhatIsBlock;

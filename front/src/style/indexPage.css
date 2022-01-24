@@ -136,7 +136,7 @@ a{
     color: #F9F9F9;
 }
 .cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
-    background-color: #F9F9F9 /*#000000*/;
+    background-color: #000000;
 }
 .cardioCentre button, .traumaCentre button {
     margin-top: 20px;
