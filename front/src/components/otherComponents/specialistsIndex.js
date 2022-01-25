@@ -36,7 +36,7 @@ export function  SpecialistsIndex ()  {
                     )
                    }
                 </ul>
-                <button onClick={() => window.location.assign('http://localhost:5000/ourSpecialists') }>Детальніше</button>
+                <button onClick={() => window.location.assign('/ourSpecialists') }>Детальніше</button>
             </div>
         </div>
     )

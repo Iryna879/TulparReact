@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.05068007.chunk.css",
-    "main.js": "/static/js/main.3cf02332.chunk.js",
-    "main.js.map": "/static/js/main.3cf02332.chunk.js.map",
+    "main.css": "/static/css/main.7b562a2e.chunk.css",
+    "main.js": "/static/js/main.d16d0244.chunk.js",
+    "main.js.map": "/static/js/main.d16d0244.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a654aa01.js",
     "runtime-main.js.map": "/static/js/runtime-main.a654aa01.js.map",
     "static/css/2.e7313321.chunk.css": "/static/css/2.e7313321.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.207b12ad.chunk.js.map": "/static/js/3.207b12ad.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e7313321.chunk.css.map": "/static/css/2.e7313321.chunk.css.map",
-    "static/css/main.05068007.chunk.css.map": "/static/css/main.05068007.chunk.css.map",
+    "static/css/main.7b562a2e.chunk.css.map": "/static/css/main.7b562a2e.chunk.css.map",
     "static/js/2.bcc55e21.chunk.js.LICENSE.txt": "/static/js/2.bcc55e21.chunk.js.LICENSE.txt",
     "static/media/font.css": "/static/media/TTHoves-Regular.22badb64.ttf",
     "static/media/contactPage.css": "/static/media/backContact.41a4ceb2.png",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.a654aa01.js",
     "static/css/2.e7313321.chunk.css",
     "static/js/2.bcc55e21.chunk.js",
-    "static/css/main.05068007.chunk.css",
-    "static/js/main.3cf02332.chunk.js"
+    "static/css/main.7b562a2e.chunk.css",
+    "static/js/main.d16d0244.chunk.js"
   ]
 }

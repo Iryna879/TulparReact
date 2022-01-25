@@ -83,7 +83,7 @@ a{
 .cardioCentre h6 {
     font-family: "TTHoves-Bold";
     margin-top: 135px;
-    margin-left: 170px;
+    margin-left: 25%;
     width: 428px;
     height: 72px;
     font-weight: 800;
@@ -105,14 +105,14 @@ a{
     text-align: right;
     color: #000000 /* #F9F9F9*/;
     margin-top: 50px;
-    margin-left: 380px;
+    margin-left: 50% /*380px*/;
 }
 
 .cardioCentre .services {
     width: 250px;
     margin-top: 29px;
     text-align: right;
-    margin-left: 350px;
+    margin-left: 50% /* 350px*/;
 }
 
  .services li {
@@ -134,6 +134,7 @@ a{
     height : 50px;
     background-color: transparent;
     color: #F9F9F9;
+    margin-bottom: 25px;
 }
 .cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
     background-color: #000000;
@@ -190,6 +191,7 @@ a{
     height : 50px;
     background-color: transparent;
     color: #32495E;
+    margin-bottom: 25px;
 }
 
 .social {

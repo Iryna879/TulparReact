@@ -28,7 +28,7 @@ export function OurServicesRow () {
                                         </div>
                                     </div>
                                     <img id="cardioIndex" src={cardio} alt="cardio"/>
-                                        <p>Кардіо-реабілітаційний центр</p></li>
+                                        <p className="heading">Кардіо-реабілітаційний центр</p></li>
 
 
                                 <li>
@@ -42,7 +42,7 @@ export function OurServicesRow () {
                                         </div>
                                     </div>
                                     <img src={trauma} alt="trauma" className="servicesImg"/>
-                                        <p>Травма-реабілітаційний центр</p></li>
+                                        <p className="heading">Травма-реабілітаційний центр</p></li>
 
                                 <li>
                                     <div className={`index_redInfo`}>
@@ -55,7 +55,7 @@ export function OurServicesRow () {
                                         </div>
                                     </div>
                                     <img src={cafe} alt="cafe" className="servicesImg"/>
-                                        <p>Здорова та смачна їжа для відновлення</p></li>
+                                        <p className="heading">Здорова та смачна їжа для відновлення</p></li>
 
 
                                 <li>
@@ -69,10 +69,10 @@ export function OurServicesRow () {
                                         </div>
                                     </div>
                                     <img src={sauna} alt="sauna" className="servicesImg"/>
-                                        <p>Сауна вищого класу </p></li>
+                                        <p className="heading">Сауна вищого класу </p></li>
 
                             </ul>
-                            <button onClick={(e) => window.location.assign('http://localhost:5000/services') }>
+                            <button onClick={(e) => window.location.assign('/services') }>
                                 Всі послуги
                             </button>
                         </div>
