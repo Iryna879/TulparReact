@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 577px) {
     .map {
         margin-bottom: 26px;
         min-width: 100% /*768px*/;
@@ -22,5 +22,32 @@
         font-size: 75% /* 12px*/;
         line-height: 18px;
         width: 28%;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .map {
+        margin-bottom: 26px;
+        min-width: 100%;
+    }
+    .map h6 {
+        font-size: 112.5% /*18px*/;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    iframe {height:180px;}
+    .address, .phone, .email {
+        margin-right: 12%;
+        margin-bottom: 30px;
+    }
+    .address h3, .phone h3, .email h3 {
+        font-size: 62.5% /*10px*/;
+        line-height: 12px;
+        margin-bottom: 15px;
+    }
+    .address p, .phone p, .email p {
+        font-size: 50% /* 8px*/;
+        line-height: 12px;
+        width: 36%;
     }
 }
