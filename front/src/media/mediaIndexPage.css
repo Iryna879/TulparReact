@@ -81,6 +81,7 @@
 
 @media all and (max-width: 576px) {
     .index_fluid {background: none; height: auto; min-width:100%;}
+    .index_fluid div.row:first-child {background-color: #E95258;}
     .container{min-width: 100%}
     .logo img {
         width: 100% ;
