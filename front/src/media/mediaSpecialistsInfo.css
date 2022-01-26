@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 577px) {
     .container { min-width: 100%;}
     .specialistsListPage {
         margin-top: 60px;
@@ -42,5 +42,50 @@
 
     .career li:nth-child(odd), .activity li:nth-child(odd) {
         font-size: 75%;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container { min-width: 100%;}
+    .specialistsListPage {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .specialistsListPage li {
+        margin-right: 4% /*12px*/;
+        width: 33%;
+    }
+    .specialistsListPage img {
+        width: 100%;
+        height: auto ;
+    }
+    .specialistsListPage p {
+        font-weight: 600;
+        font-size: 62.5%;
+        margin-top: 15px;
+    }
+    .specialistInfo {
+        min-height: 500px;
+    }
+    .specialistInfo p {
+        font-size: 87.5% /*14px*/;
+        margin-bottom: 15px;
+    }
+
+    .gridSpecialistInfo {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridSpecialistInfo li:nth-child(even){
+        font-size: 62.5%;
+        line-height: 10px;
+    }
+
+    .career li:nth-child(odd), .activity li:nth-child(odd) {
+        font-size: 62.5%;
+        line-height: 12px;
     }
 }

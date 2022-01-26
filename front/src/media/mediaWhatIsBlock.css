@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 577px) {
     body, html{
         width: 100%;
     }
@@ -24,6 +24,36 @@
         width: 75% /* 300px*/;
         font-size: 43.75% /* 7px*/;
         line-height: 20px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .centerInfo {
+        height: auto;
+        min-width:100%;
+        background-image: none;
+        background-color: #465B6E;
+       /* background-size: 100% 100%;*/
+    }
+    .container{min-width: 100%}
+    .textAboutCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textAboutCenter h6 {
+        font-size: 75% /* 12px*/;
+        line-height: 25px;
+        margin-top: 30px;
+        margin-left: 4%;
+    }
+    .textAboutCenter p {
+        width: 97% /* 290px*/;
+        font-size: 62.5% /* 10px*/;
+        line-height: 16px;
         margin-top: 0;
         margin-left: 0;
     }

@@ -26,7 +26,7 @@ const  WhatIsBlock = (props) => {
                 <div className="container-fluid p-0 centerInfo" style={{'backgroundImage': `url(${"http://localhost:5000" + item.background})`}}>
                     <div className="container">
                         <div className="row  ">
-                            <div className="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-sm-6 offset-sm-3 col-6 offset-3">
+                            <div className="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-sm-6 offset-sm-3 col-12">
                                 <div key={item._id} className="textAboutCenter">
                                     <h6>{item.header}</h6>
                                     <p>{item.paragraphOne}</p>

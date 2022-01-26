@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 768px) and (min-width: 577px) {
     body, html{
         width: 100%;
     }
@@ -32,6 +32,39 @@
         font-size: 75% /*12px*/;
         line-height: 15px;
         text-align: left;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+    .whyWeFluid {
+        height: auto;
+        min-width: 100%;
+    }
+    .container{min-width: 100%}
+    .whyWe h6 {
+        font-size: 112.5%; /*18px;*/
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .benefits {flex-wrap: wrap; justify-content: center}
+    .benefits li {
+        width: 95%;
+        margin-right: 5% /*15px*/;
+    }
+    .benefits li img {
+        width: 80px;
+        height: 80px;
+    }
+    .benefits h1 {
+        font-size: 87.5% /*14px*/;
+        line-height: 17px;
+        margin: 15px 0;
+    }
+    .benefits p {
+        width: 100% /*330px*/;
+        font-size: 75% /*12px*/;
+        line-height: 15px;
     }
 
 }
