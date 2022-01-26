@@ -54,7 +54,7 @@
     }
     .specialistsListPage li {
         margin-right: 4% /*12px*/;
-        width: 33%;
+        width: 25%;
     }
     .specialistsListPage img {
         width: 100%;
@@ -66,7 +66,7 @@
         margin-top: 15px;
     }
     .specialistInfo {
-        min-height: 500px;
+        min-height: 475px;
     }
     .specialistInfo p {
         font-size: 87.5% /*14px*/;
@@ -74,18 +74,19 @@
     }
 
     .gridSpecialistInfo {
-        margin-bottom: 30px;
+        margin-bottom: 0;
         display: flex;
         flex-direction: column;
+        row-gap: 15px;
     }
 
     .gridSpecialistInfo li:nth-child(even){
-        font-size: 62.5%;
+        font-size: 70%;
         line-height: 10px;
     }
 
     .career li:nth-child(odd), .activity li:nth-child(odd) {
-        font-size: 62.5%;
+        font-size: 70%;
         line-height: 12px;
     }
 }

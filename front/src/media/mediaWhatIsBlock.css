@@ -2,7 +2,7 @@
     body, html{
         width: 100%;
     }
-    .centerInfo {
+    .centerInfo_cardioCenter, .centerInfo_traumaCenter {
         height: auto;
         min-width:100%;
         background-size: 100% 100%;
@@ -30,7 +30,7 @@
 }
 
 @media all and (max-width: 576px) {
-    .centerInfo {
+    .centerInfo_cardioCenter, .centerInfo_traumaCenter {
         height: auto;
         min-width:100%;
         background-image: none;

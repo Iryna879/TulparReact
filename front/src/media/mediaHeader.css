@@ -122,6 +122,7 @@
         width: 84%;
         font-size: 100% /*16px*/;
         margin-top: 0;
+        line-height: 25px;
     }
     .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
         width: 84%;
