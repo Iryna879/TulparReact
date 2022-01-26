@@ -1,8 +1,7 @@
-
 import React, {useState} from "react";
 import { useForm } from "react-hook-form";
-
 import "./../../style/telegramBot.css";
+import "./../../media/mediaTelegramForm.css";
 
 export default function TelegramBot() {
 	const { register, handleSubmit, reset, formState: {errors} } = useForm();
