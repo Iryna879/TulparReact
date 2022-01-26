@@ -1,7 +1,5 @@
 import * as React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
-
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./cssBootstrap/bootstrap.min.css";
 import {Index} from "./components/pages/index";
 import {ServicePage} from "./components/pages/servicePage";
@@ -14,21 +12,21 @@ import "./media/mediaHeader.css";
 import "./media/mediaWhatIsBlock.css";
 import "./media/mediaServicesRow.css";
 import ButtonCallback from "./components/otherComponents/buttonCallback";
-
+import Page404 from "./components/404/page404";
 
 function App() {
   return (
       <BrowserRouter className="App">
        <ButtonCallback/>
-        {<Routes>
+          <Routes>
+              <Route  path="*" element={<Page404 />} />
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<ServicePage />} />
-          <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/cardioCenter" element={<CardioCenterPage />} />
             <Route path="/traumaCenter" element={<TraumaCenterPage />} />
             <Route path="/ourSpecialists" element={<OurSpecialistsPage />} />
-        </Routes>}
-
+          </Routes>
       </BrowserRouter>
   );
 }
