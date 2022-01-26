@@ -2,7 +2,7 @@
     width: 100%;
     height: 604px;
     background-image: url("../img/cardioBackTwo.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .centerInfo_traumaCenter {background-image: url("../img/traumaBackTwo.png");}

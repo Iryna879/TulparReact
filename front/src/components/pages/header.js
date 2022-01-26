@@ -41,9 +41,9 @@ const  Header = (props) => {
                     </div>
                 </div>
                 {
-                    items.map(item => {
-                        if (item.name === name) {
-                            return (
+                    items
+                        .filter(itemName => itemName.name === name)
+                        .map(item =>
                                 <div className="row">
                                     <div key={item._id} className={`col-12  ${name}_text`}>
                                         <h6>{item.heading}</h6>
@@ -52,8 +52,6 @@ const  Header = (props) => {
                                 </div>
                             )
                         }
-                    })
-                }
             </div>
         </header>
    )
