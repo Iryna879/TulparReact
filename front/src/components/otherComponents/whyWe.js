@@ -1,6 +1,6 @@
 import React from "react";
 import "./../../style/whyWe.css";
-import mind from "@img/mind.png";
+import mind from "./../../img/mind.png";
 import bed from "./../../img/bed.png";
 import smile from "./../../img/smile.png";
 import like from "./../../img/like.png";
