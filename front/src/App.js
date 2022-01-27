@@ -13,10 +13,13 @@ import "./media/mediaWhatIsBlock.css";
 import "./media/mediaServicesRow.css";
 import ButtonCallback from "./components/otherComponents/buttonCallback";
 import Page404 from "./components/404/page404";
+import Auth0ProviderWithHistory from "./providers/Auth0ProviderWithHistory";
+
 
 function App() {
   return (
       <BrowserRouter className="App">
+     <Auth0ProviderWithHistory>
        <ButtonCallback/>
           <Routes>
               <Route  path="*" element={<Page404 />} />
@@ -27,6 +30,7 @@ function App() {
             <Route path="/traumaCenter" element={<TraumaCenterPage />} />
             <Route path="/ourSpecialists" element={<OurSpecialistsPage />} />
           </Routes>
+     </Auth0ProviderWithHistory>
       </BrowserRouter>
   );
 }

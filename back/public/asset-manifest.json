@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b562a2e.chunk.css",
-    "main.js": "/static/js/main.d16d0244.chunk.js",
-    "main.js.map": "/static/js/main.d16d0244.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a654aa01.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a654aa01.js.map",
+    "main.css": "/static/css/main.d90a9eb3.chunk.css",
+    "main.js": "/static/js/main.3cab3fc1.chunk.js",
+    "main.js.map": "/static/js/main.3cab3fc1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.11bf357a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.11bf357a.js.map",
     "static/css/2.e7313321.chunk.css": "/static/css/2.e7313321.chunk.css",
     "static/js/2.bcc55e21.chunk.js": "/static/js/2.bcc55e21.chunk.js",
     "static/js/2.bcc55e21.chunk.js.map": "/static/js/2.bcc55e21.chunk.js.map",
-    "static/js/3.207b12ad.chunk.js": "/static/js/3.207b12ad.chunk.js",
-    "static/js/3.207b12ad.chunk.js.map": "/static/js/3.207b12ad.chunk.js.map",
+    "static/js/3.8cacdb95.chunk.js": "/static/js/3.8cacdb95.chunk.js",
+    "static/js/3.8cacdb95.chunk.js.map": "/static/js/3.8cacdb95.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e7313321.chunk.css.map": "/static/css/2.e7313321.chunk.css.map",
-    "static/css/main.7b562a2e.chunk.css.map": "/static/css/main.7b562a2e.chunk.css.map",
+    "static/css/main.d90a9eb3.chunk.css.map": "/static/css/main.d90a9eb3.chunk.css.map",
     "static/js/2.bcc55e21.chunk.js.LICENSE.txt": "/static/js/2.bcc55e21.chunk.js.LICENSE.txt",
     "static/media/font.css": "/static/media/TTHoves-Regular.22badb64.ttf",
     "static/media/contactPage.css": "/static/media/backContact.41a4ceb2.png",
@@ -20,6 +20,7 @@
     "static/media/cafe.b6dabb46.png": "/static/media/cafe.b6dabb46.png",
     "static/media/cafeIndex.1b418ec3.png": "/static/media/cafeIndex.1b418ec3.png",
     "static/media/cardio.978efc1d.png": "/static/media/cardio.978efc1d.png",
+    "static/media/whatIsBlock.css": "/static/media/traumaBackTwo.66b55771.png",
     "static/media/cardioCenterPage.css": "/static/media/cardioCenterBack.b718376a.png",
     "static/media/cardioIndex.de1662b3.png": "/static/media/cardioIndex.de1662b3.png",
     "static/media/ourSpecialists.css": "/static/media/ourSpecialistsBack.6787475c.png",
@@ -31,10 +32,10 @@
     "static/media/traumaIndex.61ab7910.png": "/static/media/traumaIndex.61ab7910.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a654aa01.js",
+    "static/js/runtime-main.11bf357a.js",
     "static/css/2.e7313321.chunk.css",
     "static/js/2.bcc55e21.chunk.js",
-    "static/css/main.7b562a2e.chunk.css",
-    "static/js/main.d16d0244.chunk.js"
+    "static/css/main.d90a9eb3.chunk.css",
+    "static/js/main.3cab3fc1.chunk.js"
   ]
 }
