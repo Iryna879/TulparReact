@@ -1,12 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import  {ServiceItem} from "./serviceItem";
-/*import insta from "./../../img/insta.png";
-import write from "./../../img/write.png";
-import whatsApp from "./../../img/whatsapp.png";
-import more from "./../../img/more.png";*/
+import AuthButton from "../../auth/authButton";
 
-export function IndexHeader (props){
+const IndexHeader = (props) => {
     const logo = props.logo;
     const [services, setServices] = useState([]);
 
@@ -42,7 +39,7 @@ export function IndexHeader (props){
                             <li><Link to="/services">Послуги</Link></li>
                             <li><Link to="/ourSpecialists">Спеціалісти</Link></li>
                             <li><Link to="/contact">Ми</Link></li>
-                            <li><Link to="/news">Новини</Link></li>
+                            <li><AuthButton/></li>
                         </ul>
                     </div>
                 </div>
@@ -64,18 +61,12 @@ export function IndexHeader (props){
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
                     <button onClick={() => window.location.assign('/traumaCenter') }>Всі послуги</button>
 
-                    {/*<ul className="social">
-                        <li><a href="https://www.instagram.com/onclinic.ua/"><img src={insta} alt="inst"/></a></li>
-                        <li><a href="#"><img src={write} alt="write"/></a></li>
-                        <li><a href="#"><img src={whatsApp} alt="whatsApp"/></a></li>
-                        <li><a href="#"><img src={more} alt="more"/></a></li>
-                    </ul>*/}
 
                 </div>
             </div>
             </div>
         </header>
     )
-
-
 }
+
+export default IndexHeader;

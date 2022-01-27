@@ -2,7 +2,7 @@ import React from "react";
 import "../../style/indexPage.css";
 import "../../media/mediaIndexPage.css";
 import logo from  "./../../img/cardioCenterLogo.png";
-import {IndexHeader} from "../otherComponents/indexHeader";
+import IndexHeader from "../otherComponents/indexHeader";
 import {OurServicesRow} from "../otherComponents/ourServicesRow";
 import {Footer} from "../otherComponents/footer";
 import Recommend from "../otherComponents/recommend";
