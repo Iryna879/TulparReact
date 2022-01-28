@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "TT Hoves";
+    src: url("../font/TTHoves-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Bold";
+    src: url("../font/TTHoves-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-DemiBold";
+    src: url("../font/TTHoves-DemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-Medium";
+    src: url("../font/TTHoves-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTHoves-ExtraBold";
+    src: url("../font/TTHoves-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

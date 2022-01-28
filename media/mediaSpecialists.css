@@ -1,0 +1,85 @@
+@media (max-width: 768px) and (min-width: 577px) {
+    .specialists {
+        min-width: 100%;
+    }
+    .specialists h6 {
+        font-size: 212.5% /* 34px*/;
+        margin-top: 60px;
+    }
+
+    .gridSpecialist {
+        margin-top: 26px;
+        margin-bottom: 26px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+    }
+    .gridSpecialist img {
+        width: 98px;
+        height: 98px ;
+    }
+
+    .gridSpecialist p {
+        margin-top: 26px;
+    }
+
+    .gridSpecialist span {
+        font-size: 12px;
+        line-height: 15px;
+        width: 31.3% /* 233px*/;
+    }
+
+    .specialists button, .priceList button {
+        margin-top: 26px;
+        margin-left: 45%;
+        margin-bottom: 60px;
+        width: 25% /* 120px*/;
+        height: 40px;
+
+    }
+}
+
+
+@media all and (max-width: 576px) {
+    .specialists {
+        min-width: 100%;
+    }
+    .specialists h6 {
+        font-size: 112.5% /* 34px*/;
+        margin-top: 30px;
+    }
+
+    .gridSpecialist {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridSpecialist img {
+        width: 98px;
+        height: 98px ;
+    }
+
+    .gridSpecialist p {
+        margin-top: 15px;
+        font-size: 75%;
+    }
+
+    .gridSpecialist span {
+        font-size: 75%;
+        line-height: 15px;
+        width: 77.7% /* 230px*/;
+    }
+
+    .specialists button, .priceList button {
+        margin-top: 30px;
+        margin-left: 34%;
+        margin-bottom: 30px;
+        width: 40.5% /* 120px*/;
+        height: 40px;
+
+    }
+}

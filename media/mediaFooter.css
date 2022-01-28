@@ -1,0 +1,44 @@
+@media (max-width: 768px) and (min-width: 577px) {
+    footer.container-fluid {height: 365px; min-width: 100%; /*768px;*/}
+    .logoFooter, .mapSite, .contactUs {margin-top: 60px;}
+    .logoFooter img {width: 100%; height: auto;}
+    .mapSite h2, .contactUs h2 {
+        font-size: 87% /* 14px*/;
+        margin-bottom: 20px;
+    }
+    .mapSite ul li a, .contactUs ul li  {
+        font-size: 75% /*12px*/;
+        margin-bottom: 14px;
+    }
+    .up button {margin-top: 60px;}
+    .up p {
+        font-size: 75% /*12px*/;
+        margin-top: 14px;
+    }
+    .copyright p {
+        font-size: 75% /*12px*/;
+        margin-top: 26px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    footer.container-fluid {height: auto; min-width: 100%;}
+    .logoFooter, .mapSite, .contactUs {margin-top: 30px;}
+    .logoFooter img {width: 100%; height: auto;}
+    .mapSite h2, .contactUs h2 {
+        font-size: 75% /* 12px*/;
+        margin-bottom: 15px;
+    }
+    .mapSite ul li a, .contactUs ul li  {
+        font-size: 62.5% /*10px*/;
+        margin-bottom: 10px;
+    }
+    .up button {margin-top: 60px;}
+    .up p {
+        visibility: hidden;
+    }
+    .copyright p {
+        font-size: 50% /*8px*/;
+        margin-top: 20px;
+    }
+}

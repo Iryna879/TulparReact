@@ -1,0 +1,132 @@
+@media (max-width: 768px) and (min-width: 577px) {
+    body, html{
+        width: 100%;
+    }
+    .cardioCenter_fluid, .traumaCenter_fluid, .services_fluid, .ourSpecialists_fluid, .contact_fluid  {
+        height: auto;
+        min-width: 100% /*768px*/;
+    }
+    .container{min-width: 100%}
+
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        visibility: hidden;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        background-color:#000;
+        border-radius: 5px;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -20px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 20px;
+    }
+    .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
+        font-size: 75% /*12px*/;
+        margin-left: 0;
+    }
+    .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
+        margin-right: 5% /*38px*/;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+        background-color:#fff;
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+        background-color:#fff;
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color:#fff;
+    }
+    .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
+        width: 67.5%;
+        font-size: 212.5% /*34px*/;
+        margin-top: 50px;
+    }
+    .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
+        width: 67.8%;
+        font-size: 75% /*12px*/;
+        line-height: 15px;
+        margin-top: 26px;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .cardioCenter_fluid, .traumaCenter_fluid, .services_fluid, .ourSpecialists_fluid, .contact_fluid  {
+        height: auto;
+        min-width: 100%;
+    }
+    .container{min-width: 100%}
+    .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
+        flex-direction: column;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        width: 68%;
+        height: 416px;
+        margin: 0;
+        background-color: #32495E;
+    }
+    .cardioCenter_menu  li, .traumaCenter_menu  li, .services_menu li,
+    .ourSpecialists_menu li, .contact_menu li  {margin-bottom:  26px;}
+    .cardioCenter_menu  li a, .traumaCenter_menu  li a, .services_menu li a,
+    .ourSpecialists_menu li a, .contact_menu li a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 40%;
+        margin-bottom:  26px;
+    }
+    .cardioCenter_menu  li:first-child, .traumaCenter_menu  li:first-child,
+    .services_menu  li:first-child, .ourSpecialists_menu  li:first-child,
+    .contact_menu li:first-child{ margin-top:60px;}
+
+    .menu__btn{
+        top: 20px;
+        visibility: visible;
+        z-index: 103;
+    }
+
+    #menu__toggle:checked ~ .cardioCenter_menu,
+    #menu__toggle:checked ~ .traumaCenter_menu, #menu__toggle:checked ~ .services_menu,
+    #menu__toggle:checked ~ .ourSpecialists_menu, #menu__toggle:checked ~ .contact_menu{
+        visibility: visible;
+        z-index: 102;
+        right: 0;
+    }
+    .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
+        width: 84%;
+        font-size: 100% /*16px*/;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
+        width: 84%;
+        font-size: 75% /*12px*/;
+        line-height: 15px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}

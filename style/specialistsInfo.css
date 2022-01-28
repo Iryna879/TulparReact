@@ -1,0 +1,59 @@
+.specialistsListPage {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.specialistsListPage li {
+    margin-right: 50px;
+    cursor: pointer;
+}
+.specialistsListPage img {
+    width: 129px;
+    height: 135px ;
+    border-radius: 50%;
+}
+.specialistsListPage p {
+    font-family: "TTHoves-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #32495E;
+    margin-top: 20px;
+}
+.specialistInfo {
+    min-height: 450px;
+}
+.specialistInfo p {
+    font-family: "TTHoves-Bold";
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.gridSpecialistInfo {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 113px 720px;
+    grid-auto-rows: minmax(17px, auto);
+    grid-row-gap: 20px;
+    grid-column-gap: 77px;
+}
+.gridSpecialistInfo li:nth-child(odd) {
+    font-family: "TTHoves-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    color: #E95258;
+}
+.gridSpecialistInfo li:nth-child(even){
+    font-family: "TT Hoves";
+    font-size: 14px;
+    line-height: 17px;
+}
+.career, .activity {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.career li:nth-child(odd), .activity li:nth-child(odd) {
+    color: #333333;
+    font-family: "TT Hoves";
+    font-size: 14px;
+}

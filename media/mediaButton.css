@@ -1,0 +1,33 @@
+@media (max-width: 768px) and (min-width: 576px) {
+    .callback-bt {
+        right: 20%;
+        bottom: 50%;
+        height:40px;
+        width:40px;
+    }
+    .callback-bt .text-call, .callback-bt i {
+        height:40px;
+        width:40px;
+    }
+    .callback-bt i {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .callback-bt {
+        right: 40%;
+        bottom: 80%;
+        height:40px;
+        width:40px;
+    }
+    .callback-bt .text-call, .callback-bt i {
+        height:40px;
+        width:40px;
+    }
+    .callback-bt i {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
