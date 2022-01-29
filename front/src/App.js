@@ -14,7 +14,7 @@ import "./media/mediaServicesRow.css";
 import ButtonCallback from "./components/otherComponents/buttonCallback";
 import Page404 from "./components/404/page404";
 import Auth0ProviderWithHistory from "./providers/Auth0ProviderWithHistory";
-import ProfilePage from "./components/otherComponents/profilePage";
+import Patient from "./components/patient/patient";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
             <Route path="/cardioCenter" element={<CardioCenterPage />} />
             <Route path="/traumaCenter" element={<TraumaCenterPage />} />
             <Route path="/ourSpecialists" element={<OurSpecialistsPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/profile" element={<Patient />} />
           </Routes>
      </Auth0ProviderWithHistory>
       </BrowserRouter>
