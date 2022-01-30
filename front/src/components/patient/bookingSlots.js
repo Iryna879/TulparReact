@@ -24,7 +24,6 @@ const BookingSlots = (props) => {
                       .catch(err =>
                           console.log(err))
 
-    }, [doctor._id]);
 
         function getDateString() {
             let finalDate = date.getFullYear().toString()
@@ -49,68 +48,70 @@ const BookingSlots = (props) => {
 
         }
         const dateToSend = getDateString();
+
         //fetchDate(dateToSend);
+      allData.forEach(data => {
+              console.log(data);
+              console.log(dateToSend);
+              data.dates
+                  .filter(date => date.date === dateToSend)
+                  .map(d => setSlots(d.slots))
+          }
+      )
+    }, [doctor._id]);
 
   return (
-      allData.map(data => {
-          data.dates
-              .filter(date => date.date === dateToSend)
-              .map( d =>
-                  <div className="bg-dark" style={{ height: "100vh" }}>
-                      <div>
-                          <div className="row m-5" style={{ maxWidth: "100%" }}>
-                              <div className="col-3 col-md-3 p-4 bg-white ">
-                                  <Leftside />
-                              </div>
-                              <div
-                                  className="col-9 col-md-9 p-4"
-                                  style={{
-                                      border: "15px solid yellow ",
-                                      height: "80vh",
-                                      backgroundColor: "#6c757d",
-                                  }}
-                              >
-                                  <table className="table table-hover table-dark">
-                                      <thead>
-                                      <tr>
-                                          <th scope="col">Slot</th>
-                                          <th scope="col">Booking Status</th>
-                                      </tr>
-                                      </thead>
-                                      <tbody>
-                                      {d.slots.map((slot) => (
-                                          <tr key={slot._id}>
-                                              <th scope="row">{slot.time}</th>
-                                              {slot.isBooked ? (
-                                                  <td>Booked</td>
-                                              ) : (
-                                                  <td>
-                                                      <Link
-                                                          to={{
-                                                              pathname: "/patient/payment",
-                                                              data: {
-                                                                  dateId:d._id,
-                                                                  doctor:doctor,
-                                                                  slotId:slot._id,
-                                                              },
-                                                          }}
-                                                      >
-                                                          Book Now
-                                                      </Link>
-                                                  </td>
-                                              )}
-                                          </tr>
-                                      ))}
-                                      </tbody>
-                                  </table>
-                              </div>
-                          </div>
-                      </div>
+      <div className="bg-dark" style={{ height: "100vh" }}>
+          <div>
+              <div className="row m-5" style={{ maxWidth: "100%" }}>
+                  <div className="col-3 col-md-3 p-4 bg-white ">
+                      <Leftside />
                   </div>
-              )
-      }
-
-      )
+                  <div
+                      className="col-9 col-md-9 p-4"
+                      style={{
+                          border: "15px solid yellow ",
+                          height: "80vh",
+                          backgroundColor: "#6c757d",
+                      }}
+                  >
+                      <table className="table table-hover table-dark">
+                          <thead>
+                          <tr>
+                              <th scope="col">Slot</th>
+                              <th scope="col">Booking Status</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          {Slots.map((slot) => (
+                              <tr key={slot._id}>
+                                  <th scope="row">{slot.time}</th>
+                                  {slot.isBooked ? (
+                                      <td>Booked</td>
+                                  ) : (
+                                      <td>
+                                          <Link
+                                              to={{
+                                                  pathname: "/patient/payment",
+                                                  /*data: {
+                                                      dateId:dateId,
+                                                      doctor:doctor,
+                                                      slotId:slot._id,
+                                                  },*/
+                                              }}
+                                          >
+                                              Book Now
+                                          </Link>
+                                      </td>
+                                  )}
+                              </tr>
+                          ))}
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
   );
    /*for(let data of allData) {
        for(let d of data.dates){
