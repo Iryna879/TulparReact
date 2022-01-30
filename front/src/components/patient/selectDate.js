@@ -8,7 +8,7 @@ import Leftside from "./leftside";
 const SelectDate = (props) => {
     const [date, setDate] = useState(new Date());
     const location = useLocation();
-    const { doctor} = location.doctor;
+    const { doctor} = location.state;
     const onChange = (date) => {
         setDate(date);
     };
@@ -56,15 +56,15 @@ const SelectDate = (props) => {
             <Col> */}
                         <div className="row justify-content-center mt-5 ml-5">
                             <div className="col-2">
-                                <Link to="/patient/searchdoctor">
+                                <Link to="/profile/searchdoctor">
                                     <Button color="danger">GO BACK</Button>
                                 </Link>
                             </div>
                             {/* </Col>
             <Col> */}
                             <div className="col-4">
-                                <Link to="/patient/book-slot"
-                                        state: {{
+                                <Link to="/profile/book-slot"
+                                        state={{
                                     date: date,
                                     doctor: doctor
                                 }}

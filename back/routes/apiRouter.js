@@ -28,6 +28,7 @@ router.post('/api/contacts',cContacts.post);
 let cSpecialists = require('../controllers/controllerSpecialists');
 router.get ('/api/specialists',cSpecialists.get);
 router.post('/api/specialists',cSpecialists.post);
+router.get('/api/specialists/getSlots/:id',cSpecialists.getSlots);
 
 const cPatients = require('../controllers/controllerPatients');
 router.get ('/api/patients', cPatients.get);
