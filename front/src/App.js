@@ -16,6 +16,7 @@ import Page404 from "./components/404/page404";
 import Auth0ProviderWithHistory from "./providers/Auth0ProviderWithHistory";
 import ProfilePage from "./components/patient/profilePage";
 import SearchDoctor from "./components/patient/searchDoctor";
+import SelectDate from "./components/patient/selectDate";
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
             <Route path="/traumaCenter" element={<TraumaCenterPage />} />
             <Route path="/ourSpecialists" element={<OurSpecialistsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route  path="/profile/searchdoctor" element={<SearchDoctor/>} />
+            <Route  path="/profile/searchdoctor" element={<SearchDoctor />} />
+            <Route  path="/patient/selectdate" element={<SelectDate />} />
           </Routes>
      </Auth0ProviderWithHistory>
       </BrowserRouter>

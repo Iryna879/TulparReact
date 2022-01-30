@@ -121,7 +121,7 @@ const Search = () => {
             {/* <ListGroup> */}
             <Scrollbar
                 noScrollX
-                style={{ position: "absolute", top:"60%", height: "60vh", width: "144vh" }}
+                style={{ position: "absolute", top:"20%", minHeight: "50%", width: "60%" }}
                 className="col-12 col-md-12"
             >
                 <div className="row">
@@ -132,8 +132,7 @@ const Search = () => {
                                 <div className="card-body">
                                     <div className="text-info">
                                         <h6>
-                                            Doctor Name:
-                                            <span className="text-uppercase"> {doc.name + doc.surname}</span>
+                                            <span className="text-uppercase"> {doc.name + " " + doc.surname}</span>
                                         </h6>
                                     </div>
                                     <div>Specialization : {doc.specialization}</div>
@@ -142,10 +141,10 @@ const Search = () => {
                                         <div
                                             className=" col align-self-end col-md-2 offset-md-3 inline"
                                             style={{ textAlign: "center" }}
-                                        ><Link to={{ pathname: "/patient/selectdate", doctor: { doctor: doc } }}>
-                                            <button className="btn btn-sm btn-primary"
-
-                                            >  Book</button> </Link>
+                                        >
+                                            <Link to="/patient/selectdate" doctor ={{doctor: doc}} >
+                                            <button className="btn btn-sm btn-primary">
+                                                Book</button> </Link>
                                         </div>
                                     </div>
 
