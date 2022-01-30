@@ -29,14 +29,15 @@ let cSpecialists = require('../controllers/controllerSpecialists');
 router.get ('/api/specialists',cSpecialists.get);
 router.post('/api/specialists',cSpecialists.post);
 
-let cPatients = require('../controllers/controllerPatients');
-router.get ('/api/patients',cPatients.get);
-router.post('/api/patients',cPatients.post);
+const cPatients = require('../controllers/controllerPatients');
+router.get ('/api/patients', cPatients.get);
+router.post('/api/patients', cPatients.post);
+router.get ('/api/patients/testbyemail/:email', cPatients.testByEmail);
+
 
 let cAppointments = require('../controllers/controllerAppointments');
 router.get ('/api/appointments',cAppointments.get);
 router.post('/api/appointments',cAppointments.post);
-
 
 
 module.exports = router;

@@ -20,10 +20,7 @@ app.use(cookieParser());
 
 // Разрешение забирать статические файлы из папки
 var path = require('path');
-app.use(express.static(path.join(__dirname, './public')));
-app.get('!*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public', 'index.html'));
-});
+
 /*if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, './public')));
     app.get('*', (req, res) => {
@@ -37,6 +34,11 @@ const apiRoute = require("./routes/apiRouter");
 app.use(apiRoute);
 const apiTelegram = require("./routes/apiTelegram");
 app.use('/api', apiTelegram);
+
+app.use(express.static(path.join(__dirname, './public')));
+app.get('!*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public', 'index.html'));
+});
 
 module.exports = app
 

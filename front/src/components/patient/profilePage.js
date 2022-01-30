@@ -4,37 +4,43 @@ import { Circles } from 'react-loader-spinner';
 import LogoutButton from "../../auth/logoutButton";
 
 const ProfilePage = withAuthenticationRequired(
-    (props) => {
+    () => {
         const {user} = useAuth0();
         const {name, picture, email} = user;
-        const patient = props.patient;
 
-        patient.map(p => {
-            console.log(p.email);
-            if (p.email === email) {
-                console.log("Have");
-            } else {
-                useEffect(() => {
-                    fetch("/api/patients",
-                        {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(user)
-                        }
-                    )
-                        .then(res => {
-                            console.log("Result:", res);
-                            return res.json();
-                        })
-                        .then(user => {
-                            console.log(user);
-                        })
-                        .catch(err => {
-                            console.log(err);
-                        });
-                }, [])
-            }
-        })
+        useEffect(() => {
+            fetch("/api/patients/testbyemail/" + email)
+                .then(response => response.text())
+                .then (isHaving => {
+                    if(isHaving === "true") {
+                        console.log(" такой уже есть ");
+                    } else {
+                        console.log(" в базе такого нет - перехожу к записи в базу ");
+                            fetch("/api/patients",
+                                {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(user)
+                                }
+                            )
+                                .then(res => {
+                                    console.log("Result:", res);
+                                    return res.json();
+                                })
+                                .then(user => {
+                                    console.log(user);
+                                })
+                                .catch(err => {
+                                    console.log(err);
+                                });
+
+                    }
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+
+        }, []);
 
         return (
             <div>
