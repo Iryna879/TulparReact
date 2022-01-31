@@ -9,7 +9,7 @@ const BookingSlots = (props) => {
     // console.log("Date: " + date + " DoctorId: " + doctorId);
     const [allData, setAllData] = useState([]);
     const [dateId, setdateId] = useState("");
-    const [Slots, setSlots] = useState([]);
+    const [slots, setSlots] = useState([]);
 
     useEffect(() => {
                   fetch("/api/specialists/getSlots/" + doctor._id)
@@ -23,7 +23,7 @@ const BookingSlots = (props) => {
                       })
                       .catch(err =>
                           console.log(err))
-
+    }, [doctor._id])
 
         function getDateString() {
             let finalDate = date.getFullYear().toString()
@@ -50,17 +50,18 @@ const BookingSlots = (props) => {
         const dateToSend = getDateString();
 
         //fetchDate(dateToSend);
-      allData.forEach(data => {
-              console.log(data);
-              console.log(dateToSend);
-              data.dates
-                  .filter(date => date.date === dateToSend)
-                  .map(d => setSlots(d.slots))
-          }
-      )
-    }, [doctor._id]);
+
 
   return (
+      allData.map(data => {
+              console.log(data);
+              console.log(dateToSend);
+              const result = data.dates.filter(date => date.date === dateToSend);
+              console.log("res" + result);
+              //setSlots(result.slots);
+          return (
+          result.map (r =>
+
       <div className="bg-dark" style={{ height: "100vh" }}>
           <div>
               <div className="row m-5" style={{ maxWidth: "100%" }}>
@@ -83,7 +84,7 @@ const BookingSlots = (props) => {
                           </tr>
                           </thead>
                           <tbody>
-                          {Slots.map((slot) => (
+                          {r.slots.map(slot =>
                               <tr key={slot._id}>
                                   <th scope="row">{slot.time}</th>
                                   {slot.isBooked ? (
@@ -105,13 +106,15 @@ const BookingSlots = (props) => {
                                       </td>
                                   )}
                               </tr>
-                          ))}
+                          )}
                           </tbody>
                       </table>
                   </div>
               </div>
           </div>
-      </div>
+      </div> ))
+          }
+      )
   );
    /*for(let data of allData) {
        for(let d of data.dates){
