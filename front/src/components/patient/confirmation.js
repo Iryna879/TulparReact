@@ -83,14 +83,13 @@ const Confirmation = () => {
     console.log("name: " + name + " " + "email: " + email);
     const navigate = useNavigate();
     let { data } = [];
-    //const bookSlot = () => {
-         useEffect(() => {
-             fetch("http://localhost:5000/api/specialists/book-slot/",
+    const bookSlot = () => {
+            fetch("/api/specialists/book-slot/",
                 {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
-                        patientEmail:email,
+                        patientEmail: email,
                         patientName: name,
                         slotId: slotId,
                         dateId: dateId,
@@ -108,7 +107,8 @@ const Confirmation = () => {
                 .catch(err => {
                     console.log(err);
                 });
-         }, []);
+        }
+
     /*if (data.doctorEmail) {
         createEvent(data._id, data.date + "T" + data.slotTime, data.doctorEmail);
     }*/
@@ -210,7 +210,8 @@ const Confirmation = () => {
                                         <Link to='/profile' >
                                             <button
                                                 type="button"
-                                                className="btn btn-success btn-lg btn-block">
+                                                className="btn btn-success btn-lg btn-block"
+                                            onClick={() => bookSlot()} >
                                                 Confirm
                                                 <span className="glyphicon glyphicon-chevron-right" />
                                             </button>

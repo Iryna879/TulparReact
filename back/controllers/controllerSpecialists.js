@@ -65,7 +65,7 @@ exports.bookSlot = function(request, response) {
     console.log(patientEmail + patientName + dateId);
    // const meetLink = "";
 
-    specialists.findOne({ _id: doctorId },
+    specialists.find({ _id: doctorId },
         function(err, allData) {
             if(err){
                 console.log(err);
@@ -89,7 +89,7 @@ exports.bookSlot = function(request, response) {
                                 slotId,
                                 date: date.date,
                                 slotTime: slot.time,
-                                doctorName: doctor.name,
+                                doctorName: doctor.name + " " + doctor.surname,
                                 patientName: patientName
                             });
 
