@@ -23,13 +23,6 @@ const Leftside = () => {
                     </Link>
                 </li>
 
-                <li>
-                    <Link to="/profile/previousappointments">
-                        <Option Value="Previous Appointments" />
-                    </Link>
-                </li>
-
-
             </ul>
         </div>
     );

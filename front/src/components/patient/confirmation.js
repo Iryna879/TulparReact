@@ -82,7 +82,7 @@ const Confirmation = () => {
     const {name, email} = user;
     console.log("name: " + name + " " + "email: " + email);
     const navigate = useNavigate();
-    let { data } = [];
+
     const bookSlot = () => {
             fetch("/api/specialists/book-slot/",
                 {
@@ -207,7 +207,7 @@ const Confirmation = () => {
                                             </tr>
                                             </tbody>
                                         </table>
-                                        <Link to='/profile' >
+                                        <Link to='/profile/appointment-status' >
                                             <button
                                                 type="button"
                                                 className="btn btn-success btn-lg btn-block"

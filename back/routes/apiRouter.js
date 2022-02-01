@@ -40,6 +40,7 @@ router.get ('/api/patients/testbyemail/:email', cPatients.testByEmail);
 let cAppointments = require('../controllers/controllerAppointments');
 router.get ('/api/appointments',cAppointments.get);
 router.post('/api/appointments',cAppointments.post);
+router.get('/api/appointments/upcoming-appointments/:patientEmail',cAppointments.upcomingAppointments);
 
 
 module.exports = router;
