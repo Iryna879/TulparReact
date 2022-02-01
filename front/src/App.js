@@ -18,6 +18,7 @@ import ProfilePage from "./components/patient/profilePage";
 import SearchDoctor from "./components/patient/searchDoctor";
 import SelectDate from "./components/patient/selectDate";
 import BookingSlots from "./components/patient/bookingSlots";
+import Confirmation from "./components/patient/confirmation";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route  path="/profile/searchdoctor" element={<SearchDoctor />} />
             <Route  path="/profile/selectdate" element={<SelectDate />} />
             <Route path="/profile/book-slot" element={<BookingSlots />} />
+            <Route path="/profile/confirmation" element={<Confirmation />} />
           </Routes>
      </Auth0ProviderWithHistory>
       </BrowserRouter>

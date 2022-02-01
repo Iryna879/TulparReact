@@ -29,6 +29,7 @@ let cSpecialists = require('../controllers/controllerSpecialists');
 router.get ('/api/specialists',cSpecialists.get);
 router.post('/api/specialists',cSpecialists.post);
 router.get('/api/specialists/getSlots/:id',cSpecialists.getSlots);
+router.post('/api/specialists/book-slot',cSpecialists.bookSlot);
 
 const cPatients = require('../controllers/controllerPatients');
 router.get ('/api/patients', cPatients.get);

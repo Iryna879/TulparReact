@@ -1,7 +1,7 @@
 // TODO: подключить модель для сущности
 const doctors = require("../models/specialists");
 const { specialists, slot, dateSchedule } = doctors;
-
+const appointment = require("../models/appointments");
 
 
 // Create => POST
@@ -55,6 +55,74 @@ exports.getSlots = function (request, response)  {
           }
       });
 }
+
+exports.bookSlot = function(request, response) {
+    const patientEmail = request.body.patientEmail; // Patient's email
+    const patientName = request.body.patientName; // Patient's name
+    const doctorId = request.body.doctorId; // Doctor's id 606460d2e0dd28cc76d9b0f3
+    const slotId = request.body.slotId; // Id of that particular slot
+    const dateId = request.body.dateId; // Id of that particular date
+    console.log(patientEmail + patientName + dateId);
+   // const meetLink = "";
+
+    specialists.findOne({ _id: doctorId },
+        function(err, allData) {
+            if(err){
+                console.log(err);
+                return err;
+            }
+
+            console.log(allData);
+            if(allData.length > 0) {
+                allData.map(doctor => {
+                    const date = doctor.dates.id(dateId);
+                    const slot = date.slots.id(slotId);
+                    slot.isBooked = true;
+                    doctor
+                        .save()
+                        .then(() => {
+                            // Create an entry in the appointment database
+                            const newAppointment = new appointment({
+                                doctorId,
+                                patientEmail,
+                                dateId,
+                                slotId,
+                                date: date.date,
+                                slotTime: slot.time,
+                                doctorName: doctor.name,
+                                patientName: patientName
+                            });
+
+                            console.log(newAppointment);
+
+                            newAppointment
+                                .save()
+                                .then((appointment) => {
+                                    return response.status(200).json(appointment);
+                                })
+                                .catch((err) => {
+                                    console.log(err);
+                                    response.status(400).json(err);
+                                });
+                        })
+                        .catch((err) => {
+                            console.log(err);
+                            response.status(400).json({
+                                message: `An error occurred : ${err}`,
+                            });
+                        });
+                } )
+
+            } else {
+                console.log("Doctor not found in the database!");
+                return response.status(404).json({
+                    message: "Doctor not found in the database!",
+                });
+            }
+    })
+}
+
+
 
 
 

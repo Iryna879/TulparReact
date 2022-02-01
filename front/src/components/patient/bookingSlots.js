@@ -8,8 +8,6 @@ const BookingSlots = (props) => {
     const { date, doctor } = location.state;
     // console.log("Date: " + date + " DoctorId: " + doctorId);
     const [allData, setAllData] = useState([]);
-    const [dateId, setdateId] = useState("");
-    const [slots, setSlots] = useState([]);
 
     useEffect(() => {
                   fetch("/api/specialists/getSlots/" + doctor._id)
@@ -92,14 +90,12 @@ const BookingSlots = (props) => {
                                   ) : (
                                       <td>
                                           <Link
-                                              to={{
-                                                  pathname: "/patient/payment",
-                                                  /*data: {
-                                                      dateId:dateId,
-                                                      doctor:doctor,
-                                                      slotId:slot._id,
-                                                  },*/
-                                              }}
+                                              to="/profile/confirmation"
+                                                  state={{
+                                                      dateId: r._id,
+                                                      doctor: doctor,
+                                                      slotId: slot._id,
+                                                  }}
                                           >
                                               Book Now
                                           </Link>
