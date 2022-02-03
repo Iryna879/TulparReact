@@ -44,7 +44,7 @@
         min-height: 7em;
         width: 96%;
     }
-    .services_redInfo .redInfoText {min-height: 9em;}
+    .services_redInfo .redInfoText {min-height: 8em;}
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
         margin-left: 9px ;  margin-bottom: 10px;
     }

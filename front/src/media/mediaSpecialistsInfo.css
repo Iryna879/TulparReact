@@ -8,14 +8,13 @@
     .specialistsListPage li {
         margin-right: 5% ;
         width: 25%;
+        text-align: center;
     }
     .specialistsListPage img {
         width: 100%;
         height: auto ;
     }
     .specialistsListPage p {
-        font-weight: 600;
-        font-size: 75%;
         margin-top: 26px;
     }
     .specialistInfo {
@@ -36,12 +35,12 @@
     }
 
     .gridSpecialistInfo li:nth-child(even){
-        font-size: 87.5%;
+        font-size: 90%;
         line-height: 15px;
     }
 
     .career li:nth-child(odd), .activity li:nth-child(odd) {
-        font-size: 87.5%;
+        font-size: 90%;
     }
 }
 

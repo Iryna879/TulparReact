@@ -10,10 +10,10 @@ export function Footer() {
         <footer className="container-fluid p-0">
             <div className="container">
                 <div className="row  ">
-                    <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12 logoFooter">
+                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-12 logoFooter">
                         <Link to="/"><img src={logo} alt="alt"/></Link>
                     </div>
-                    <div className="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4  mapSite">
+                    <div className="col-xl-2 col-lg-2 col-md-2 offset-md-1 col-sm-3 col-4  mapSite">
                         <h2>Мапа сайту</h2>
                         <ul>
                             <li><Link to="/">Головна</Link></li>
@@ -25,7 +25,7 @@ export function Footer() {
                     </div>
 
                     <div className="col-xl-2 offset-xl-1 col-lg-2 offset-lg-2
-                    col-md-2 offset-md-2 cols-sm-3 col-6 contactUs">
+                    col-md-3 offset-md-1 col-sm-3 col-6 contactUs">
                         <h2>Зв`язатися з нами</h2>
                         <ul>
                             <li>+38 093 032 12 19</li>
@@ -43,7 +43,7 @@ export function Footer() {
 
                 <div className="row  ">
                     <div className="col-12 copyright">
-                        <p>© Все права защищены 2021 “Тулпар”</p>
+                        <p>© Все права защищены 2022 “Тулпар”</p>
                     </div>
                 </div>
 

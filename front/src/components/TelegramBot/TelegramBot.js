@@ -44,11 +44,11 @@ export default function TelegramBot() {
 						pattern: /^[А-Яа-яЁё_ ]*$/})}
 				/>
                 {errors.fullName && errors.fullName.type === "minLength" &&
-                <p className="formErr">Your name is less than 10 characters</p>}
+                <p className="formErr">Ваше ім'я містить менше 10 символів</p>}
                 {errors.fullName && errors.fullName.type === "maxLength" &&
-                <p className="formErr">Max length exceeded</p>}
+                <p className="formErr">Перевищення максимальної довжини</p>}
                 {errors.fullName && errors.fullName.type === "pattern" &&
-                <p className="formErr">Only letters</p>}
+                <p className="formErr">Тільки літери кирилиці</p>}
 
 
                 <input
@@ -59,9 +59,7 @@ export default function TelegramBot() {
                     })}
                 />
                 {errors.tel && errors.tel.type === "pattern" &&
-                <p className="formErr">The phone number is incorrect. Example +380123456789</p>}
-
-
+                <p className="formErr">Неправильний номер телефону. Наприклад +380123456789</p>}
 				<input type="submit" />
 			</form>
 		</div>

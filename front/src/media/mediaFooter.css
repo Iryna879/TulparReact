@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 768px) and (min-width: 577px) {
-    footer.container-fluid {height: 365px; min-width: 100%; /*768px;*/}
+    footer.container-fluid {height: auto; min-width: 100%; /*768px;*/}
     .logoFooter, .mapSite, .contactUs {margin-top: 60px;}
     .logoFooter img {width: 100%; height: auto;}
     .mapSite h2, .contactUs h2 {

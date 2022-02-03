@@ -9,6 +9,7 @@
     .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
         font-size: 85%;
         margin-left: 0;
+        margin-top: -45px;
     }
     .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
         margin-right: 10%;
