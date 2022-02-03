@@ -25,6 +25,7 @@ a{
 }
 #menu__toggle {
     opacity: 0;
+    width: auto;
 }
 .menu__btn {
     display: flex;
