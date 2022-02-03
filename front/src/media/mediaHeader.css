@@ -1,3 +1,33 @@
+@media (max-width: 992px) and (min-width: 768px) {
+
+    .cardioCenter_fluid, .traumaCenter_fluid, .services_fluid, .ourSpecialists_fluid, .contact_fluid  {
+        height: auto;
+        min-width: 100%;
+    }
+    .container{min-width: 100%}
+
+    .cardioCenter_menu, .traumaCenter_menu, .services_menu, .ourSpecialists_menu, .contact_menu {
+        font-size: 85%;
+        margin-left: 0;
+    }
+    .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
+        margin-right: 10%;
+    }
+
+    .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
+        width: 75%;
+        font-size: 243.75% /*39px*/;
+        margin-top: 50px;
+    }
+    .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
+        width: 70%;
+        font-size: 87.5% /*14px*/;
+        line-height: 15px;
+        margin-top: 26px;
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 577px) {
     body, html{
         width: 100%;
@@ -13,6 +43,7 @@
     }*/
     #menu__toggle {
         opacity: 0;
+        width: auto;
     }
     .menu__btn {
         display: flex;
@@ -87,6 +118,7 @@
         position: absolute;
         visibility: hidden;
         top: 0;
+        right: 0;
         width: 68%;
         height: 416px;
         margin: 0;
