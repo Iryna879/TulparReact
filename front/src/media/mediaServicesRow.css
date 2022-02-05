@@ -40,7 +40,7 @@
     .index_redInfo .redInfoText, .services_redInfo .redInfoText {
         height: auto;
         min-height: 10em;
-        width: 100%;
+        width: 99%;
     }
     .services_redInfo .redInfoText {min-height: 7em;}
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
