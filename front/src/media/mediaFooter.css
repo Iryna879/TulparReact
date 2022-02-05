@@ -1,4 +1,4 @@
-@media (max-width: 1400px) and (min-width: 992px) {
+@media (max-width: 1200px) and (min-width: 992px) {
     footer.container-fluid {height: auto; min-width: 100%; }
     .logoFooter, .mapSite, .contactUs {margin-top: 50px;}
     .logoFooter img {width: 100%; height: auto;}
