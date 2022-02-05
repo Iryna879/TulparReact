@@ -10,10 +10,10 @@ export function Footer() {
         <footer className="container-fluid p-0">
             <div className="container">
                 <div className="row  ">
-                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-12 logoFooter">
+                    <div className="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-12 logoFooter">
                         <Link to="/"><img src={logo} alt="alt"/></Link>
                     </div>
-                    <div className="col-xl-2 col-lg-2 col-md-2 offset-md-1 col-sm-3 col-4  mapSite">
+                    <div className="col-4 col-sm-3 col-md-2 offset-md-1 col-lg-2 col-xl-2  mapSite">
                         <h2>Мапа сайту</h2>
                         <ul>
                             <li><Link to="/">Головна</Link></li>
@@ -24,7 +24,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="col-xl-2 offset-xl-1 col-lg-2 offset-lg-2
+                    <div className="col-xl-2 offset-xl-1 col-lg-2 offset-lg-1
                     col-md-3 offset-md-1 col-sm-3 col-6 contactUs">
                         <h2>Зв`язатися з нами</h2>
                         <ul>
@@ -34,7 +34,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="col-xl-2 offset-xl-2 col-lg-1 offset-lg-1
+                    <div className="col-xl-2 offset-xl-1 col-lg-2 offset-lg-1
                     col-md-1 offset-md-1 col-sm-2 col-2 up">
                         <button><img src={arrow} alt="arrow"/></button>
                         <p>Нагору</p>
