@@ -1,3 +1,26 @@
+@media (max-width: 1400px) and (min-width: 992px) {
+    footer.container-fluid {height: auto; min-width: 100%; }
+    .logoFooter, .mapSite, .contactUs {margin-top: 50px;}
+    .logoFooter img {width: 100%; height: auto;}
+    .mapSite h2, .contactUs h2 {
+        font-size: 112.5% /* 18px*/;
+        margin-bottom: 20px;
+    }
+    .mapSite ul li a, .contactUs ul li  {
+        font-size: 100% /*16px*/;
+        margin-bottom: 14px;
+    }
+    .up button {margin-top: 60px;}
+    .up p {
+        font-size: 100% /*16px*/;
+        margin-top: 14px;
+    }
+    .copyright p {
+        font-size: 100% /*16px*/;
+        margin-top: 26px;
+    }
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
     footer.container-fluid {height: auto; min-width: 100%; }
     .logoFooter, .mapSite, .contactUs {margin-top: 60px;}

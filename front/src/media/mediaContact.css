@@ -1,3 +1,27 @@
+@media (max-width: 1400px) and (min-width: 992px) {
+    .map {
+        margin-bottom: 26px;
+        min-width: 100%;
+    }
+    .map h6 {
+        font-size: 262.5% /*42px*/;
+        margin-top: 20px;
+        margin-bottom: 26px;
+    }
+    .address, .phone, .email {
+        margin-right: 18%;
+        margin-bottom: 60px;
+    }
+    .address h3, .phone h3, .email h3 {
+        font-size: 112.5% /*18px*/;
+        margin-bottom: 24px;
+    }
+    .address p, .phone p, .email p {
+        font-size: 112.5% /* 18px*/;
+        width: 30%;
+    }
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
     .map {
         margin-bottom: 26px;

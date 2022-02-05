@@ -1,3 +1,29 @@
+@media (max-width: 1400px) and (min-width: 992px) {
+    .centerInfo_cardioCenter, .centerInfo_traumaCenter {
+        height: auto;
+        min-width:100%;
+    }
+    .container{min-width: 100%}
+    .textAboutCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textAboutCenter h6 {
+        font-size: 200% /*32*/;
+        margin-top: 10px;
+        margin-left: 5%;
+    }
+    .textAboutCenter p {
+        width: 75% ;
+        font-size: 75% ;
+        line-height: 22px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 991px) and (min-width: 768px) {
     .centerInfo_cardioCenter, .centerInfo_traumaCenter {
         height: auto;
@@ -12,7 +38,6 @@
     }
     .textAboutCenter h6 {
         font-size: 125% /*20*/;
-        line-height: 52px;
         margin-top: 10px;
         margin-left: 5%;
     }
@@ -42,7 +67,6 @@
     }
     .textAboutCenter h6 {
         font-size: 100% /* 24px*/;
-        line-height: 52px;
         margin-top: 10px;
         margin-left: 5%;
     }
