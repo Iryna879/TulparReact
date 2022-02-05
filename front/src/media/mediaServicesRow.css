@@ -8,12 +8,11 @@
         margin-top: 60px;
         margin-bottom: 30px;
     }
-    .services_photoServ {margin-bottom: 80px;}
     .index_photoServ li, .services_photoServ li {
         margin-right: 10px;
         width: 25%;
     }
-    #cardioIndex, .index_photoServ .servicesImg, .services_photoServ .servicesImg {
+    #cardioIndex, .index_photoServ .servicesImg {
         width: 100%;
         height: 196px ;
     }
@@ -28,10 +27,14 @@
         margin-left: 10px;
     }
     .index_redInfo, .services_redInfo { width: 24%;}
+    .services_redInfo { height: 43%}
     .services_photoServ li:hover  p.heading {visibility: hidden;}
     .index_redInfo .pulse, .services_redInfo .pulse  {
         width: 100%;
         height: 93px;
+    }
+    .services_redInfo .pulse  {
+        height: 50%;
     }
     .index_redInfo .pulse img, .services_redInfo .pulse img {
         margin-top: 35px ;
@@ -42,7 +45,7 @@
         min-height: 10em;
         width: 99%;
     }
-    .services_redInfo .redInfoText {min-height: 7em;}
+    .services_redInfo .redInfoText {min-height: 9em;}
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
         margin-left: 9px ;  margin-bottom: 10px;
     }
@@ -51,7 +54,7 @@
         padding-top: 10px ;
     }
     .services_redInfo .redInfoText p:first-child {
-        font-size: 82.5%;
+        font-size: 95%;
         line-height: 14px;
         width: 95%;
     }

@@ -3,11 +3,9 @@
     .specialistsListPage {
         margin-top: 60px;
         margin-bottom: 30px;
-        flex-wrap: wrap;
     }
     .specialistsListPage li {
         margin-right: 5% ;
-        width: 25%;
         text-align: center;
     }
     .specialistsListPage img {
