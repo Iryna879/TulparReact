@@ -1,6 +1,6 @@
 import React from "react";
 import Search from "../search/search";
-import Leftside from "./leftside";
+import LeftSide from "./leftside";
 
 
 const SearchDoctor = () => {
@@ -9,7 +9,7 @@ const SearchDoctor = () => {
             <div>
                 <div className="row m-5" style={{ maxWidth: "100%" }}>
                     <div className="col-3 col-md-3 p-4 bg-white ">
-                        <Leftside />
+                        <LeftSide />
                     </div>
                     <div
                         className="col-9 col-md-9 p-4"

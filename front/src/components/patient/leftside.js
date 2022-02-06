@@ -3,7 +3,7 @@ import Option from "./option";
 import "./dashboard.css";
 import { Link } from "react-router-dom";
 
-const Leftside = () => {
+const LeftSide = () => {
     return (
         <div>
             <ul>
@@ -28,4 +28,4 @@ const Leftside = () => {
     );
 };
 
-export default Leftside;
+export default LeftSide;

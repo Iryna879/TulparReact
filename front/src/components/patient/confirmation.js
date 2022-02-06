@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
-import Leftside from "./leftside";
+import LeftSide from "./leftside";
 
 const Confirmation = () => {
 
     const location = useLocation();
     const { dateId, doctor, slotId } = location.state;
-    console.log("date: " + dateId + " " + "slot: " + slotId + "doctor: " + doctor._id);
+    // console.log("date: " + dateId + " " + "slot: " + slotId + "doctor: " + doctor._id);
     const {user} = useAuth0();
     const {name, email} = user;
-    console.log("name: " + name + " " + "email: " + email);
+    // console.log("name: " + name + " " + "email: " + email);
 
     const bookSlot = () => {
             fetch("/api/specialists/book-slot/",
@@ -46,7 +46,7 @@ const Confirmation = () => {
                         className="col-3 col-md-3 p-4 bg-white "
                         style={{ height: "80vh" }}
                     >
-                        <Leftside />
+                        <LeftSide />
                     </div>
                     <div
                         className="col-9 col-md-9 p-4 "

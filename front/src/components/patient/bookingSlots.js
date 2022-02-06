@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Leftside from "./leftside";
+import LeftSide from "./leftside";
 
 
 const BookingSlots = () => {
@@ -63,7 +63,7 @@ const BookingSlots = () => {
           <div>
               <div className="row m-5" style={{ maxWidth: "100%" }}>
                   <div className="col-3 col-md-3 p-4 bg-white ">
-                      <Leftside />
+                      <LeftSide />
                   </div>
                   <div
                       className="col-9 col-md-9 p-4"

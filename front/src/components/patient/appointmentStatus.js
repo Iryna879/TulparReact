@@ -25,7 +25,7 @@ const AppointmentStatus = () => {
                 console.log(err))
 
         setIsLoading(false)
-    }, [])
+    }, [email])
 
     return (
         <div className="bg-dark" style={{ height: "100vh" }}>

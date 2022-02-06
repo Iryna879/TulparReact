@@ -3,7 +3,7 @@ import "react-calendar/dist/Calendar.css";
 import { Button } from "reactstrap";
 import { Link, useLocation } from "react-router-dom";
 import Calendar from "react-calendar";
-import Leftside from "./leftside";
+import LeftSide from "./leftside";
 
 const SelectDate = () => {
     const [date, setDate] = useState(new Date());
@@ -22,7 +22,7 @@ const SelectDate = () => {
                         className="col-3 col-md-3 p-4 bg-white "
                         style={{ height: "80vh" }}
                     >
-                        <Leftside />
+                        <LeftSide />
                     </div>
                     <div
                         className="col-9 col-md-9 p-4"
