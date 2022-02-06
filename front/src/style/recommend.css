@@ -9,3 +9,4 @@
 }
 .recommend ul {display: flex}
 .recommend ul li {margin-right: 70px; margin-bottom: 70px;}
+.recommend ul li:last-child {margin-right:0;}

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Circles } from 'react-loader-spinner';
 import LogoutButton from "../../auth/logoutButton";

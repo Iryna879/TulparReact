@@ -1,79 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { toast } from "react-toastify";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
 import Leftside from "./leftside";
 
-function getEndDateTime(dateTime) {
-    const hrs = (parseInt(dateTime.split("T")[1].split(":")[0]) + 1)
-        .toString()
-        .padStart(2, "0");
-    const time = hrs + ":00:00";
-    const date = dateTime.split("T")[0];
-    return date + "T" + time;
-}
-
 const Confirmation = () => {
-    //const [finalBalnce, setFinalBalnce] = useState(0);
-    //const [data, setData] = useState([]);
-
-
-    /*function createEvent(id, dateTime, doctorEmail) {
-        var virtualEvent = {
-            id: id,
-            summary: "Appointment",
-            location: "Virtual",
-            description: "Doctor-Patient appointment",
-            start: {
-                dateTime: dateTime,
-                timeZone: "Asia/Kolkata",
-            },
-            end: {
-                dateTime: getEndDateTime(dateTime),
-                timeZone: "Asia/Kolkata",
-            },
-            conferenceData: {
-                createRequest: {
-                    requestId: "7qxalsvy0e",
-                },
-            },
-            attendees: [{ email: doctorEmail }],
-            guestsCanModify: true,
-            reminders: {
-                useDefault: false,
-                overrides: [
-                    { method: "email", minutes: 24 * 60 },
-                    { method: "popup", minutes: 15 },
-                ],
-            },
-        };
-
-        var request = window.gapi.client.calendar.events.insert({
-            calendarId: "primary",
-            resource: virtualEvent,
-            sendUpdates: "all",
-            supportsAttachments: true,
-            conferenceDataVersion: 1,
-        });
-
-        request.execute(function (event) {
-            console.log("Executed!");
-
-            // Add meet link
-            if (event) {
-                // console.log(`AddEvent link : ${event.hangoutLink}, Id : ${id}`)
-                axios.put(
-                    `${process.env.REACT_APP_SERVER_URL}/appointments/add-meet-link`,
-                    {
-                        appointmentId: id,
-                        meetLink: event.hangoutLink
-                    }
-                ).then((x) => {
-                    console.log(`Updated Meet Link!`);
-                })
-            }
-        });
-    }*/
 
     const location = useLocation();
     const { dateId, doctor, slotId } = location.state;
@@ -81,7 +11,6 @@ const Confirmation = () => {
     const {user} = useAuth0();
     const {name, email} = user;
     console.log("name: " + name + " " + "email: " + email);
-    const navigate = useNavigate();
 
     const bookSlot = () => {
             fetch("/api/specialists/book-slot/",
@@ -109,35 +38,6 @@ const Confirmation = () => {
                 });
         }
 
-    /*if (data.doctorEmail) {
-        createEvent(data._id, data.date + "T" + data.slotTime, data.doctorEmail);
-    }*/
-   // };
-
-    /*useEffect(() => {
-        setFinalBalnce(1.18 * doctor.feesPerSession);
-    }, []);*/
-
-   /* const makePayment = async (token) => {
-        const { data } = await Axios.post(
-            `${process.env.REACT_APP_SERVER_URL}/patients/payment`,
-            {
-                token,
-                finalBalnce,
-            }
-        );*/
-
-       /* if (data) {
-            bookSlot();
-            toast("Appointment booked successfully", {
-                type: "success"
-            })
-            navigate("/profile");
-        }
-
-        console.log(data);*/
-    //};
-    //bookSlot();
     return (
         <div className="bg-dark" style={{ height: "100vh" }}>
             <div>
