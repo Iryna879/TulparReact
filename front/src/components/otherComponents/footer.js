@@ -43,7 +43,7 @@ export function Footer() {
 
                 <div className="row  ">
                     <div className="col-12 copyright">
-                        <p>© Все права защищены 2022 “Тулпар”</p>
+                        <p>© Всі права захищені 2022 “Тулпар”</p>
                     </div>
                 </div>
 

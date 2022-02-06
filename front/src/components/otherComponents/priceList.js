@@ -24,14 +24,14 @@ export function PriceList (){
             <div className="row  ">
                 <div className="col-xl-12 priceList">
                     <h6>Прайс лист</h6>
-                    <ul className="menuPrice">
+                    {/*<ul className="menuPrice">
                         <li>Показати всі</li>
                         <li>Кардіо</li>
                         <li>Травми</li>
                         <li>Дерматологія</li>
                         <li>Урологія</li>
                         <li>УЗД</li>
-                    </ul>
+                    </ul>*/}
 
                         <PriceListItem price={price}/>
 

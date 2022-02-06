@@ -8,14 +8,14 @@
         margin-top: 60px;
         margin-bottom: 30px;
     }
-    .index_photoServ li, .services_photoServ li {
-        margin-right: 10px;
-        width: 25%;
-    }
+    .index_photoServ li, .services_photoServ li {width: 25%;}
+    .index_photoServ li {margin-right: 10px;}
     #cardioIndex, .index_photoServ .servicesImg {
         width: 100%;
         height: 196px ;
     }
+    .services_photoServ .servicesImg {width: 100%;
+        height: 100% ;}
     .index_photoServ li  p, .services_photoServ li p {
         line-height: 18px;  margin-top: 10px; margin-left: 5px;
     }
@@ -34,18 +34,22 @@
         height: 93px;
     }
     .services_redInfo .pulse  {
-        height: 50%;
+        height: 34%;
     }
     .index_redInfo .pulse img, .services_redInfo .pulse img {
         margin-top: 35px ;
         margin-left: 43% /*76px*/ ;
     }
-    .index_redInfo .redInfoText, .services_redInfo .redInfoText {
+    .index_redInfo .redInfoText {
         height: auto;
         min-height: 10em;
         width: 99%;
     }
-    .services_redInfo .redInfoText {min-height: 9em;}
+    .services_redInfo .redInfoText {
+        min-height: 48.5%;
+        width: 102%;
+        height: auto;
+    }
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
         margin-left: 9px ;  margin-bottom: 10px;
     }

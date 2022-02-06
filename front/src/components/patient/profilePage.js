@@ -9,40 +9,6 @@ const ProfilePage = withAuthenticationRequired(
         const {user} = useAuth0();
         const {name, picture, email} = user;
 
-        useEffect(() => {
-            fetch("/api/patients/testbyemail/" + email)
-                .then(response => response.text())
-                .then (isHaving => {
-                    if(isHaving === "true") {
-                        console.log(" такой уже есть ");
-                    } else {
-                        console.log(" в базе такого нет - перехожу к записи в базу ");
-                            fetch("/api/patients",
-                                {
-                                    method: 'POST',
-                                    headers: { 'Content-Type': 'application/json' },
-                                    body: JSON.stringify(user)
-                                }
-                            )
-                                .then(res => {
-                                    console.log("Result:", res);
-                                    return res.json();
-                                })
-                                .then(user => {
-                                    console.log(user);
-                                })
-                                .catch(err => {
-                                    console.log(err);
-                                });
-
-                    }
-                })
-                .catch(err => {
-                    console.log(err);
-                });
-
-        }, []);
-
         return (
             <div>
                 <h1>Profile Page</h1>
