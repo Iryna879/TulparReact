@@ -2,6 +2,7 @@ import React from "react";
 import Option from "./option";
 import "./dashboard.css";
 import { Link } from "react-router-dom";
+import LogoutButton from "../../auth/logoutButton";
 
 const LeftSide = () => {
     return (
@@ -22,7 +23,9 @@ const LeftSide = () => {
                         <Option Value="Записи до лікарів" />
                     </Link>
                 </li>
-
+                <li>
+                    <LogoutButton/>
+                </li>
             </ul>
         </div>
     );

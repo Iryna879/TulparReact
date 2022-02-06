@@ -100,7 +100,7 @@ const Search = () => {
                         <Input
                             value={text}
                             type="text"
-                            placeholder="Search Your Doctor"
+                            placeholder="Хірург"
                             onChange={onTextChanged}
                             className="mb-1"
                         />
@@ -117,8 +117,7 @@ const Search = () => {
                     {renderSuggestions()}
                 </Col>
             </Row>
-
-            {/* <ListGroup> */}
+            
             <Scrollbar
                 noScrollX
                 style={{ position: "absolute", top:"20%", minHeight: "50%", width: "60%" }}
