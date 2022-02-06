@@ -9,17 +9,17 @@ const Leftside = () => {
             <ul>
                 <li>
                     <Link to="/profile" >
-                        <Option Value="Personal Details" />
+                        <Option Value="Персональні дані" />
                     </Link>
                 </li>
                 <li>
                     <Link to="/profile/searchdoctor">
-                        <Option Value="Search Doctor" />
+                        <Option Value="Пошук лікаря" />
                     </Link>
                 </li>
                 <li>
                     <Link to="/profile/appointment-status">
-                        <Option Value="Appointment Status" />
+                        <Option Value="Записи до лікарів" />
                     </Link>
                 </li>
 

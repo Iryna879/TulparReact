@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Leftside from "./leftside";
 
 
-const BookingSlots = (props) => {
+const BookingSlots = () => {
     const location = useLocation();
     const { date, doctor } = location.state;
     // console.log("Date: " + date + " DoctorId: " + doctorId);
@@ -47,7 +47,6 @@ const BookingSlots = (props) => {
         }
         const dateToSend = getDateString();
 
-        //fetchDate(dateToSend);
 
 
   return (
@@ -77,8 +76,8 @@ const BookingSlots = (props) => {
                       <table className="table table-hover table-dark">
                           <thead>
                           <tr>
-                              <th scope="col">Slot</th>
-                              <th scope="col">Booking Status</th>
+                              <th scope="col">Час</th>
+                              <th scope="col">Статус</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -86,7 +85,7 @@ const BookingSlots = (props) => {
                               <tr key={slot._id}>
                                   <th scope="row">{slot.time}</th>
                                   {slot.isBooked ? (
-                                      <td>Booked</td>
+                                      <td>Зайнято</td>
                                   ) : (
                                       <td>
                                           <Link
@@ -97,7 +96,7 @@ const BookingSlots = (props) => {
                                                       slotId: slot._id,
                                                   }}
                                           >
-                                              Book Now
+                                              Вільно
                                           </Link>
                                       </td>
                                   )}
@@ -112,15 +111,6 @@ const BookingSlots = (props) => {
           }
       )
   );
-   /*for(let data of allData) {
-       for(let d of data.dates){
-           if(d.date === dateToSend){
-               setdateId(d._id);
-               setSlots(d.slots);
-           }
-       }
-   }
-*/
 
 };
 

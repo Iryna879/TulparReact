@@ -110,7 +110,7 @@ const Search = () => {
                                     color="primary"
                                     onClick={() => UpdateDisplay(text)}
                                 >
-                                    Search Doctor
+                                    Шукати лікаря
                                 </Button>
                         </div>
                     </InputGroup>
@@ -126,7 +126,6 @@ const Search = () => {
             >
                 <div className="row">
                     {doctor.map((doc) => (
-                        // <ListGroupItem key={doc.id} className="mb-3">
                         <div className="col-sm-6 mb-2" key={doc._id}>
                             <div className="card">
                                 <div className="card-body">
@@ -135,8 +134,8 @@ const Search = () => {
                                             <span className="text-uppercase"> {doc.name + " " + doc.surname}</span>
                                         </h6>
                                     </div>
-                                    <div>Specialization : {doc.specialization}</div>
-                                    <div>Job: {doc.jobTitle}</div>
+                                    <div>Спеціалізація : {doc.specialization}</div>
+                                    <div>{doc.jobTitle}</div>
                                     <div className="row mb-0 pb-0">
                                         <div
                                             className=" col align-self-end col-md-2 offset-md-3 inline"
@@ -145,18 +144,16 @@ const Search = () => {
                                             <Link to="/profile/selectdate"
                                                   state={{doctor: doc}} >
                                             <button className="btn btn-sm btn-primary">
-                                                Book</button> </Link>
+                                                Записатися</button> </Link>
                                         </div>
                                     </div>
 
-                                    {/* </ListGroupItem> */}
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </Scrollbar>
-            {/* </ListGroup> */}
         </div>
     );
 };

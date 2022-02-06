@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import Calendar from "react-calendar";
 import Leftside from "./leftside";
 
-const SelectDate = (props) => {
+const SelectDate = () => {
     const [date, setDate] = useState(new Date());
     const location = useLocation();
     const { doctor} = location.state;
@@ -33,7 +33,6 @@ const SelectDate = (props) => {
                         }}
                     >
                         <div className="d-flex justify-content-center">
-                            {/* <ReactCalendar /> */}
                             <div>
                                 <Calendar
                                     tileDisabled={({ date }) =>
@@ -52,16 +51,12 @@ const SelectDate = (props) => {
                                 </p>
                             </div>
                         </div>
-                        {/* <Row className="w-100">
-            <Col> */}
                         <div className="row justify-content-center mt-5 ml-5">
                             <div className="col-2">
                                 <Link to="/profile/searchdoctor">
-                                    <Button color="danger">GO BACK</Button>
+                                    <Button color="danger">Назад</Button>
                                 </Link>
                             </div>
-                            {/* </Col>
-            <Col> */}
                             <div className="col-4">
                                 <Link to="/profile/book-slot"
                                         state={{
@@ -69,11 +64,10 @@ const SelectDate = (props) => {
                                     doctor: doctor
                                 }}
                                 >
-                                    <Button color="primary">Confirm And Go to Next Step</Button>
+                                    <Button color="primary">Далі</Button>
                                 </Link>
                             </div>
-                            {/* </Col>
-          </Row> */}
+
                         </div>
                     </div>
                 </div>

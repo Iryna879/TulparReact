@@ -11,7 +11,7 @@ const LogoutButton = () => {
                 })
             }
         >
-            Log Out
+            Вихід
         </button>
     );
 }

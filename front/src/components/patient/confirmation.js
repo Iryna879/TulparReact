@@ -62,35 +62,33 @@ const Confirmation = () => {
                                     <div className="row">
                                         <div className="col-xs-6 col-sm-6 col-md-6">
                                             <address>
-                                                <strong>Elf Cafe</strong>
+                                                <strong>Тулпар</strong>
                                                 <br />
-                                                2135 Sunset Blvd
+                                                Садова, 7
                                                 <br />
-                                                Los Angeles, CA 90026
+                                                Миколаїв, 54001
                                                 <br />
                                                 <abbr title="Phone">P:</abbr> (213) 484-6829
                                             </address>
                                         </div>
-                                        <div className="col-xs-6 col-sm-6 col-md-6 text-right">
+                                       {/* <div className="col-xs-6 col-sm-6 col-md-6 text-right">
                                             <p>
                                                 <em>Date: 1st November, 2013</em>
                                             </p>
                                             <p>
                                                 <em>Receipt #: 34522677W</em>
                                             </p>
-                                        </div>
+                                        </div>*/}
                                     </div>
                                     <div className="row">
                                         <div className="text-center">
-                                            <h1>Receipt</h1>
+                                            <h1>Запис</h1>
                                         </div>
                                         <table className="table table-hover text-white">
                                             <thead>
                                             <tr>
-                                                <th>Doctor Name</th>
-                                                <th>Specialization</th>
-
-                                                <th className="text-center">Total</th>
+                                                <th>Лікар</th>
+                                                <th>Спеціалізація</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -112,7 +110,7 @@ const Confirmation = () => {
                                                 type="button"
                                                 className="btn btn-success btn-lg btn-block"
                                             onClick={() => bookSlot()} >
-                                                Confirm
+                                                Підтверджую
                                                 <span className="glyphicon glyphicon-chevron-right" />
                                             </button>
                                         </Link>
@@ -120,7 +118,7 @@ const Confirmation = () => {
                                         <button
                                             type="button"
                                             className="btn btn-success btn-lg btn-block">
-                                            Back
+                                            Назад
                                         </button>
                                         </Link>
                                     </div>

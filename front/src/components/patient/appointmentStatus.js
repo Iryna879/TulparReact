@@ -49,10 +49,9 @@ const AppointmentStatus = () => {
                         <table className="table table-hover table-dark">
                             <thead>
                             <tr>
-                                <th scope="col">Date</th>
-                                <th scope="col">Time</th>
-                                <th scope="col">Doctor Name</th>
-                                <th scope="col">Meet Link</th>
+                                <th scope="col">Дата</th>
+                                <th scope="col">Час</th>
+                                <th scope="col">Лікар</th>
                             </tr>
                             </thead>
                             <tbody>

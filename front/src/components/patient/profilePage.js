@@ -7,16 +7,17 @@ import Leftside from "./leftside";
 const ProfilePage = withAuthenticationRequired(
     () => {
         const {user} = useAuth0();
-        const {name, picture, email} = user;
+        const {name, picture, email, birthdate} = user;
 
         return (
             <div>
-                <h1>Profile Page</h1>
+                <h1>Особистий кабінет</h1>
                 <Leftside />
                 <div>
                     <img src={picture} alt="user"/>
-                    <h3>{name}</h3>
-                    <p>{email}</p>
+                    <h3>Ім'я: {name} </h3>
+                    <p>Пошта: {email}</p>
+                    <p>Дата народження: {birthdate}</p>
                     <LogoutButton/>
                 </div>
             </div>
