@@ -1,3 +1,77 @@
+@media (max-width: 1200px) and (min-width:992px) {
+    .specialists {
+        min-width: 100%;
+    }
+    .specialists h6 {
+        font-size: 262.5% /* 42px*/;
+        margin-top: 50px;
+    }
+
+    .gridSpecialist {
+        margin-top: 26px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 55px;
+        grid-column-gap: 40px;
+    }
+    .gridSpecialist p {
+        margin-top: 26px;
+    }
+
+    .gridSpecialist span {
+        font-size: 87.5%;
+        line-height: 15px;
+        width: 35%;
+    }
+
+    .specialists button, .priceList button {
+        margin-top: 40px;
+        margin-left: 40%;
+        margin-bottom: 60px;
+        width: 20%;
+        height: 45px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .specialists {
+        min-width: 100%;
+    }
+    .specialists h6 {
+        font-size: 243.75% /* 39px*/;
+        margin-top: 60px;
+    }
+
+    .gridSpecialist {
+        margin-top: 26px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 55px;
+        grid-column-gap: 40px;
+    }
+    .gridSpecialist p {
+        margin-top: 26px;
+    }
+
+    .gridSpecialist span {
+        font-size: 12px;
+        line-height: 15px;
+        width: 35%;
+    }
+
+    .specialists button, .priceList button {
+        margin-top: 26px;
+        margin-left: 40%;
+        margin-bottom: 60px;
+        width: 20%;
+        height: 45px;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 577px) {
     .specialists {
         min-width: 100%;
@@ -15,10 +89,6 @@
         grid-template-rows: auto;
         grid-row-gap: 40px;
         grid-column-gap: 20px;
-    }
-    .gridSpecialist img {
-        width: 98px;
-        height: 98px ;
     }
 
     .gridSpecialist p {
@@ -40,7 +110,6 @@
 
     }
 }
-
 
 @media all and (max-width: 576px) {
     .specialists {

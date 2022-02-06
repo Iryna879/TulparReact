@@ -25,6 +25,7 @@ a{
 }
 #menu__toggle {
     opacity: 0;
+    width: auto;
 }
 .menu__btn {
     display: flex;
@@ -58,7 +59,6 @@ a{
     margin-top: -65px;
     font-family: "TTHoves-Medium";
     font-size: 18px;
-    font-style: normal;
     line-height: 18px;
     text-align: left;
     margin-left: 40px;
@@ -98,14 +98,13 @@ a{
     font-family: "TTHoves-DemiBold";
     width: 220px;
     height: 102px;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     text-align: right;
     color: #000000 /* #F9F9F9*/;
     margin-top: 50px;
-    margin-left: 58% /*380px*/;
+    margin-left: 50% /*380px*/;
 }
 
 .cardioCentre .services {
@@ -129,7 +128,7 @@ a{
     border: 1px solid #000000 /*#F9F9F9*/;
     box-sizing: border-box;
     border-radius: 25px;
-    margin-left: 70%;
+    margin-left: 440px;
     width: 160px;
     height : 50px;
     background-color: transparent;
@@ -192,15 +191,6 @@ a{
     background-color: transparent;
     color: #32495E;
     margin-bottom: 25px;
-}
-
-.social {
-    display: flex;
-    margin-left: 220px;
-    margin-top: 5px;
-}
-.social li {
-    margin-left: 10px;
 }
 .serv {
     width: 100%;

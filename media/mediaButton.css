@@ -1,6 +1,40 @@
+@media (max-width: 1200px) and (min-width: 992px) {
+    .callback-bt {
+        right: 0;
+        bottom: 50%;
+        height:58px;
+        width:58px;
+    }
+    .callback-bt .text-call, .callback-bt i {
+        height:58px;
+        width:58px;
+    }
+    .callback-bt i {
+        font-size: 187.5% /*30px*/;
+        line-height: 55px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .callback-bt {
+        right: 0;
+        bottom: 50%;
+        height:48px;
+        width:48px;
+    }
+    .callback-bt .text-call, .callback-bt i {
+        height:48px;
+        width:48px;
+    }
+    .callback-bt i {
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 576px) {
     .callback-bt {
-        right: 20%;
+        right: 0;
         bottom: 50%;
         height:40px;
         width:40px;
@@ -17,8 +51,8 @@
 
 @media all and (max-width: 575px) {
     .callback-bt {
-        right: 40%;
-        bottom: 80%;
+        right: 0;
+        bottom: 50%;
         height:40px;
         width:40px;
     }

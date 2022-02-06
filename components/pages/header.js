@@ -36,7 +36,6 @@ const  Header = (props) => {
                             <li><Link to="/services">Послуги</Link></li>
                             <li><Link to="/ourSpecialists">Спеціалісти</Link></li>
                             <li><Link to="/contact">Ми</Link></li>
-                            <li><Link to="/news">Новини</Link></li>
                         </ul>
                     </div>
                 </div>

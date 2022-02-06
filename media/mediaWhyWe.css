@@ -1,7 +1,72 @@
-@media (max-width: 768px) and (min-width: 577px) {
-    body, html{
-        width: 100%;
+@media (max-width: 1200px) and (min-width: 992px) {
+    .whyWeFluid {
+        height: auto;
+        min-width: 100%;
     }
+    .container{min-width: 100%}
+    .whyWe h6 {
+        font-size: 262.5%; /*42px;*/
+        margin-top: 55px;
+        margin-bottom: 45px;
+    }
+    .benefits li {
+        width: 45%;
+        margin-right: 5%;
+    }
+    .benefits li img {
+        width: 80px;
+        height: 80px;
+    }
+    .benefits h1 {
+        font-size: 87.5% /*14px*/;
+        margin-top: 26px;
+        margin-bottom: 14px;
+    }
+    .benefits p {
+        width: 100%;
+        font-size: 75% /*12px*/;
+        line-height: 15px;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .whyWeFluid {
+        height: auto;
+        min-width: 100%;
+    }
+    .container{min-width: 100%}
+    .whyWe h6 {
+        font-size: 243.75%; /*39px;*/
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+    .benefits {flex-wrap: wrap;}
+    .benefits li {
+        width: 45%;
+        margin-right: 5%;
+    }
+    .benefits li img {
+        width: 74px;
+        height: 74px;
+    }
+    .benefits h1 {
+        font-size: 87.5% /*14px*/;
+        line-height: 17px;
+        margin-top: 26px;
+        margin-bottom: 14px;
+    }
+    .benefits p {
+        width: 100%;
+        font-size: 75% /*12px*/;
+        line-height: 15px;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
     .whyWeFluid {
         height: auto;
         min-width: 100%; /*768px;*/

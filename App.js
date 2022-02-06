@@ -14,7 +14,12 @@ import "./media/mediaServicesRow.css";
 import ButtonCallback from "./components/otherComponents/buttonCallback";
 import Page404 from "./components/404/page404";
 import Auth0ProviderWithHistory from "./providers/Auth0ProviderWithHistory";
-import ProfilePage from "./components/otherComponents/profilePage";
+import ProfilePage from "./components/patient/profilePage";
+import SearchDoctor from "./components/patient/searchDoctor";
+import SelectDate from "./components/patient/selectDate";
+import BookingSlots from "./components/patient/bookingSlots";
+import Confirmation from "./components/patient/confirmation";
+import AppointmentStatus from "./components/patient/appointmentStatus";
 
 
 function App() {
@@ -31,6 +36,11 @@ function App() {
             <Route path="/traumaCenter" element={<TraumaCenterPage />} />
             <Route path="/ourSpecialists" element={<OurSpecialistsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route  path="/profile/searchdoctor" element={<SearchDoctor />} />
+            <Route  path="/profile/selectdate" element={<SelectDate />} />
+            <Route path="/profile/book-slot" element={<BookingSlots />} />
+            <Route path="/profile/confirmation" element={<Confirmation />} />
+            <Route path="/profile/appointment-status" element={<AppointmentStatus />} />
           </Routes>
      </Auth0ProviderWithHistory>
       </BrowserRouter>

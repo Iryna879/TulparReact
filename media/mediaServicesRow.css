@@ -1,4 +1,163 @@
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 1200px) and (min-width: 992px) {
+    .serv, .servicesPhoto {
+        min-width:100%;
+        height: auto;
+    }
+    .ourServices h6 {
+        font-size: 262.5% /*42px*/;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .index_photoServ li, .services_photoServ li {width: 25%;}
+    .index_photoServ li {margin-right: 10px;}
+    #cardioIndex, .index_photoServ .servicesImg {
+        width: 100%;
+        height: 196px ;
+    }
+    .services_photoServ .servicesImg {width: 100%;
+        height: 100% ;}
+    .index_photoServ li  p, .services_photoServ li p {
+        line-height: 18px;  margin-top: 10px; margin-left: 5px;
+    }
+    .index_photoServ li  p {
+        width: 90% ;
+    }
+    .services_photoServ li p{
+        width: 15%;
+        margin-left: 10px;
+    }
+    .index_redInfo, .services_redInfo { width: 24%;}
+    .services_redInfo { height: 43%}
+    .services_photoServ li:hover  p.heading {visibility: hidden;}
+    .index_redInfo .pulse, .services_redInfo .pulse  {
+        width: 100%;
+        height: 93px;
+    }
+    .services_redInfo .pulse  {
+        height: 34%;
+    }
+    .index_redInfo .pulse img, .services_redInfo .pulse img {
+        margin-top: 35px ;
+        margin-left: 43% /*76px*/ ;
+    }
+    .index_redInfo .redInfoText {
+        height: auto;
+        min-height: 10em;
+        width: 99%;
+    }
+    .services_redInfo .redInfoText {
+        min-height: 48.5%;
+        width: 102%;
+        height: auto;
+    }
+    .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
+        margin-left: 9px ;  margin-bottom: 10px;
+    }
+    .index_redInfo .redInfoText p:first-child {
+        line-height: 18px;
+        padding-top: 10px ;
+    }
+    .services_redInfo .redInfoText p:first-child {
+        font-size: 95%;
+        line-height: 14px;
+        width: 95%;
+    }
+    .index_redInfo .redInfoText p:last-child, .services_redInfo .redInfoText p:last-child {
+        line-height: 15px;
+        margin-left: 9px ;
+        width: 89%;
+    }
+    .index_redInfo .redInfoText p:last-child {margin-top: 0; padding-bottom: 5px;}
+    .services_redInfo .redInfoText p:last-child {margin-top: 50px ;}
+    .ourServicesPhoto button {
+        margin-top: 26px;
+        margin-left: 40%;
+        width: 20%;
+        height : 40px;
+        margin-bottom: 30px;
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .serv, .servicesPhoto {
+        min-width:100%;
+        height: auto;
+    }
+    .ourServices h6 {
+        font-size: 243.75% /*39px*/;
+        margin-top: 60px;
+        margin-bottom: 26px;
+    }
+    .services_photoServ {margin-bottom: 100px;}
+    .index_photoServ li, .services_photoServ li {
+        margin-right: 10px;
+        width: 25%;
+    }
+    #cardioIndex, .index_photoServ .servicesImg, .services_photoServ .servicesImg {
+        width: 100%;
+        height: 152px ;
+    }
+    .index_photoServ li  p, .services_photoServ li p {
+        line-height: 18px;  margin-top: 10px; margin-left: 5px;
+    }
+    .index_photoServ li  p {
+        font-size: 87.5%;
+        width: 90% ;
+    }
+    .services_photoServ li p{
+        font-size: 82.5%;
+        width: 15%;
+        margin-left: 10px;
+    }
+    .index_redInfo, .services_redInfo { width: 24%;}
+    .services_photoServ li:hover  p.heading {visibility: hidden;}
+    .index_redInfo .pulse, .services_redInfo .pulse  {
+        width: 100%;
+        height: 93px;
+    }
+    .index_redInfo .pulse img, .services_redInfo .pulse img {
+        margin-top: 35px ;
+        margin-left: 43% /*76px*/ ;
+    }
+    .index_redInfo .redInfoText, .services_redInfo .redInfoText {
+        height: auto;
+        min-height: 7em;
+        width: 96%;
+    }
+    .services_redInfo .redInfoText {min-height: 8em;}
+    .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
+        margin-left: 9px ;  margin-bottom: 10px;
+    }
+    .index_redInfo .redInfoText p:first-child {
+        font-size: 75%;
+        line-height: 15px;
+        padding-top: 10px ;
+    }
+    .services_redInfo .redInfoText p:first-child {
+        font-size: 65%;
+        line-height: 10px;
+        width: 95%;
+    }
+    .index_redInfo .redInfoText p:last-child, .services_redInfo .redInfoText p:last-child {
+        font-size: 62.5% /*10px*/;
+        line-height: 12px;
+        margin-left: 9px ;
+        width: 89%;
+    }
+    .index_redInfo .redInfoText p:last-child {margin-top: 0; padding-bottom: 5px;}
+    .services_redInfo .redInfoText p:last-child {margin-top: 50px ;}
+    .ourServicesPhoto button {
+        margin-top: 26px;
+        margin-left: 40%;
+        width: 20%;
+        height : 40px;
+        margin-bottom: 30px;
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 575px) {
     body, html{
         width: 100%;
     }
@@ -45,7 +204,7 @@
     }
     .index_redInfo .redInfoText, .services_redInfo .redInfoText {
         height: auto;
-        min-height: 7em;
+        min-height: 8em;
         width: 96%;
     }
     .services_redInfo .redInfoText {min-height: 9em;}

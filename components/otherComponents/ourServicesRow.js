@@ -4,6 +4,7 @@ import cardio from "./../../img/cardioIndex.png";
 import trauma from "./../../img/traumaIndex.png";
 import cafe from "./../../img/cafeIndex.png";
 import sauna from "./../../img/saunaIndex.png";
+import {Link} from "react-router-dom";
 
 export function OurServicesRow () {
     return (
@@ -72,9 +73,9 @@ export function OurServicesRow () {
                                         <p className="heading">Сауна вищого класу </p></li>
 
                             </ul>
-                            <button onClick={(e) => window.location.assign('http://tulpar-heroku.herokuapp.com/services') }>
+                          <Link to='/services' > <button>
                                 Всі послуги
-                            </button>
+                            </button></Link>
                         </div>
                     </div>
                 </div>

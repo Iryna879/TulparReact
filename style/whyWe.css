@@ -21,6 +21,9 @@
     text-align: center;
     margin-right: 69px;
 }
+.benefits li:last-child {
+    margin-right:0;
+}
 .benefits h1 {
     font-family: "TTHoves-Bold";
     font-weight: 800;

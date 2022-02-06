@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./../../style/specialists.css";
 import "./../../media/mediaSpecialists.css";
+import {Link} from "react-router-dom";
 
 export function  SpecialistsIndex ()  {
     const [specialists, setSpecialists] = useState([]);
@@ -16,7 +17,7 @@ export function  SpecialistsIndex ()  {
             })
             .catch(err =>
                 console.log(err))
-    })
+    }, [])
 
     return (
         <div className="row  ">
@@ -28,7 +29,7 @@ export function  SpecialistsIndex ()  {
                         .filter((item, index) => index < 8)
                         .map(s  =>
                             <li key={s._id}>
-                                <img src={ s.photo} alt="doctor"/>
+                                <img src={s.photo} alt="doctor"/>
                                 <p>Доктор {s.surname} {s.name}</p>
                                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text</span>
@@ -36,7 +37,7 @@ export function  SpecialistsIndex ()  {
                     )
                    }
                 </ul>
-                <button onClick={() => window.location.assign('https://tulpar-heroku.herokuapp.com/ourSpecialists') }>Детальніше</button>
+               <Link to='/ourSpecialists'> <button>Детальніше</button></Link>
             </div>
         </div>
     )
