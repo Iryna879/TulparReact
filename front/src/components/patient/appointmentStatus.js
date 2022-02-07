@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./dashboard.css";
 import {useAuth0} from "@auth0/auth0-react";
-import Leftside from "./leftside";
+import LeftSide from "./leftside";
+import {Link} from "react-router-dom";
+import { Circles } from 'react-loader-spinner';
 
 const AppointmentStatus = () => {
     const [appointments, setAppointments] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const {user} = useAuth0();
     const { email} = user;
-const arr = [];
+
+
+
     useEffect(() => {
         setIsLoading(true)
 
@@ -28,8 +32,9 @@ const arr = [];
     }, [email])
 
     const deleteSlot = (id) => {
-        appointments.map(a => {
-            if (a._id === id) {
+        appointments
+            .filter(aId => aId._id === id)
+            .map(a =>
         fetch("/api/appointments",
             {
                 method: 'DELETE',
@@ -42,16 +47,15 @@ const arr = [];
                     })
             }
             )
-            .then(res => {
-                // console.log(res);
-                return res.json()
-            })
+            .then(() => console.log("Delete"))
             .catch(err =>
                 console.log(err))
-    }
-    })
+            )
 }
 
+if(isLoading === true) {
+    return (<div><Circles/></div>)
+}
     return (
         <div className="bg-dark" style={{ height: "100vh" }}>
             <div>
@@ -60,7 +64,7 @@ const arr = [];
                         className="col-3 col-md-3 p-4 bg-white "
                         style={{ height: "80vh" }}
                     >
-                        <Leftside />
+                        <LeftSide />
                     </div>
                     {isLoading && <h1>Loading</h1>}
                     {!isLoading && <div
@@ -86,11 +90,12 @@ const arr = [];
                                     <th scope="row">{Appointment.date}</th>
                                     <th scope="row">{Appointment.slotTime}</th>
                                     <th scope="row">{Appointment.doctorName}</th>
-                                    <th scope="row"> <button className="btn btn-danger btn-block"
-                                    onClick={() => deleteSlot(Appointment._id)}
-                                    >
-                                        Відмінити
-                                    </button>  </th>
+                                    <th scope="row"> <Link to='/profile/searchdoctor' >
+                                        <button className="btn btn-danger btn-block"
+                                                onClick={() => deleteSlot(Appointment._id)}
+                                        >
+                                            Відмінити
+                                        </button> </Link> </th>
                                 </tr>
                             ))}
                             </tbody>
