@@ -30,14 +30,16 @@ const arr = [];
     const deleteSlot = (id) => {
         appointments.map(a => {
             if (a._id === id) {
-                arr.push(a);
-            }
-        })
         fetch("/api/appointments",
             {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(arr)
+                body: JSON.stringify({
+                    _id: a._id,
+                    doctorId: a.doctorId,
+                    slotId: a.slotId,
+                    dateId: a.dateId,
+                    })
             }
             )
             .then(res => {
@@ -47,6 +49,8 @@ const arr = [];
             .catch(err =>
                 console.log(err))
     }
+    })
+}
 
     return (
         <div className="bg-dark" style={{ height: "100vh" }}>

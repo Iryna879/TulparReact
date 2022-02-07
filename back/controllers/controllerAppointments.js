@@ -1,7 +1,8 @@
 // TODO: подключить модель для сущности
 const appointment = require("../models/appointments");
 const doctors = require("../models/specialists");
-const { specialists } = doctors;
+const { specialists, slot, dateSchedule } = doctors;
+
 // Create => POST
 exports.post = function (request, response) {
     console.log("Run POST");
@@ -73,8 +74,9 @@ exports.upcomingAppointments = function (request, response) {
 
 exports.delete = function (request, response) {
     console.log("Run DELETE ");
-    console.log(request);
+   // console.log(request);
     const doctorId =  request.body.doctorId;
+    console.log(doctorId);
     const appId = request.body._id;
     const slotId = request.body.slotId;
     const dateId = request.body.dateId;
