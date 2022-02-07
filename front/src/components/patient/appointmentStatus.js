@@ -8,7 +8,7 @@ const AppointmentStatus = () => {
     const [isLoading, setIsLoading] = useState(false);
     const {user} = useAuth0();
     const { email} = user;
-
+const arr = [];
     useEffect(() => {
         setIsLoading(true)
 
@@ -26,6 +26,27 @@ const AppointmentStatus = () => {
 
         setIsLoading(false)
     }, [email])
+
+    const deleteSlot = (id) => {
+        appointments.map(a => {
+            if (a._id === id) {
+                arr.push(a);
+            }
+        })
+        fetch("/api/appointments",
+            {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(arr)
+            }
+            )
+            .then(res => {
+                // console.log(res);
+                return res.json()
+            })
+            .catch(err =>
+                console.log(err))
+    }
 
     return (
         <div className="bg-dark" style={{ height: "100vh" }}>
@@ -52,6 +73,7 @@ const AppointmentStatus = () => {
                                 <th scope="col">Дата</th>
                                 <th scope="col">Час</th>
                                 <th scope="col">Лікар</th>
+                                <th scope="col">Відмінити</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -60,6 +82,11 @@ const AppointmentStatus = () => {
                                     <th scope="row">{Appointment.date}</th>
                                     <th scope="row">{Appointment.slotTime}</th>
                                     <th scope="row">{Appointment.doctorName}</th>
+                                    <th scope="row"> <button className="btn btn-danger btn-block"
+                                    onClick={() => deleteSlot(Appointment._id)}
+                                    >
+                                        Відмінити
+                                    </button>  </th>
                                 </tr>
                             ))}
                             </tbody>

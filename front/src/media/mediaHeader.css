@@ -68,13 +68,9 @@
         min-width: 100% /*768px*/;
     }
     .container{min-width: 100%}
-   /* .logo  {
-        width: 128px ;
-        height: 31px ;
-    }*/
+
     #menu__toggle {
         opacity: 0;
-        width: auto;
     }
     .menu__btn {
         display: flex;
@@ -154,7 +150,6 @@
         height: 416px;
         margin: 0;
         background-color: #32495E;
-        opacity: 97%;
     }
     .cardioCenter_menu  li, .traumaCenter_menu  li, .services_menu li,
     .ourSpecialists_menu li, .contact_menu li  {margin-bottom:  26px;}
@@ -169,16 +164,18 @@
     .cardioCenter_menu  li:first-child, .traumaCenter_menu  li:first-child,
     .services_menu  li:first-child, .ourSpecialists_menu  li:first-child,
     .contact_menu li:first-child{ margin-top:60px;}
+
     .menu__btn{
         top: 20px;
         visibility: visible;
-        z-index: 3;
+        z-index: 103;
     }
+
     #menu__toggle:checked ~ .cardioCenter_menu,
     #menu__toggle:checked ~ .traumaCenter_menu, #menu__toggle:checked ~ .services_menu,
     #menu__toggle:checked ~ .ourSpecialists_menu, #menu__toggle:checked ~ .contact_menu{
         visibility: visible;
-        z-index: 2;
+        z-index: 102;
         right: 0;
     }
     .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {

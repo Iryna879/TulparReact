@@ -1,6 +1,7 @@
 // TODO: подключить модель для сущности
 const appointment = require("../models/appointments");
-
+const doctors = require("../models/specialists");
+const { specialists } = doctors;
 // Create => POST
 exports.post = function (request, response) {
     console.log("Run POST");
@@ -67,5 +68,52 @@ exports.upcomingAppointments = function (request, response) {
                 response.status(200).json(sortedAppointments);
             }
             );
+
+}
+
+exports.delete = function (request, response) {
+    console.log("Run DELETE ");
+    console.log(request);
+    const doctorId =  request.body.doctorId;
+    const appId = request.body._id;
+    const slotId = request.body.slotId;
+    const dateId = request.body.dateId;
+    specialists.find({ _id: doctorId },
+        function(err, allData) {
+            if (err) {
+                console.log(err);
+                return err;
+            }
+
+            console.log(allData);
+            if (allData.length > 0) {
+                allData.map(doctor => {
+                        const date = doctor.dates.id(dateId);
+                        const slot = date.slots.id(slotId);
+                        slot.isBooked = false;
+                    doctor
+                        .save()
+                        .then(() => {
+                            appointment.findByIdAndDelete( appId,
+                                {},
+                                function (err) {
+                                    if (err) response.send(err);
+                                    response.sendStatus(200);
+                                }
+                            ); })
+                        .catch((err) => {
+                                console.log(err);
+                                response.status(400).json({
+                                    message: `An error occurred : ${err}`,
+                                });
+                            });
+
+
+                    }
+                )
+            }
+
+
+            } )
 
 }

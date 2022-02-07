@@ -32,7 +32,7 @@ const IndexHeader = (props) => {
                     col-sm-6 offset-sm-3 col-2 offset-4 menuDiv">
                         <input id="menu__toggle" type="checkbox"/>
                         <label className="menu__btn" htmlFor="menu__toggle">
-                            <span></span>
+                            <span/>
                         </label>
                         <ul className="menu">
                             <li><Link to="/">Головна</Link></li>
@@ -51,7 +51,7 @@ const IndexHeader = (props) => {
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
-                    <button onClick={() => window.location.assign('/cardioCenter') }>Всі послуги</button>
+                  <Link to='/cardioCenter'><button>Всі послуги</button></Link>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
@@ -59,7 +59,7 @@ const IndexHeader = (props) => {
                         Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
-                    <button onClick={() => window.location.assign('/traumaCenter') }>Всі послуги</button>
+                   <Link to='/traumaCenter'><button>Всі послуги</button></Link>
 
 
                 </div>

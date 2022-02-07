@@ -135,7 +135,6 @@
     .traumaCentre button {margin-left: 7%;}
 
 }
-
 @media (max-width: 768px) and (min-width: 576px) {
     body, html{
         width: 100%;
@@ -171,10 +170,10 @@
         margin-left: 25%;
     }
     .cardioCentre .services, .traumaCentre .services {
-        width: 90%;
+        width: 100%;
         margin-top: 21px;
     }
-    .cardioCentre .services {margin-left: 3%;}
+    .cardioCentre .services {margin-left: -8%;}
     .cardioCentre .services li, .traumaCentre .services li  {
         font-size: 75%;
     }
@@ -235,7 +234,6 @@
         height: 416px;
         margin: 0;
         background-color: #32495E;
-        opacity: 97%;
     }
     .menu li:first-child{ margin-top:60px;}
     .menu  li {margin-bottom:  26px;}
@@ -247,7 +245,7 @@
     }
     #menu__toggle:checked ~ .menu {
         visibility: visible;
-        z-index: 2;
+        z-index: 102;
         right: 0;
     }
     .cardioCentre { background-color:  #E95258; }
@@ -271,7 +269,7 @@
     }
 
     .cardioCentre .services, .traumaCentre .services {
-        width: 100%;
+        width: 90%;
         margin-top: 25px;
         text-align: left;
         margin-left: 5%;
@@ -295,7 +293,5 @@
         margin-bottom: 30px;
         margin-left: 5%;
     }
-
-    .social {visibility: hidden}
 
 }
