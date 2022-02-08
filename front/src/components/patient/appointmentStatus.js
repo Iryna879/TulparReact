@@ -3,6 +3,7 @@ import {useAuth0} from "@auth0/auth0-react";
 import ProfileMenu from "./profileMenu";
 import {Link} from "react-router-dom";
 import { Circles } from 'react-loader-spinner';
+import "./style/bookingSlots.css";
 
 const AppointmentStatus = () => {
     const [appointments, setAppointments] = useState([]);

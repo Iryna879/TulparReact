@@ -2,6 +2,14 @@
     th, td {
         font-size: 85%;
     }
+    table th button.btn-danger {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+    }
 }
 
 @media all and (max-width: 576px) {
