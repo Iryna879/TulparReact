@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LeftSide from "./leftside";
-
+import "./style/bookingSlots.css";
 
 const BookingSlots = () => {
     const location = useLocation();
@@ -51,29 +51,19 @@ const BookingSlots = () => {
 
   return (
       allData.map(data => {
-              console.log(data);
-              console.log(dateToSend);
+              //console.log(data);
+              //console.log(dateToSend);
               const result = data.dates.filter(date => date.date === dateToSend);
-              console.log("res" + result);
+              //console.log("res" + result);
               //setSlots(result.slots);
           return (
-          result.map (r =>
-
-      <div className="bg-dark" style={{ height: "100vh" }}>
+          result.map (r => <>
+              <LeftSide />
+      <div className="bg-dark" style={{ height: "83.8vh" }}>
           <div>
-              <div className="row m-5" style={{ maxWidth: "100%" }}>
-                  <div className="col-3 col-md-3 p-4 bg-white ">
-                      <LeftSide />
-                  </div>
-                  <div
-                      className="col-9 col-md-9 p-4"
-                      style={{
-                          border: "15px solid yellow ",
-                          height: "80vh",
-                          backgroundColor: "#6c757d",
-                      }}
-                  >
-                      <table className="table table-hover table-dark">
+              <div className="row m-5" >
+                  <div className="col-12 p-4">
+                      <table className="table table-hover table-light">
                           <thead>
                           <tr>
                               <th scope="col">Час</th>
@@ -107,7 +97,8 @@ const BookingSlots = () => {
                   </div>
               </div>
           </div>
-      </div> ))
+      </div>
+          </>))
           }
       )
   );
