@@ -1,11 +1,29 @@
+.calendarFluid {
+    min-height: 83.8vh;
+    height: auto;
+}
+
 .calendar h3 {
     font-family: "TTHoves-Bold";
     font-weight: 300;
-    font-size: 34px;
+    font-size: 212.5%;
     line-height: 42px;
     text-transform: uppercase;
     color: #F9F9F9;
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+
+@media (max-width: 768px) and (min-width: 575px) {
+    .calendar h3 {
+        font-weight: 200;
+        font-size: 175%;
+        line-height: 36px;
+    }
+}
+
+@media all and (max-width: 576px) {
+
 }
