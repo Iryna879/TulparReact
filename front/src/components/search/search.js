@@ -121,7 +121,7 @@ const Search = () => {
             
             <Scrollbar
                 noScrollX
-                style={{ position: "absolute", marginTop:"20px", maxHeight: "70%", width: "85%" }}
+                style={{ position: "absolute", marginTop:"20px", maxHeight: "70%", width: "88%" }}
                 className="col-12"
             >
                 <div className="row">
@@ -130,12 +130,12 @@ const Search = () => {
                             <div className="card">
                                 <div className="card-body">
                                     <div className="text-info">
-                                        <h6>
-                                            <span className="text-uppercase"> {doc.name + " " + doc.surname}</span>
+                                        <h6 className="text-uppercase">
+                                             {doc.name + " " + doc.surname}
                                         </h6>
                                     </div>
-                                    <div>Спеціалізація : {doc.specialization}</div>
-                                    <div>{doc.jobTitle}</div>
+                                    <div className="job">Спеціалізація : {doc.specialization}</div>
+                                    <div className="job">{doc.jobTitle}</div>
                                     <div className="row mb-0 pb-0">
                                         <div
                                             className=" col align-self-end col-md-2 offset-md-3 inline"
