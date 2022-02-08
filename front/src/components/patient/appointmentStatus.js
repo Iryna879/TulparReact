@@ -50,29 +50,17 @@ const AppointmentStatus = () => {
             )
 }
 
-if(isLoading === true) {
-    return (<div><Circles/></div>)
-}
+/*if(isLoading === true) {
+    return (<div></div>)
+}*/
     return (
-        <div className="bg-dark" style={{ height: "100vh" }}>
-            <div>
-                <div className="row m-5" style={{ maxWidth: "100%" }}>
-                    <div
-                        className="col-3 col-md-3 p-4 bg-white "
-                        style={{ height: "80vh" }}
-                    >
-                        <LeftSide />
-                    </div>
-                    {isLoading && <h1>Loading</h1>}
-                    {!isLoading && <div
-                        className="col-9 col-md-9 p-4"
-                        style={{
-                            border: "15px solid yellow ",
-                            height: "80vh",
-                            backgroundColor: "#6c757d",
-                        }}
-                    >
-                        <table className="table table-hover table-dark">
+        <>
+            <LeftSide />
+        <div className="bg-dark" style={{ height: "83.8vh" }}>
+                <div className="row m-5" >
+                    {isLoading && <h1><Circles/></h1>}
+                    {!isLoading && <div className="col-12 p-4">
+                        <table className="table table-hover table-light">
                             <thead>
                             <tr>
                                 <th scope="col">Дата</th>
@@ -100,7 +88,7 @@ if(isLoading === true) {
                     </div> }
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
