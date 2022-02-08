@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LeftSide from "./leftside";
-import "./style/bookingSlots.css";
 
 const BookingSlots = () => {
     const location = useLocation();
@@ -83,7 +82,7 @@ const BookingSlots = () => {
                                                   state={{
                                                       dateId: r._id,
                                                       doctor: doctor,
-                                                      slotId: slot._id,
+                                                      slot: slot,
                                                   }}
                                           >
                                               Вільно

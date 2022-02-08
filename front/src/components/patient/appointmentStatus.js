@@ -6,15 +6,13 @@ import { Circles } from 'react-loader-spinner';
 
 const AppointmentStatus = () => {
     const [appointments, setAppointments] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const {user} = useAuth0();
     const { email} = user;
 
 
 
     useEffect(() => {
-        setIsLoading(true)
-
         fetch("/api/appointments/upcoming-appointments/" + email)
             .then(res => {
                 // console.log(res);

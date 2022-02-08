@@ -2,11 +2,12 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
 import LeftSide from "./leftside";
+import "./style/confirmation.css";
 
 const Confirmation = () => {
 
     const location = useLocation();
-    const { dateId, doctor, slotId } = location.state;
+    const { dateId, doctor, slot } = location.state;
     // console.log("date: " + dateId + " " + "slot: " + slotId + "doctor: " + doctor._id);
     const {user} = useAuth0();
     const {name, email} = user;
@@ -20,7 +21,7 @@ const Confirmation = () => {
                     body: JSON.stringify({
                         patientEmail: email,
                         patientName: name,
-                        slotId: slotId,
+                        slotId: slot._id,
                         dateId: dateId,
                         doctorId: doctor._id
                     })
@@ -39,26 +40,12 @@ const Confirmation = () => {
         }
 
     return (
-        <div className="bg-dark" style={{ height: "100vh" }}>
-            <div>
-                <div className="row m-5" style={{ maxWidth: "100%" }}>
-                    <div
-                        className="col-3 col-md-3 p-4 bg-white "
-                        style={{ height: "80vh" }}
-                    >
-                        <LeftSide />
-                    </div>
-                    <div
-                        className="col-9 col-md-9 p-4 "
-                        style={{
-                            border: "15px solid yellow ",
-                            height: "80vh",
-                            backgroundColor: "#6c757d",
-                        }}
-                    >
+        <>
+            <LeftSide />
+        <div className="bg-dark" style={{ height: "83.8vh" }}>
+                <div className="row m-5 d-flex justify-content-center " >
+                    <div className="col-6 p-4 receipt">
                         <div className="container text-white">
-                            <div className="row">
-                                <div className="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
                                     <div className="row">
                                         <div className="col-xs-6 col-sm-6 col-md-6">
                                             <address>
@@ -68,17 +55,14 @@ const Confirmation = () => {
                                                 <br />
                                                 Миколаїв, 54001
                                                 <br />
-                                                <abbr title="Phone">P:</abbr> (213) 484-6829
+                                                <abbr title="Phone">P:</abbr> (512) 48-44-68
                                             </address>
                                         </div>
-                                       {/* <div className="col-xs-6 col-sm-6 col-md-6 text-right">
+                                        <div className="col-xs-6 col-sm-6 col-md-6 text-right">
                                             <p>
-                                                <em>Date: 1st November, 2013</em>
+                                                <em>Час: {slot.time} </em>
                                             </p>
-                                            <p>
-                                                <em>Receipt #: 34522677W</em>
-                                            </p>
-                                        </div>*/}
+                                        </div>
                                     </div>
                                     <div className="row">
                                         <div className="text-center">
@@ -105,6 +89,7 @@ const Confirmation = () => {
                                             </tr>
                                             </tbody>
                                         </table>
+                                        <div className="buttons">
                                         <Link to='/profile/appointment-status' >
                                             <button
                                                 type="button"
@@ -117,18 +102,22 @@ const Confirmation = () => {
                                         <Link to='/profile' >
                                         <button
                                             type="button"
-                                            className="btn btn-success btn-lg btn-block">
+                                            className="btn btn-success btn-lg btn-block ">
                                             Назад
                                         </button>
                                         </Link>
+                                        </div>
+
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
-                    </div>
+
                 </div>
-            </div>
-        </div>
+        </>
     )
 }
 

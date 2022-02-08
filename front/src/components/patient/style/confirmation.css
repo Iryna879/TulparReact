@@ -1,0 +1,13 @@
+.receipt {
+    border: 5px solid #3AA8E8;
+    height: 60vh;
+    background-color: #E95258;
+    margin-top: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
