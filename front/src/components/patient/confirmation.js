@@ -42,12 +42,14 @@ const Confirmation = () => {
     return (
         <>
             <ProfileMenu />
-        <div className="bg-dark" style={{ height: "83.8vh" }}>
-                <div className="row m-5 d-flex justify-content-center " >
-                    <div className="col-6 p-4 receipt">
+        <div className="bg-dark confirmation" >
+                <div className="row m-5 mb-0 d-flex justify-content-center " >
+                    <div className="col-xl-6 col-lg-6
+                    col-md-8 col-sm-8 col-10
+                     p-4 receipt">
                         <div className="container text-white">
                                     <div className="row">
-                                        <div className="col-xs-6 col-sm-6 col-md-6">
+                                        <div className="col-xs-6 col-sm-6 col-md-6 cAddress">
                                             <address>
                                                 <strong>Тулпар</strong>
                                                 <br />
@@ -58,7 +60,7 @@ const Confirmation = () => {
                                                 <abbr title="Phone">P:</abbr> (512) 48-44-68
                                             </address>
                                         </div>
-                                        <div className="col-xs-6 col-sm-6 col-md-6 text-right">
+                                        <div className="col-xs-6 col-sm-6 col-md-6 text-right time">
                                             <p>
                                                 <em>Час: {slot.time} </em>
                                             </p>
@@ -96,13 +98,12 @@ const Confirmation = () => {
                                                 className="btn btn-success btn-lg btn-block"
                                             onClick={() => bookSlot()} >
                                                 Підтверджую
-                                                <span className="glyphicon glyphicon-chevron-right" />
                                             </button>
                                         </Link>
                                         <Link to='/profile' >
                                         <button
                                             type="button"
-                                            className="btn btn-success btn-lg btn-block ">
+                                            className="btn btn-primary btn-lg btn-block ">
                                             Назад
                                         </button>
                                         </Link>
