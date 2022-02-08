@@ -3,7 +3,7 @@ import "react-calendar/dist/Calendar.css";
 import { Button } from "reactstrap";
 import { Link, useLocation } from "react-router-dom";
 import Calendar from "react-calendar";
-import LeftSide from "./leftside";
+import ProfileMenu from "./profileMenu";
 import "./style/selectDate.css";
 
 const SelectDate = () => {
@@ -17,7 +17,7 @@ const SelectDate = () => {
     previous.setDate(previous.getDate() - 1);
     return (
         <>
-            <LeftSide/>
+            <ProfileMenu/>
         <div className="bg-dark container-fluid" style={{ height: "83.8vh" }}>
             <div>
                 <div className="row m-5 pt-5 calendar" >

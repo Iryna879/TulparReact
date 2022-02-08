@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Circles } from 'react-loader-spinner';
-import LeftSide from "./leftside";
+import ProfileMenu from "./profileMenu";
 import "./style/profilePage.css";
 
 const ProfilePage = withAuthenticationRequired(
@@ -11,7 +11,7 @@ const ProfilePage = withAuthenticationRequired(
 
         return (
             <div>
-                <LeftSide />
+                <ProfileMenu />
                 <h1 className="profile">Особистий кабінет</h1>
                 <div>
                     <img src={picture} alt="user"/>

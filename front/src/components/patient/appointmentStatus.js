@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {useAuth0} from "@auth0/auth0-react";
-import LeftSide from "./leftside";
+import ProfileMenu from "./profileMenu";
 import {Link} from "react-router-dom";
 import { Circles } from 'react-loader-spinner';
 
@@ -55,7 +55,7 @@ const AppointmentStatus = () => {
 }*/
     return (
         <>
-            <LeftSide />
+            <ProfileMenu />
         <div className="bg-dark" style={{ height: "83.8vh" }}>
                 <div className="row m-5" >
                     {isLoading && <h1><Circles/></h1>}

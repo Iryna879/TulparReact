@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
-import LeftSide from "./leftside";
+import ProfileMenu from "./profileMenu";
 import "./style/confirmation.css";
 
 const Confirmation = () => {
@@ -41,7 +41,7 @@ const Confirmation = () => {
 
     return (
         <>
-            <LeftSide />
+            <ProfileMenu />
         <div className="bg-dark" style={{ height: "83.8vh" }}>
                 <div className="row m-5 d-flex justify-content-center " >
                     <div className="col-6 p-4 receipt">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import LeftSide from "./leftside";
+import ProfileMenu from "./profileMenu";
 
 const BookingSlots = () => {
     const location = useLocation();
@@ -57,7 +57,7 @@ const BookingSlots = () => {
               //setSlots(result.slots);
           return (
           result.map (r => <>
-              <LeftSide />
+              <ProfileMenu />
       <div className="bg-dark" style={{ height: "83.8vh" }}>
           <div>
               <div className="row m-5" >

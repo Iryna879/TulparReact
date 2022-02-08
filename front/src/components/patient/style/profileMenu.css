@@ -1,0 +1,69 @@
+
+.logo {
+    margin-top: 0;
+}
+.profileMenu {
+    display: flex;
+    align-items: center;
+   /* margin-top: 25px;*/
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+}
+.profileMenu li {
+    margin-right: 15px;
+}
+.profileMenu li a{
+    text-decoration: none;
+    color: #32495E;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .profileMenu {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .profileMenu {
+        font-size: 100%;
+        line-height: 15px;
+        text-align: center;
+    }
+    .profileMenu li {
+        margin-right: 10px;
+    }
+    .profileMenu li button {
+        width: 50px;
+        height: 40px;
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 575px) {
+    .profileMenu {
+        font-size: 80%;
+        line-height: 12px;
+        text-align: center;
+    }
+    .profileMenu li {
+        margin-right: 12px;
+    }
+    .profileMenu li button {
+        width: 40px;
+        height: 30px;
+        font-size: 87.5%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+}
+
+
+
