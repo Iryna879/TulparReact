@@ -1,0 +1,23 @@
+
+.logo {
+    margin-top: 20px;
+}
+.profileMenu {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-family: "TTHoves-Medium";
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+}
+.profileMenu li {
+    margin-right: 15px;
+}
+.profileMenu li a{
+    text-decoration: none;
+    color: #32495E;
+}
+
+
+

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./dashboard.css";
 import {useAuth0} from "@auth0/auth0-react";
 import LeftSide from "./leftside";
 import {Link} from "react-router-dom";
