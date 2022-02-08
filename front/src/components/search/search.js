@@ -11,6 +11,7 @@ import {
 import Trie from "./trie.js";
 import specialization from "./specialization";
 import { Link } from "react-router-dom";
+import "../patient/style/searchDoctor.css";
 
 const Search = () => {
     const [text, setText] = useState();
@@ -96,17 +97,17 @@ const Search = () => {
         <div>
             <Row className="mb-3">
                 <Col>
-                    <InputGroup>
+                    <InputGroup className="inputGroup">
                         <Input
                             value={text}
                             type="text"
                             placeholder="Хірург"
                             onChange={onTextChanged}
-                            className="mb-1"
+                            className="mb-1 search"
                         />
-                        <div style={{ height: 10 }} className="">
+                        <div >
                                 <Button
-                                    className="h-10 d-inline-block"
+                                    className="h-10 d-inline-block buttonSearch"
                                     color="primary"
                                     onClick={() => UpdateDisplay(text)}
                                 >
@@ -120,12 +121,12 @@ const Search = () => {
             
             <Scrollbar
                 noScrollX
-                style={{ position: "absolute", top:"20%", minHeight: "50%", width: "60%" }}
-                className="col-12 col-md-12"
+                style={{ position: "absolute", marginTop:"20px", maxHeight: "70%", width: "85%" }}
+                className="col-12"
             >
                 <div className="row">
                     {doctor.map((doc) => (
-                        <div className="col-sm-6 mb-2" key={doc._id}>
+                        <div className="col-6 mb-5" key={doc._id}>
                             <div className="card">
                                 <div className="card-body">
                                     <div className="text-info">

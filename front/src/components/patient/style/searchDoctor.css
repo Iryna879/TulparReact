@@ -1,0 +1,17 @@
+.inputGroup {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 70%;
+    margin-top: 25px;
+}
+
+.buttonSearch {
+    height: 40px;
+    margin-left: 10px;
+}
+
+
+
