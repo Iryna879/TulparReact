@@ -1,0 +1,11 @@
+.calendar h3 {
+    font-family: "TTHoves-Bold";
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}

@@ -4,6 +4,7 @@ import { Button } from "reactstrap";
 import { Link, useLocation } from "react-router-dom";
 import Calendar from "react-calendar";
 import LeftSide from "./leftside";
+import "./style/selectDate.css";
 
 const SelectDate = () => {
     const [date, setDate] = useState(new Date());
@@ -15,24 +16,13 @@ const SelectDate = () => {
     let previous = new Date();
     previous.setDate(previous.getDate() - 1);
     return (
-        <div className="bg-dark" style={{ height: "100vh" }}>
+        <>
+            <LeftSide/>
+        <div className="bg-dark container-fluid" style={{ height: "83.8vh" }}>
             <div>
-                <div className="row m-5" style={{ maxWidth: "100%" }}>
-                    <div
-                        className="col-3 col-md-3 p-4 bg-white "
-                        style={{ height: "80vh" }}
-                    >
-                        <LeftSide />
-                    </div>
-                    <div
-                        className="col-9 col-md-9 p-4"
-                        style={{
-                            border: "15px solid yellow ",
-                            height: "80vh",
-                            backgroundColor: "#6c757d",
-                        }}
-                    >
-                        <div className="d-flex justify-content-center">
+                <div className="row m-5 pt-5 calendar" >
+                        <h3 >Оберіть дату</h3>
+                        <div className="col-12 d-flex justify-content-center  ">
                             <div>
                                 <Calendar
                                     tileDisabled={({ date }) =>
@@ -51,13 +41,15 @@ const SelectDate = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="row justify-content-center mt-5 ml-5">
-                            <div className="col-2">
+                </div>
+
+                <div className="row d-flex justify-content-center mt-5 ">
+                            <div className="col-1 offset-5">
                                 <Link to="/profile/searchdoctor">
                                     <Button color="danger">Назад</Button>
                                 </Link>
                             </div>
-                            <div className="col-4">
+                            <div className="col-6">
                                 <Link to="/profile/book-slot"
                                         state={{
                                     date: date,
@@ -71,8 +63,7 @@ const SelectDate = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+        </>
     );
 };
 
