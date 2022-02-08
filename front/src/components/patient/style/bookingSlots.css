@@ -1,0 +1,9 @@
+@media (max-width: 768px) and (min-width: 575px) {
+    th, td {
+        font-size: 85%;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+}
