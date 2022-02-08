@@ -103,7 +103,7 @@ const Search = () => {
                             type="text"
                             placeholder="Хірург"
                             onChange={onTextChanged}
-                            className="mb-1 search"
+                            className="search"
                         />
                         <div >
                                 <Button
