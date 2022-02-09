@@ -17,6 +17,7 @@ const Search = () => {
     const [text, setText] = useState();
     const [suggestions, setSuggestions] = useState([]);
 
+
     const memoized_trie = useMemo(() => {
         const trie = new Trie();
 

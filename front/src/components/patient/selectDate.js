@@ -55,7 +55,7 @@ const SelectDate = () => {
                                 <Link to="/profile/book-slot"
                                         state={{
                                     date: date,
-                                    doctor: doctor
+                                    doctor: doctor,
                                 }}
                                 >
                                     <Button color="primary">Далі</Button>

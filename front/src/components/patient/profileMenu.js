@@ -20,7 +20,7 @@ const ProfileMenu = () => {
             <ul className="profileMenu">
                 <li><Link to="/">Головна</Link></li>
                 <li><Link to="/profile">Персональні дані</Link></li>
-                <li><Link to="/profile/searchdoctor">Пошук лікаря</Link></li>
+                <li><Link to="/profile/searchdoctor" >Пошук лікаря</Link></li>
                 <li><Link to="/profile/appointment-status">Записи до лікарів</Link></li>
                 <li> <LogoutButton/></li>
             </ul>

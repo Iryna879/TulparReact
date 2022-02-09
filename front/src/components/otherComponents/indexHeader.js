@@ -29,7 +29,7 @@ const IndexHeader = (props) => {
                         <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
                     <div className="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3
-                    col-sm-6 offset-sm-3 col-2 offset-4 menuDiv">
+                    col-sm-6 offset-sm-3 col-3 offset-3 menuDiv">
                         <input id="menu__toggle" type="checkbox"/>
                         <label className="menu__btn" htmlFor="menu__toggle">
                             <span/>
