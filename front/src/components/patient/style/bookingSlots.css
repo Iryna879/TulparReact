@@ -14,4 +14,12 @@
 
 @media all and (max-width: 576px) {
 
+    table th button.btn-danger {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+    }
 }
