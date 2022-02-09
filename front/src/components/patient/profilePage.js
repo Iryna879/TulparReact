@@ -13,7 +13,7 @@ const ProfilePage = withAuthenticationRequired(
             <div>
                 <ProfileMenu />
                 <h1 className="profile">Особистий кабінет</h1>
-                <div>
+                <div className="user">
                     <img src={picture} alt="user"/>
                     <h3>Ім'я: {name} </h3>
                     <p>Пошта: {email}</p>

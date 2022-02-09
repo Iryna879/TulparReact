@@ -26,7 +26,7 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 575px) {
+@media (max-width: 768px) and (min-width: 576px) {
     .profile {
         font-weight: 200;
         font-size: 137.5%;
@@ -35,6 +35,17 @@
     }
 }
 
-@media all and (max-width: 576px) {
-
+@media all and (max-width: 575px) {
+    .profile {
+        font-weight: 200;
+        font-size: 100%;
+        line-height: 18px;
+        margin-top: 50px;
+    }
+    .user img {
+        width: 40%;
+        height: auto;
+    }
+    .user h3 { font-size: 100%}
+    .user p { font-size: 75%;}
 }
