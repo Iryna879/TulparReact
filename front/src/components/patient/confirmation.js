@@ -42,25 +42,25 @@ const Confirmation = () => {
     return (
         <>
             <ProfileMenu />
-        <div className="bg-dark confirmation" >
-                <div className="row m-5 mb-0 d-flex justify-content-center " >
+        <div className="bg-dark container-fluid confirmation" >
+                <div className="row mt-5  d-flex justify-content-center " >
                     <div className="col-xl-6 col-lg-6
                     col-md-8 col-sm-8 col-10
                      p-4 receipt">
                         <div className="container text-white">
                                     <div className="row">
-                                        <div className="col-xs-6 col-sm-6 col-md-6 cAddress">
+                                        <div className="col-xl-6 col-md-6 col-sm-6 col-8 cAddress">
                                             <address>
                                                 <strong>Тулпар</strong>
                                                 <br />
-                                                Садова, 7
+                                                Шевченка, 240/1
                                                 <br />
                                                 Миколаїв, 54001
                                                 <br />
-                                                <abbr title="Phone">P:</abbr> (512) 48-44-68
+                                                <abbr title="Phone">P:</abbr> (093) 032-12-19
                                             </address>
                                         </div>
-                                        <div className="col-xs-6 col-sm-6 col-md-6 text-right time">
+                                        <div className="col-xl-6 col-md-6 col-sm-6 col-4 text-right time">
                                             <p>
                                                 <em>Час: {slot.time} </em>
                                             </p>
@@ -79,11 +79,11 @@ const Confirmation = () => {
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td className="col-md-9">
+                                                <td className="col-9">
                                                     <em>{doctor.name + " "  + doctor.surname}</em>
                                                 </td>
                                                 <td
-                                                    className="col-md-1"
+                                                    className="col-1"
                                                     style={{ textAlign: "center" }}
                                                 >
                                                     {doctor.specialization}
