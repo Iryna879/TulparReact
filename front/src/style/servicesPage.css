@@ -6,6 +6,7 @@
 .services_photoServ {
     display: flex;
 }
+.services_photoServ li { width: 25%;}
 .services_redInfo {
     position: absolute;
     visibility: hidden;
