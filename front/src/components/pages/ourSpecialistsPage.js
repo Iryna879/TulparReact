@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header"
-import "./../../style/ourSpecialists.css";
 import logo from  "./../../img/ourSpecialistsLogo.png";
 import {Footer} from "../otherComponents/footer";
 import WhyWe from "../otherComponents/whyWe";

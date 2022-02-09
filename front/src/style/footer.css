@@ -9,14 +9,14 @@ footer.container-fluid {
 .mapSite h2, .contactUs h2 {
     font-family: "TTHoves-ExtraBold";
     font-weight: 800;
-    font-size: 20px;
+    font-size: 125%;
     line-height: 20px;
     color: #F9F9F9;
     margin-bottom: 20px;
 }
 .mapSite ul li a, .contactUs ul li  {
     font-family: "TT Hoves";
-    font-size: 18px;
+    font-size: 112.5%;
     line-height: 17px;
     color: #F9F9F9;
     margin-bottom: 10px;
@@ -32,14 +32,14 @@ footer.container-fluid {
 .up p {
     position: absolute;
     font-family: "TT Hoves";
-    font-size: 14px;
+    font-size: 87.5%;
     color: #F9F9F9;
     transform: rotate(-90deg);
     margin-top: 20px;
 }
 .copyright p {
     font-family:"TT Hoves";
-    font-size: 16px;
+    font-size: 100%;
     color: #F9F9F9;
     margin-top: 40px;
 }

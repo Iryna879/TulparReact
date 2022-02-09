@@ -8,6 +8,7 @@ body,ul{
     font-family: "TT Hoves";
 }
 ul{list-style-type: none;}
+.container {min-width: 90%;}
 a{
     text-decoration: none;
     color: #32495E;
@@ -17,7 +18,6 @@ a{
     height: 800px;
     background-image: url("../img/background-fluid.png");
     background-size: cover;
-    /*background-size: contain;*/
     background-repeat: no-repeat;
 }
 .logo {
@@ -58,10 +58,10 @@ a{
     display: flex;
     margin-top: 20px;
     font-family: "TTHoves-Medium";
-    font-size: 18px;
+    font-size: 112.5%;
     line-height: 18px;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 7%;
 }
 .menu li {
     margin-right: 40px;
@@ -84,34 +84,34 @@ a{
     font-family: "TTHoves-Bold";
     margin-top: 135px;
     margin-left: 25%;
-    width: 428px;
+    width: 64%;
     height: 72px;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 200%;
     line-height: 38px;
     text-align: right;
     text-transform: uppercase;
-    color: #000000 /*#F9F9F9*/;
+    color: #000000;
 }
 
 .cardioCentre p {
     font-family: "TTHoves-DemiBold";
-    width: 220px;
+    width: 32%;
     height: 102px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 20px;
     text-align: right;
     color: #000000 /* #F9F9F9*/;
     margin-top: 50px;
-    margin-left: 50% /*380px*/;
+    margin-left: 56%;
 }
 
 .cardioCentre .services {
-    width: 250px;
+    width: 36%;
     margin-top: 29px;
     text-align: right;
-    margin-left: 50% /* 350px*/;
+    margin-left: 54% /* 350px*/;
 }
 
  .services li {
@@ -128,8 +128,8 @@ a{
     border: 1px solid #000000 /*#F9F9F9*/;
     box-sizing: border-box;
     border-radius: 25px;
-    margin-left: 440px;
-    width: 160px;
+    margin-left: 63%;
+    width: 23%;
     height : 50px;
     background-color: transparent;
     color: #F9F9F9;
@@ -138,38 +138,36 @@ a{
 .cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
     background-color: #000000;
 }
-.cardioCentre button, .traumaCentre button {
-    margin-top: 20px;
-}
+.cardioCentre button, .traumaCentre button {margin-top: 20px;}
 
 .traumaCentre h6 {
-    width: 450px;
+    width: 64%;
     height: 72px;
     font-family: "TTHoves-Bold";
     font-weight: 800;
-    font-size: 32px;
+    font-size: 200%;
     line-height: 38px;
     text-transform: uppercase;
     color: #32495E;
     margin-top: 135px;
-    margin-left: 100px;
+    margin-left: 7% /*100px*/;
 }
 
 .traumaCentre p {
     font-family: "TTHoves-DemiBold";
-    width: 220px;
+    width: 32%;
     height: 102px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 20px;
     color: #32495E;
-    margin-left: 100px ;
+    margin-left: 7% /*100px*/ ;
     margin-top: 50px;
 }
 .traumaCentre .services {
-    width: 250px;
+    width: 36%;
     margin-top: 29px;
-    margin-left: 100px;
+    margin-left: 7% /*100px*/;
 }
 
 .traumaCentre .services li {
@@ -185,8 +183,8 @@ a{
     border: 1px solid #32495E;
     box-sizing: border-box;
     border-radius: 25px;
-    margin-left: 100px;
-    width: 160px;
+    margin-left: 7% /* 100px*/;
+    width: 23%;
     height : 50px;
     background-color: transparent;
     color: #32495E;
@@ -200,25 +198,21 @@ a{
 .ourServices h6 {
     font-family: "TTHoves-Bold";
     font-weight: 800;
-    font-size: 44px;
+    font-size: 275%;
     line-height: 52px;
     text-transform: uppercase;
     color: #F9F9F9;
     margin-top: 70px;
     margin-bottom: 50px;
 }
-.index_photoServ {
-    display: flex;
-}
+.index_photoServ {display: flex;}
 
 .index_redInfo {
     position: absolute;
     visibility: hidden;
     z-index: 1;
 }
-.index_photoServ li {
-    margin-right: 30px;
-}
+.index_photoServ li {margin-right: 3%; width: 25%; }
 #cardioIndex {
     width: 279px;
     height: 240px ;
@@ -226,7 +220,7 @@ a{
 .index_photoServ li  p{
     font-family: "TTHoves-Bold";
     font-weight: 800;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 22px;
     color: #F9F9F9;
     width: 241px;
@@ -249,7 +243,7 @@ a{
 .index_redInfo .redInfoText p:first-child {
     font-family: "TTHoves-Bold";
     font-weight: 800;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 20px;
     color: #F9F9F9;
     padding-top: 20px ;
@@ -258,8 +252,7 @@ a{
 }
 .index_redInfo .redInfoText p:last-child {
     font-family: "TT Hoves";
-    font-weight: normal;
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 17px;
     color: #F9F9F9;
     margin-top: 20px ;
@@ -273,8 +266,8 @@ a{
     box-sizing: border-box;
     border-radius: 25px;
     margin-top: 72px;
-    margin-left: 580px;
-    width: 160px;
+    margin-left: 44%;
+    width: 12%;
     height : 50px;
     background-color: transparent;
     color: #F9F9F9;

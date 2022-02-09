@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header"
-import "./../../style/contactPage.css";
 import logo from  "./../../img/contactLogo.png";
 import {Footer} from "../otherComponents/footer";
 import Recommend from "../otherComponents/recommend";
