@@ -6,6 +6,7 @@
         height: auto ;
     }
     .menu {
+        max-width: 90%;
         font-size: 100%;
         margin-left: 20px;
         margin-top: 15px;
@@ -74,9 +75,10 @@
         height: auto ;
     }
     .menu {
+        max-width: 90%;
         font-size: 93.75%;
         margin-left: 20px;
-        margin-top: -45px;
+        margin-top: 20px;
     }
     .menu li {
         margin-right: 7%;
@@ -135,7 +137,7 @@
     .traumaCentre button {margin-left: 7%;}
 
 }
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 767px) and (min-width: 576px) {
     body, html{
         width: 100%;
     }
@@ -146,6 +148,7 @@
         height: auto ;
     }
     .menu {
+        max-width: 90%;
         font-size: 75%;
         margin-left: 20px;
     }
@@ -216,7 +219,7 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
     .index_fluid {background: none; height: auto; min-width:100%;}
     .index_fluid div.row:first-child {background-color: #E95258;}
     .container{min-width: 100%}
