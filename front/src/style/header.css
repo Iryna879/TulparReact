@@ -26,7 +26,7 @@ ul{list-style-type: none;}
 .cardioCenter_menu, .traumaCenter_menu, .services_menu,
 .contact_menu, .ourSpecialists_menu   {
     display: flex;
-    margin-top: 20px;
+    margin-top: -30px;
     font-family: "TTHoves-Medium";
     font-size: 18px;
     text-align: left;
