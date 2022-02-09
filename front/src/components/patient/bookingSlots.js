@@ -62,7 +62,7 @@ const BookingSlots = () => {
       <div className="bg-dark" style={{ height: "83.8vh" }}>
           <div>
               <div className="row m-5" >
-                  <div className="col-12 p-4">
+                  <div className="col-12 p-xl-4 p-lg-4 p-md-4 p-sm-3 p-2 pt-4">
                       <table className="table table-hover table-light">
                           <thead>
                           <tr>

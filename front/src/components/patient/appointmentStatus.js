@@ -60,7 +60,7 @@ const AppointmentStatus = () => {
         <div className="bg-dark" style={{ height: "83.8vh" }}>
                 <div className="row m-5" >
                     {isLoading && <h1><Circles/></h1>}
-                    {!isLoading && <div className="col-12 p-4">
+                    {!isLoading && <div className="col-12 p-xl-4 p-lg-4 p-md-4 p-sm-3 p-2 pt-4">
                         <table className="table table-hover table-light">
                             <thead>
                             <tr>
