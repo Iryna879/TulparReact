@@ -8,6 +8,7 @@ import {CardioCenterPage} from "./components/pages/cardioCenterPage";
 import {TraumaCenterPage} from "./components/pages/traumaCenterPage";
 import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
+import "./style/header.css";
 import "./media/mediaHeader.css";
 import "./media/mediaWhatIsBlock.css";
 import "./media/mediaServicesRow.css";

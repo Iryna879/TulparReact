@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import Menu from "../otherComponents/menu";
 
+
 const  Header = (props) => {
     const {name, logo} = props;
     const [items, setItems] = useState([]);

@@ -20,38 +20,52 @@ ul{list-style-type: none;}
 .services_fluid {height: 348px; background-image: url("../img/servBack.png");}
 .contact_fluid {height: 348px; background-image: url("../img/backContact.png");}
 .ourSpecialists_fluid {background-image: url("../img/ourSpecialistsBack.png");}
+
 .logo { margin-top: 20px;}
-.cardioCenter_menu {
+
+.cardioCenter_menu, .traumaCenter_menu, .services_menu,
+.contact_menu, .ourSpecialists_menu   {
     display: flex;
-    margin-top: -65px;
+    margin-top: 20px;
     font-family: "TTHoves-Medium";
     font-size: 18px;
     text-align: left;
+    line-height: 18px;
     margin-left: 40px;
 }
-.cardioCenter_menu li {
+
+.cardioCenter_menu li, .traumaCenter_menu li,
+.services_menu li, .contact_menu li , .ourSpecialists_menu li{
     margin-right: 40px;
 }
-.cardioCenter_menu li a{
-    text-decoration: none;
-    color: #F9F9F9;
-}
-.cardioCenter_text h6 {
+.cardioCenter_menu li a, .traumaCenter_menu li a,
+.services_menu li a, .contact_menu li a,
+.ourSpecialists_menu li a{text-decoration: none;}
+
+.cardioCenter_menu li a, .contact_menu li a {color: #F9F9F9;}
+.traumaCenter_menu li a, .services_menu li a, .ourSpecialists_menu li a{color: #32495E;}
+
+.cardioCenter_text h6, .traumaCenter_text h6, .services_text h6,
+.contact_text h6, .ourSpecialists_text h6 {
     width: 672px;
     font-family: "TTHoves-ExtraBold";
     font-weight: 800;
     font-size: 44px;
     line-height: 52px;
     text-transform: uppercase;
-    color: #F9F9F9;
     margin-top: 60px;
 }
-.cardioCenter_text p {
+.cardioCenter_text h6, .contact_text h6 {color: #F9F9F9;}
+.traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6 {color: #32495E;}
+
+.cardioCenter_text p, .traumaCenter_text p,
+.services_text p, .ourSpecialists_text p {
     width: 780px;
     font-family: "TTHoves-DemiBold";
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    color: #F9F9F9;
     margin-top: 20px;
 }
+.cardioCenter_text p  {color: #F9F9F9;}
+.traumaCenter_text p, .services_text p, .ourSpecialists_text p {color: #32495E;}
