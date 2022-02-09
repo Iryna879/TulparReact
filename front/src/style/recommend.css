@@ -1,12 +1,12 @@
 .recommend h6 {
     font-family: "TTHoves-ExtraBold";
     font-weight: 800;
-    font-size: 44px;
+    font-size: 275%;
     text-transform: uppercase;
     color: #32495E;
     margin-top: 70px;
     margin-bottom: 50px;
 }
 .recommend ul {display: flex}
-.recommend ul li {margin-right: 70px; margin-bottom: 70px;}
+.recommend ul li {margin-right: 7%; margin-bottom: 70px; width:20%;}
 .recommend ul li:last-child {margin-right:0;}

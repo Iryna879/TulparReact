@@ -29,7 +29,6 @@
     }
     .map h6 {
         font-size: 243.75% /*39px*/;
-        margin-top: 20px;
         margin-bottom: 26px;
     }
     iframe {height:300px;}
@@ -49,14 +48,13 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 577px) {
+@media (max-width: 767px) and (min-width: 576px) {
     .map {
         margin-bottom: 26px;
         min-width: 100% /*768px*/;
     }
     .map h6 {
         font-size: 212.5% /*34px*/;
-        margin-top: 20px;
         margin-bottom: 26px;
     }
     iframe {height:260px;}
@@ -76,14 +74,13 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
     .map {
         margin-bottom: 26px;
         min-width: 100%;
     }
     .map h6 {
         font-size: 112.5% /*18px*/;
-        margin-top: 30px;
         margin-bottom: 30px;
     }
     iframe {height:180px;}
