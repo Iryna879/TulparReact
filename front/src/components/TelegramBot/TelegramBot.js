@@ -7,6 +7,7 @@ export default function TelegramBot() {
 	const { register, handleSubmit, reset, formState: {errors} } = useForm();
 
 	const [hide, setHide] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 	const onSubmit = (data) => {
 		//alert(JSON.stringify(data));
 		fetch("/api/sendTelegram/",
@@ -17,11 +18,11 @@ export default function TelegramBot() {
 			}
 		)
 			.then(res => {
-				console.log("Result:", res);
+				//console.log("Result:", res);
 				return res.json();
 			})
-			.then(data => {
-				console.log(data);
+			.then(() => {
+				setShowModal(true);
 			})
 			.catch(err => {
 				console.log(err);
@@ -29,11 +30,11 @@ export default function TelegramBot() {
 		reset({fullName: "", tel: ""});
 	};
 	console.log(errors);
-//+ hide ? 'hide' : 'show'  onClick={() => setHide(true)}
 	return (
 		<div className={`container-fluid formFluid ${hide ? 'hide' : 'show'} ` } >
+			<div className={`modal ${showModal ? 'showModal' : 'hideModal'} `}>Дякуємо за звернення </div>
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<input type="button" className="close"  onClick={() => setHide(true)}  />
+				<input type="button" className="close"  onClick={() => setHide(true)  }  />
 
 				<h1>Залиште свої дані</h1>
 

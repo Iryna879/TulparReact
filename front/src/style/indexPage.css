@@ -56,7 +56,7 @@ a{
 }
 .menu {
     display: flex;
-    margin-top: -65px;
+    margin-top: 20px;
     font-family: "TTHoves-Medium";
     font-size: 18px;
     line-height: 18px;
