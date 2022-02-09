@@ -27,7 +27,7 @@
     .logoFooter img {width: 100%; height: auto;}
     .mapSite h2, .contactUs h2 {
         font-size: 100% /* 16px*/;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .mapSite ul li a, .contactUs ul li  {
         font-size: 87.5% /*14px*/;
@@ -44,13 +44,13 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 577px) {
+@media (max-width: 767px) and (min-width: 576px) {
     footer.container-fluid {height: auto; min-width: 100%; /*768px;*/}
     .logoFooter, .mapSite, .contactUs {margin-top: 60px;}
     .logoFooter img {width: 100%; height: auto;}
     .mapSite h2, .contactUs h2 {
         font-size: 87% /* 14px*/;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .mapSite ul li a, .contactUs ul li  {
         font-size: 75% /*12px*/;
@@ -67,7 +67,7 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
     footer.container-fluid {height: auto; min-width: 100%;}
     .logoFooter, .mapSite, .contactUs {margin-top: 30px;}
     .logoFooter img {width: 100%; height: auto;}

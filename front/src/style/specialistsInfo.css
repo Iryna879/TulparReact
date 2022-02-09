@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 70px;
     margin-bottom: 50px;
+    justify-content: space-around;
 }
 .specialistsListPage li {
     margin-right: 50px;
@@ -15,7 +16,7 @@
 .specialistsListPage p {
     font-family: "TTHoves-Bold";
     font-weight: 800;
-    font-size: 14px;
+    font-size: 87.5%;
     color: #32495E;
     margin-top: 20px;
 }
@@ -24,7 +25,7 @@
 }
 .specialistInfo p {
     font-family: "TTHoves-Bold";
-    font-size: 24px;
+    font-size: 150%;
     color: #333333;
     margin-bottom: 20px;
 }
@@ -32,20 +33,20 @@
 .gridSpecialistInfo {
     margin-bottom: 70px;
     display: grid;
-    grid-template-columns: 113px 720px;
+    grid-template-columns: 9% 56%;
     grid-auto-rows: minmax(17px, auto);
     grid-row-gap: 20px;
     grid-column-gap: 77px;
 }
 .gridSpecialistInfo li:nth-child(odd) {
     font-family: "TTHoves-Bold";
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 17px;
     color: #E95258;
 }
 .gridSpecialistInfo li:nth-child(even){
     font-family: "TT Hoves";
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 17px;
 }
 .career, .activity {
@@ -55,5 +56,5 @@
 .career li:nth-child(odd), .activity li:nth-child(odd) {
     color: #333333;
     font-family: "TT Hoves";
-    font-size: 14px;
+    font-size: 87.5%;
 }

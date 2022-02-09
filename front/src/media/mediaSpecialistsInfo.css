@@ -26,10 +26,8 @@
     .gridSpecialistInfo {
         margin-bottom: 60px;
         display: grid;
-        grid-template-columns: 15% 80.5%;
-        /*grid-auto-rows: minmax(17px, auto);*/
+        grid-template-columns: 15% 75%;
         grid-row-gap: 14px;
-        /*grid-column-gap: 10.3% /*77px;*/
     }
 
     .gridSpecialistInfo li:nth-child(even){
@@ -72,7 +70,7 @@
     .gridSpecialistInfo {
         margin-bottom: 60px;
         display: grid;
-        grid-template-columns: 15% 80.5%;
+        grid-template-columns: 15% 75%;
         grid-auto-rows: minmax(17px, auto);
         grid-row-gap: 14px;
         grid-column-gap: 10.3% /*77px*/;
@@ -88,7 +86,7 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 577px) {
+@media (max-width: 767px) and (min-width: 576px) {
     .container { min-width: 100%;}
     .specialistsListPage {
         margin-top: 60px;
@@ -119,7 +117,7 @@
     .gridSpecialistInfo {
         margin-bottom: 60px;
         display: grid;
-        grid-template-columns: 15% 80.5% /*113px 599px*/;
+        grid-template-columns: 15% 75% /*113px 599px*/;
         grid-auto-rows: minmax(17px, auto);
         grid-row-gap: 14px;
         grid-column-gap: 10.3% /*77px*/;
@@ -135,7 +133,7 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
     .container { min-width: 100%;}
     .specialistsListPage {
         margin-top: 30px;
