@@ -13,6 +13,10 @@ const ProfileMenu = () => {
                 </div>
                 <div className="col-xl-6 offset-xl-3 col-lg-7 offset-lg-2 col-md-8 offset-md-1
                     col-sm-9 offset-sm-0 col-2 offset-4 ">
+                    <input id="menu__toggle" type="checkbox"/>
+                    <label className="menu__btn" htmlFor="menu__toggle">
+                        <span/>
+                    </label>
             <ul className="profileMenu">
                 <li><Link to="/">Головна</Link></li>
                 <li><Link to="/profile">Персональні дані</Link></li>
@@ -20,6 +24,7 @@ const ProfileMenu = () => {
                 <li><Link to="/profile/appointment-status">Записи до лікарів</Link></li>
                 <li> <LogoutButton/></li>
             </ul>
+
                 </div>
 
             </div>
