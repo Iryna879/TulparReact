@@ -26,6 +26,18 @@
     }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 575px) {
+    .buttonSearch {
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    h6.text-uppercase {
+        font-size: 75%;
+    }
+    div.job {
+        font-size: 65%;
+    }
+
 
 }

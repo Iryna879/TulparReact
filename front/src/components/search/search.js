@@ -126,7 +126,8 @@ const Search = () => {
             >
                 <div className="row">
                     {doctor.map((doc) => (
-                        <div className="col-6 mb-5" key={doc._id}>
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6
+                        col-12 mb-5" key={doc._id}>
                             <div className="card">
                                 <div className="card-body">
                                     <div className="text-info">
@@ -136,9 +137,9 @@ const Search = () => {
                                     </div>
                                     <div className="job">Спеціалізація : {doc.specialization}</div>
                                     <div className="job">{doc.jobTitle}</div>
-                                    <div className="row mb-0 pb-0">
+                                    <div className="row mb-0 mt-2 pb-0">
                                         <div
-                                            className=" col align-self-end col-md-2 offset-md-3 inline"
+                                            className=" col-12 justify-content-center inline"
                                             style={{ textAlign: "center" }}
                                         >
                                             <Link to="/profile/selectdate"
