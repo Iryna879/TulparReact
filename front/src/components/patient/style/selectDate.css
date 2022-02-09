@@ -16,7 +16,7 @@
 }
 
 
-@media (max-width: 768px) and (min-width: 575px) {
+@media (max-width: 768px) and (min-width: 576px) {
     .calendar h3 {
         font-weight: 200;
         font-size: 175%;
@@ -24,6 +24,11 @@
     }
 }
 
-@media all and (max-width: 576px) {
-
+@media all and (max-width: 575px) {
+    .calendar h3 {
+        font-weight: 300;
+        font-size: 160%;
+        line-height: 30px;
+    }
+    div.react-calendar { width: 100%;}
 }
