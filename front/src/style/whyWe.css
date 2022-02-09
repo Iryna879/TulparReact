@@ -5,8 +5,7 @@
 }
 .whyWe h6 {
     font-family: "TTHoves-ExtraBold";
-    font-weight: 800;
-    font-size: 44px;
+    font-size: 275%;
     line-height: 52px;
     text-transform: uppercase;
     color: #F9F9F9;
@@ -19,24 +18,24 @@
 
 .benefits li {
     text-align: center;
-    margin-right: 69px;
+    margin-right: 5%;
+    width: 25%;
 }
 .benefits li:last-child {
     margin-right:0;
 }
 .benefits h1 {
     font-family: "TTHoves-Bold";
-    font-weight: 800;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 20px;
     margin-top: 30px;
     margin-bottom: 10px;
     color: #F9F9F9;
 }
 .benefits p {
-    width: 241px;
+    width: 100%;
     font-family: "TT Hoves";
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 17px;
     color: #F9F9F9;
 }

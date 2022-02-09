@@ -8,8 +8,7 @@
 .centerInfo_traumaCenter {background-image: url("../img/traumaBackTwo.png");}
 .textAboutCenter h6 {
     font-family: "TTHoves-ExtraBold";
-    font-weight: 800;
-    font-size: 44px;
+    font-size: 275%;
     line-height: 52px;
     text-transform: uppercase;
     color: #F9F9F9;
@@ -19,8 +18,7 @@
 .textAboutCenter p {
     width: 528px;
     font-family: "TTHoves-DemiBold";
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 24px;
     color: #F9F9F9;
     margin-top: 50px;
