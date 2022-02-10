@@ -11,7 +11,6 @@ export function ButtonCallback () {
         <div type="button" className="callback-bt">
             <div className="text-call" onClick={() => click ? setClick(false) : setClick(true)}>
                 <i className="fa fa-phone"/>
-                <span>Замовити<br/>дзвінок</span>
             </div>
         </div>
     <div>

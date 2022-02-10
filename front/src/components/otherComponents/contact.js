@@ -13,7 +13,7 @@ export function Contact () {
             })
             .catch(err =>
                 console.log(err))
-    }, [] )
+    } )
 
     if (contacts === null) {
         return (<div>Loading ...</div>)

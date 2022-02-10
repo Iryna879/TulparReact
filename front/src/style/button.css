@@ -24,42 +24,11 @@
     border-radius:50%;
     position:relative;
     overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.callback-bt .text-call span {
-    text-align: center;
-    color:#38a3fd;
-    opacity: 0;
-    font-size: 0;
-    position:absolute;
-    right: 4px;
-    top: 22px;
-    line-height: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: opacity .3s linear;
-    font-family: 'montserrat', Arial, Helvetica, sans-serif;
-}
-
-.callback-bt .text-call:hover span {
-    opacity: 1;
-    font-size: 11px;
-}
-.callback-bt:hover i {
-    display:none;
-}
-
-.callback-bt:hover {
-    z-index:1;
-    background:#fff;
-    color:transparent;
-    transition:.3s;
-}
-.callback-bt:hover i {
-    color:#38a3fd;
-    font-size:40px;
-    transition:.3s;
-}
 .callback-bt i {
     color:#fff;
     font-size:34px;
