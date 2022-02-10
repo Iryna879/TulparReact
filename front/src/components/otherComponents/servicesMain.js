@@ -46,13 +46,13 @@ export function ServicesMain () {
                                     <div className={`services_redInfo`}>
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
-                                            <p>Здорова та смачна їжа для відновлення</p>
+                                            <p>Здорова  їжа для відновлення</p>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                 industry.
                                                 Lorem Ipsum has been the industry's standard dummy text</p>
                                         </div>
                                     </div>
-                                    <p className="heading">Здорова та смачна їжа для відновлення</p>
+                                    <p className="heading">Здорова  їжа для відновлення</p>
                                     <img src={cafe} className="servicesImg"  alt="cafe"/>
                                     </li>
 
