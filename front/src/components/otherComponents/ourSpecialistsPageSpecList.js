@@ -19,7 +19,7 @@ export function  OurSpecialistsPageSpecList ()  {
             })
             .catch(err =>
                 console.log(err))
-    }, [])
+    })
 
     return (
         <div className="container">

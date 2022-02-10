@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {useAuth0} from "@auth0/auth0-react";
+import {useAuth0, withAuthenticationRequired} from "@auth0/auth0-react";
 import ProfileMenu from "./profileMenu";
 import {Link} from "react-router-dom";
 import { Circles } from 'react-loader-spinner';
 import "./style/bookingSlots.css";
 
-const AppointmentStatus = () => {
+const AppointmentStatus = withAuthenticationRequired(
+    () => {
     const [appointments, setAppointments] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const {user} = useAuth0();
@@ -45,15 +46,12 @@ const AppointmentStatus = () => {
                     })
             }
             )
-            .then(() => console.log("Delete"))
+            .then(() => console.log())
             .catch(err =>
                 console.log(err))
             )
 }
 
-/*if(isLoading === true) {
-    return (<div></div>)
-}*/
     return (
         <>
             <ProfileMenu />
@@ -91,6 +89,11 @@ const AppointmentStatus = () => {
             </div>
         </>
     );
-};
+},
+    {
+        returnTo: '/profile/appointment-status',
+        onRedirecting: () => <Circles/>
+    }
+)
 
 export default AppointmentStatus;

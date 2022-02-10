@@ -6,10 +6,10 @@ exports.post = function (request, response) {
 	let chatId = "1051137853";
 	console.log("request",request.body)
 
-	let message = encodeURI(request.body.body);
+	//let message = encodeURI(request.body.body);
 	let name = encodeURI(request.body.fullName);
 
-	let body = `Tel:%20${request.body.tel}\nName:%20${name}\nMessage:%20${message}`;
+	let body = `Tel:%20${request.body.tel}\nName:%20${name}`;
 	let url =	`https://api.telegram.org/bot${Bot_token}/sendMessage?chat_id=${chatId}&text=${body}`;
 	fetchs(url)
 		.then(res => res.json())

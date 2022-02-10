@@ -25,11 +25,6 @@ app.get('!*', (req, res) => {
     res.sendFile(path.join(__dirname, './public', 'index.html'));
 });*/
 
-
-/*app.get('!*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
-});*/
-
 app.get('*', (req, res, next) => {
     if(req.headers['x-forwarded-proto']!=='https')
         res.redirect('https://tulpar-heroku.herokuapp.com/' + req.url)
@@ -50,15 +45,6 @@ if(process.env.NODE_ENV === 'production') {
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public', 'index.html' ));
 });
-   /* app.get('*', (req, res, next) => {
-        if(req.headers['x-forwarded-proto']!='https'){
-            res.redirect('https://tulpar-heroku.herokuapp.com/' + req.url);
-            res.sendFile(path.resolve(__dirname, 'public', 'index.html')) }
-        else
-            next()
-
-    });*/
-
 
 module.exports = app
 

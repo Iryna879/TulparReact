@@ -5,8 +5,11 @@ import { Link, useLocation } from "react-router-dom";
 import Calendar from "react-calendar";
 import ProfileMenu from "./profileMenu";
 import "./style/selectDate.css";
+import {withAuthenticationRequired} from "@auth0/auth0-react";
+import {Circles} from "react-loader-spinner";
 
-const SelectDate = () => {
+const SelectDate = withAuthenticationRequired(
+    () => {
     const [date, setDate] = useState(new Date());
     const location = useLocation();
     const { doctor} = location.state;
@@ -31,7 +34,7 @@ const SelectDate = () => {
                                     onChange={onChange}
                                     value={date}
                                 />
-                                {console.log(date)}
+
                                 <p className="text-center">
                                     {date.getFullYear().toString() +
                                     "-" +
@@ -67,6 +70,11 @@ const SelectDate = () => {
                 </div>
         </>
     );
-};
+},
+    {
+        returnTo: '/profile',
+        onRedirecting: () => <Circles/>
+    }
+)
 
 export default SelectDate;

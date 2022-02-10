@@ -2,17 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ProfileMenu from "./profileMenu";
 import "./style/bookingSlots.css";
+import {withAuthenticationRequired} from "@auth0/auth0-react";
+import {Circles} from "react-loader-spinner";
 
-const BookingSlots = () => {
+const BookingSlots = withAuthenticationRequired(
+    () => {
     const location = useLocation();
     const { date, doctor } = location.state;
-    // console.log("Date: " + date + " DoctorId: " + doctorId);
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
                   fetch("/api/specialists/getSlots/" + doctor._id)
                       .then(res => {
-                          // console.log(res);
                           return res.json()
                       })
                       .then(res => {
@@ -54,13 +55,12 @@ const BookingSlots = () => {
               //console.log(data);
               //console.log(dateToSend);
               const result = data.dates.filter(date => date.date === dateToSend);
-              //console.log("res" + result);
-              //setSlots(result.slots);
+          //console.log("res" + result);
+              if(result.length > 0){
           return (
           result.map (r => <>
               <ProfileMenu />
       <div className="bg-dark" style={{ height: "83.8vh" }}>
-          <div>
               <div className="row m-5" >
                   <div className="col-12 p-xl-4 p-lg-4 p-md-4 p-sm-3 p-2 pt-4">
                       <table className="table table-hover table-light">
@@ -97,12 +97,25 @@ const BookingSlots = () => {
                   </div>
               </div>
           </div>
-      </div>
-          </>))
+          </>)) }
+              else {return ( <>
+                  <ProfileMenu />
+                  <div className="bg-dark bg-dark d-flex
+                        align-items-center justify-content-center" style={{ height: "83.8vh" }}>
+                  <div className="row m-5" >
+                      <div className="col-12 text-white">
+                          На жаль, розкладу немає. Оберіть іншу дату. </div>
+                  </div>
+              </div>
+                  </>)}
           }
       )
   );
-
-};
+},
+    {
+        returnTo: '/profile',
+        onRedirecting: () => <Circles/>
+    }
+)
 
 export default BookingSlots;

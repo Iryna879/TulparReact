@@ -1,9 +1,12 @@
 import React from "react";
 import Search from "../search/search";
 import ProfileMenu from "./profileMenu";
+import {withAuthenticationRequired} from "@auth0/auth0-react";
+import {Circles} from "react-loader-spinner";
 
 
-const SearchDoctor = () => {
+const SearchDoctor = withAuthenticationRequired(
+    () => {
     return (
         <>
         <ProfileMenu />
@@ -16,6 +19,11 @@ const SearchDoctor = () => {
             </div>
         </>
     );
-};
+},
+    {
+        returnTo: '/profile',
+        onRedirecting: () => <Circles/>
+    }
+)
 
 export default SearchDoctor;

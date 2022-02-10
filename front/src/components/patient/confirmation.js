@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import {useAuth0} from "@auth0/auth0-react";
+import {useAuth0, withAuthenticationRequired} from "@auth0/auth0-react";
 import ProfileMenu from "./profileMenu";
 import "./style/confirmation.css";
+import {Circles} from "react-loader-spinner";
 
-const Confirmation = () => {
+const Confirmation = withAuthenticationRequired(
+    () => {
 
     const location = useLocation();
     const { dateId, doctor, slot } = location.state;
@@ -120,6 +122,11 @@ const Confirmation = () => {
                 </div>
         </>
     )
-}
+},
+    {
+        returnTo: '/profile',
+        onRedirecting: () => <Circles/>
+    }
+)
 
 export default Confirmation;

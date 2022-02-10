@@ -11,7 +11,7 @@ const ProfileMenu = () => {
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 logo">
                     <Link to="/"><img src={logo} alt="logo"/></Link>
                 </div>
-                <div className="col-xl-6 offset-xl-3 col-lg-7 offset-lg-2 col-md-8 offset-md-1
+                <div className="col-xl-7 offset-xl-2 col-lg-7 offset-lg-2 col-md-8 offset-md-1
                     col-sm-9 offset-sm-0 col-3 offset-3 ">
                     <input id="menu__toggle" type="checkbox"/>
                     <label className="menu__btn" htmlFor="menu__toggle">

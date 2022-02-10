@@ -41,9 +41,9 @@ export function Footer() {
                     col-md-3 offset-md-1 col-sm-3 col-6 contactUs">
                         <h2>Зв`язатися з нами</h2>
                         <ul>
-                            <li>+38 093 032 12 19</li>
-                            <li>+38 093 032 19 12</li>
-                            <li>support@test.kz</li>
+                            <li><a href="tel:+380930321219">+38 093 032 12 19 </a></li>
+                            <li><a href="tel:+380930321912">+38 093 032 19 12</a></li>
+                            <li><a href="mailto:support@test.kz">support@test.kz </a></li>
                         </ul>
                     </div>
 

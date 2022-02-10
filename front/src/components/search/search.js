@@ -12,11 +12,13 @@ import Trie from "./trie.js";
 import specialization from "./specialization";
 import { Link } from "react-router-dom";
 import "../patient/style/searchDoctor.css";
+import {Circles} from "react-loader-spinner";
 
 const Search = () => {
+    const [doctor, setDoctor] = useState([]);
     const [text, setText] = useState();
     const [suggestions, setSuggestions] = useState([]);
-
+    const [isLoading, setIsLoading] = useState(true);
 
     const memoized_trie = useMemo(() => {
         const trie = new Trie();
@@ -64,12 +66,11 @@ const Search = () => {
         );
     }
 
-    const [doctor, setDoctor] = useState([]);
+
 
     const fetchDoctor = () => {
             fetch("/api/specialists")
                 .then(res => {
-                    // console.log(res);
                     return res.json()
                 })
                 .then(res => {
@@ -78,6 +79,8 @@ const Search = () => {
                 })
                 .catch(err =>
                     console.log(err))
+
+        setIsLoading(false)
         };
 
 
@@ -95,6 +98,9 @@ const Search = () => {
     }, []);
 
     return (
+        <>
+        {isLoading && <h1><Circles/></h1>}
+        {!isLoading &&
         <div>
             <Row className="mb-3">
                 <Col>
@@ -156,7 +162,8 @@ const Search = () => {
                     ))}
                 </div>
             </Scrollbar>
-        </div>
+        </div> }
+        </>
     );
 };
 
