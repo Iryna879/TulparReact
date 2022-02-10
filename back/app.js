@@ -30,6 +30,14 @@ app.get('!*', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });*/
 
+app.get('*', (req, res, next) => {
+    if(req.headers['x-forwarded-proto']!=='https')
+        res.redirect('https://tulpar-heroku.herokuapp.com/' + req.url)
+    else
+        next()
+
+});
+
 // Маршруты
 const apiRoute = require("./routes/apiRouter");
 app.use('/api', apiRoute);

@@ -62,8 +62,8 @@ ul{list-style-type: none;}
     padding: 10px;
 }
 .cardioCenter_menu .submenu li, .traumaCenter_menu .submenu li,
-.services_menu .submenu li, .contact_menu .submenu li, .ourSpecialists_menu .submenu li
-{margin-bottom: 15px;}
+.services_menu .submenu li, .contact_menu .submenu li, .ourSpecialists_menu .submenu li,
+.menu .submenu li {margin-bottom: 15px;}
 
 .cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
 .services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,

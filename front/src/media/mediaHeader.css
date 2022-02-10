@@ -184,16 +184,15 @@
 
     .cardioCenter_menu  li button, .traumaCenter_menu  li button,
     .services_menu  li button, .ourSpecialists_menu  li button,
-    .contact_menu li button, .menu li button { margin-left:40%;}
+    .contact_menu li button { margin-left:40%;}
 
     .submenu {
         left: 30%;
-        width: 45%;
-        background: #F9F9F9;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 0;
+        height:0;
+    }
+    .fa-angle-down {
+        visibility: hidden;
     }
     .cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
     .services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,
