@@ -9,11 +9,17 @@ const Menu = (props) => {
                     col-sm-8 offset-sm-1 col-3 offset-3 ">
             <input id="menu__toggle" type="checkbox"/>
             <label className="menu__btn" htmlFor="menu__toggle">
-                <span></span>
+                <span/>
             </label>
             <ul className={`${name}_menu`}>
                 <li><Link to="/">Головна</Link></li>
-                <li><Link to="/services">Послуги</Link></li>
+                <li ><Link to="/services">Послуги
+                    <i className="fa fa-angle-down"/> </Link>
+                    <ul className="submenu">
+                        <li><Link to="/cardioCenter"> Кардіо</Link></li>
+                        <li><Link to="/traumaCenter">Травма</Link></li>
+                    </ul>
+                </li>
                 <li><Link to="/ourSpecialists">Спеціалісти</Link></li>
                 <li><Link to="/contact">Ми</Link></li>
                 <li><AuthButton/></li>

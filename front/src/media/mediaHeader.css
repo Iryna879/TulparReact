@@ -11,8 +11,9 @@
         margin-left: 0;
         margin-top: -35px;
     }
-    .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
-        margin-right: 10%;
+    .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li,
+    .contact_menu li {
+        margin-right: 5%;
     }
 
     .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
@@ -42,7 +43,7 @@
         margin-top: -20px;
     }
     .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
-        margin-right: 10%;
+        margin-right: 5%;
     }
 
     .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
@@ -105,8 +106,7 @@
         margin-top: -20px;
     }
     .cardioCenter_menu li, .traumaCenter_menu li, .services_menu li, .ourSpecialists_menu li, .contact_menu li {
-        margin-right: 5% /*38px*/;
-        width: 20%;
+        margin-right: 2% ;
     }
     .cardioCenter_menu li button, .traumaCenter_menu li button,
     .services_menu li button, .ourSpecialists_menu li button, .contact_menu li button {
@@ -162,8 +162,9 @@
         margin: 0;
         background-color: #32495E;
     }
+
     .cardioCenter_menu  li, .traumaCenter_menu  li, .services_menu li,
-    .ourSpecialists_menu li, .contact_menu li  {margin-bottom:  26px;}
+    .ourSpecialists_menu li, .contact_menu li  {margin-bottom:  26px; width: 80%;}
     .cardioCenter_menu  li a, .traumaCenter_menu  li a, .services_menu li a,
     .ourSpecialists_menu li a, .contact_menu li a {
         color: #fff;
@@ -172,9 +173,32 @@
         margin-left: 40%;
         margin-bottom:  26px;
     }
+
     .cardioCenter_menu  li:first-child, .traumaCenter_menu  li:first-child,
     .services_menu  li:first-child, .ourSpecialists_menu  li:first-child,
     .contact_menu li:first-child{ margin-top:60px;}
+
+    .cardioCenter_menu .submenu  li:first-child, .traumaCenter_menu .submenu  li:first-child,
+    .services_menu .submenu  li:first-child, .ourSpecialists_menu .submenu li:first-child,
+    .contact_menu .submenu li:first-child, .menu .submenu li:first-child{ margin-top:0;}
+
+    .cardioCenter_menu  li button, .traumaCenter_menu  li button,
+    .services_menu  li button, .ourSpecialists_menu  li button,
+    .contact_menu li button, .menu li button { margin-left:40%;}
+
+    .submenu {
+        left: 30%;
+        width: 45%;
+        background: #F9F9F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
+    .services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,
+    .menu .submenu a
+    {color: #32495E;}
 
     .menu__btn{
         top: 20px;

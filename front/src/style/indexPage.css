@@ -66,6 +66,7 @@ a{
 }
 .menu li {
     margin-right: 40px;
+    position: relative;
 }
 .menu li button {
     max-width: 100%;

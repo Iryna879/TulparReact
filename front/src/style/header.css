@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    font-family: "TT Hoves";
+    font-family: "TT Hoves", serif;
 }
 body,ul{
     margin: 0;
@@ -38,7 +38,7 @@ ul{list-style-type: none;}
 
 .cardioCenter_menu li, .traumaCenter_menu li,
 .services_menu li, .contact_menu li , .ourSpecialists_menu li{
-    margin-right: 40px;
+    margin-right: 20px; position: relative; width: 100%;
 }
 .cardioCenter_menu li a, .traumaCenter_menu li a,
 .services_menu li a, .contact_menu li a,
@@ -46,6 +46,37 @@ ul{list-style-type: none;}
 
 .cardioCenter_menu li a, .contact_menu li a {color: #F9F9F9;}
 .traumaCenter_menu li a, .services_menu li a, .ourSpecialists_menu li a{color: #32495E;}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+    background: #32495E;
+    padding: 10px;
+}
+.cardioCenter_menu .submenu li, .traumaCenter_menu .submenu li,
+.services_menu .submenu li, .contact_menu .submenu li, .ourSpecialists_menu .submenu li
+{margin-bottom: 15px;}
+
+.cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
+.services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,
+.menu .submenu a {color: #F9F9F9;}
+.cardioCenter_menu li:hover .submenu, .traumaCenter_menu li:hover .submenu, .services_menu li:hover .submenu,
+.contact_menu li:hover .submenu, .ourSpecialists_menu li:hover .submenu,
+.menu li:hover .submenu {visibility: visible;}
+
+.fa-angle-down {
+    font-family: "FontAwesome";
+    color: inherit;
+    padding-left: 10px;
+}
 
 .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6,
 .contact_text h6, .ourSpecialists_text h6 {
