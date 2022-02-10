@@ -62,15 +62,15 @@ ul{list-style-type: none;}
     padding: 10px;
 }
 .cardioCenter_menu .submenu li, .traumaCenter_menu .submenu li,
-.services_menu .submenu li, .contact_menu .submenu li, .ourSpecialists_menu .submenu li,
-.menu .submenu li {margin-bottom: 15px;}
+.services_menu .submenu li, .contact_menu .submenu li, .ourSpecialists_menu .submenu li
+{margin-bottom: 15px;}
 
 .cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
-.services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,
-.menu .submenu a {color: #F9F9F9;}
+.services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a
+ {color: #F9F9F9;}
+
 .cardioCenter_menu li:hover .submenu, .traumaCenter_menu li:hover .submenu, .services_menu li:hover .submenu,
-.contact_menu li:hover .submenu, .ourSpecialists_menu li:hover .submenu,
-.menu li:hover .submenu {visibility: visible;}
+.contact_menu li:hover .submenu, .ourSpecialists_menu li:hover .submenu {visibility: visible;}
 
 .fa-angle-down {
     font-family: "FontAwesome";

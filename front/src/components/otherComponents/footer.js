@@ -6,6 +6,19 @@ import  "./../../style/footer.css";
 import "./../../media/mediaFooter.css";
 
 export function Footer() {
+
+   // let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    let rootElement = document.documentElement;
+
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    //scrollToTopBtn.addEventListener("click", scrollToTop);
+
     return (
         <footer className="container-fluid p-0">
             <div className="container">
@@ -36,7 +49,7 @@ export function Footer() {
 
                     <div className="col-xl-2 offset-xl-1 col-lg-2 offset-lg-1
                     col-md-1 offset-md-1 col-sm-2 col-2 up">
-                        <button><img src={arrow} alt="arrow"/></button>
+                        <button id="scrollToTopBtn" onClick={() => scrollToTop()}><img src={arrow} alt="arrow"/></button>
                         <p>Нагору</p>
                     </div>
                 </div>
@@ -51,6 +64,8 @@ export function Footer() {
         </footer>
 
 )
+
+
 
 
 }

@@ -178,9 +178,6 @@
     .services_menu  li:first-child, .ourSpecialists_menu  li:first-child,
     .contact_menu li:first-child{ margin-top:60px;}
 
-    .cardioCenter_menu .submenu  li:first-child, .traumaCenter_menu .submenu  li:first-child,
-    .services_menu .submenu  li:first-child, .ourSpecialists_menu .submenu li:first-child,
-    .contact_menu .submenu li:first-child, .menu .submenu li:first-child{ margin-top:0;}
 
     .cardioCenter_menu  li button, .traumaCenter_menu  li button,
     .services_menu  li button, .ourSpecialists_menu  li button,
@@ -194,11 +191,7 @@
     .fa-angle-down {
         visibility: hidden;
     }
-    .cardioCenter_menu .submenu a, .traumaCenter_menu .submenu a,
-    .services_menu .submenu a, .contact_menu .submenu a, .ourSpecialists_menu .submenu a,
-    .menu .submenu a
-    {color: #32495E;}
-
+    
     .menu__btn{
         top: 20px;
         visibility: visible;

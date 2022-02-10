@@ -36,12 +36,7 @@ const IndexHeader = (props) => {
                         </label>
                         <ul className="menu">
                             <li><Link to="/">Головна</Link></li>
-                            <li><Link to="/services">Послуги</Link>
-                                <ul className="submenu">
-                                    <li><Link to="/cardioCenter"> Кардіо</Link></li>
-                                    <li><Link to="/traumaCenter">Травма</Link></li>
-                                </ul>
-                            </li>
+                            <li><Link to="/services">Послуги</Link></li>
                             <li><Link to="/ourSpecialists">Спеціалісти</Link></li>
                             <li><Link to="/contact">Ми</Link></li>
                             <li><AuthButton/></li>
