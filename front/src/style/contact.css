@@ -33,6 +33,6 @@ iframe {
     font-size: 125%;
     line-height: 28px;
     color: #32495E;
-    width: 180px;
+    width: 50%;
 }
-.address p {width: 16%;}
+.address p {width: 80%;}

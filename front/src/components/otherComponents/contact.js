@@ -3,27 +3,25 @@ import "./../../style/contact.css";
 import "./../../media/mediaContact.css";
 
 export function Contact () {
-    const [contacts, setContacts] = useState([]);
+    const [contacts, setContacts] = useState(null);
     useEffect(() => {
         fetch("/api/contacts")
-            .then(res =>res.json())
+            .then(res => {return res.json() })
             .then(result => {
-                //console.log(result);
+               // console.log(result);
                 setContacts(result);
-            },
-                (err) => {
-                    console.log(err)
-                }
-                )
-            /*.catch(err =>
-                console.log(err))*/
+            })
+            .catch(err =>
+                console.log(err))
     }, [] )
-    /*contacts.map(c => console.log("con" + c.info));*/
-//console.log("cont" + contacts[0].heading);
+
+    if (contacts === null) {
+        return (<div>Loading ...</div>)
+    }
     return (
     <div className="row ">
         <div className="col-12 d-flex  contacts">
-          {/*   <div className="address">
+             <div className="address">
                 <h3>{contacts[0].heading}</h3>
                 <p>{contacts[0].info}</p>
             </div>
@@ -34,7 +32,7 @@ export function Contact () {
             <div className="email">
                 <h3>{contacts[2].heading}</h3>
                 <p>{contacts[2].info}</p>
-            </div>*/}
+            </div>
         </div>
     </div>
     )
