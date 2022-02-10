@@ -178,13 +178,15 @@
         z-index: 102;
         right: 0;
     }
-    .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6, .ourSpecialists_text h6, .contact_text h6 {
+    .cardioCenter_text h6, .traumaCenter_text h6, .services_text h6,
+    .ourSpecialists_text h6, .contact_text h6 {
         width: 84%;
         font-size: 100% /*16px*/;
-        margin-top: 0;
         line-height: 25px;
+        margin-top: 30px;
     }
-    .cardioCenter_text p, .traumaCenter_text  p, .services_text p, .ourSpecialists_text p, .contact_text p {
+    .cardioCenter_text p, .traumaCenter_text  p, .services_text p,
+    .ourSpecialists_text p, .contact_text p {
         width: 84%;
         font-size: 75% /*12px*/;
         line-height: 15px;

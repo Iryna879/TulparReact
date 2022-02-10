@@ -38,12 +38,13 @@ app.use('/api', apiTelegram);
 
 /*if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'public')));
-    app.get('*', (req, res, next) => {
-        if(req.headers['x-forwarded-proto']!=='https')
-            res.redirect('https://tulpar-heroku.herokuapp.com/' + req.url)
+    app.get('/!*', (req, res, next) => {
+        if(req.headers['x-forwarded-proto']!='https'){
+            res.redirect('https://tulpar-heroku.herokuapp.com/' + req.url);
+            res.sendFile(path.resolve(__dirname, 'public', 'index.html')) }
         else
             next()
-        res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+
     });
 }*/
 

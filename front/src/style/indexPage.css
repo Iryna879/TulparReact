@@ -56,15 +56,24 @@ a{
 }
 .menu {
     display: flex;
-    margin-top: 20px;
+    margin-top: -10px;
     font-family: "TTHoves-Medium";
     font-size: 112.5%;
     line-height: 18px;
     text-align: left;
     margin-left: 7%;
+    align-items: center;
 }
 .menu li {
     margin-right: 40px;
+}
+.menu li button {
+    max-width: 100%;
+    height: auto;
+    font-size: 112.5%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
@@ -111,7 +120,7 @@ a{
     width: 36%;
     margin-top: 29px;
     text-align: right;
-    margin-left: 54% /* 350px*/;
+    margin-left: 52% /* 350px*/;
 }
 
  .services li {
@@ -138,7 +147,12 @@ a{
 .cardioCentre button:hover,.traumaCentre button:hover, .ourServicesPhoto button:hover {
     background-color: #000000;
 }
-.cardioCentre button, .traumaCentre button {margin-top: 20px;}
+.cardioCentre button, .traumaCentre button, .ourServicesPhoto button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .traumaCentre h6 {
     width: 64%;
