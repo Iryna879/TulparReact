@@ -33,6 +33,7 @@ ul{list-style-type: none;}
     text-align: left;
     line-height: 18px;
     margin-left: 40px;
+    align-items: center;
 }
 
 .cardioCenter_menu li, .traumaCenter_menu li,
