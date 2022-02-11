@@ -18,10 +18,14 @@ app.use(logger('dev'));
 var cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
+//compression
+var compression = require('compression');
+app.use(compression());
+
 // Разрешение забирать статические файлы из папки
 var path = require('path');
-/*app.use(express.static(path.join(__dirname, './public')));
-app.get('!*', (req, res) => {
+//app.use(express.static(path.join(__dirname, './public')));
+/*app.get('!*', (req, res) => {
     res.sendFile(path.join(__dirname, './public', 'index.html'));
 });*/
 

@@ -8,7 +8,7 @@ import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 import {OurSpecialistsPageSpecList} from "../otherComponents/ourSpecialistsPageSpecList";
 
-export function OurSpecialistsPage (){
+const OurSpecialistsPage = () => {
 
     const name = "ourSpecialists";
 
@@ -28,5 +28,5 @@ export function OurSpecialistsPage (){
             <Footer/>
         </div>
     )
-
 }
+export default OurSpecialistsPage;

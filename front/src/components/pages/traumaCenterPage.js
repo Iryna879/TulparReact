@@ -9,7 +9,7 @@ import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 
 
-export function TraumaCenterPage (){
+const TraumaCenterPage = () => {
 
     const name= "traumaCenter";
 
@@ -31,3 +31,4 @@ export function TraumaCenterPage (){
     )
 
 }
+export default TraumaCenterPage;

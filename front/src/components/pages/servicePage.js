@@ -10,7 +10,7 @@ import Recommend from "../otherComponents/recommend";
 import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 
-export function ServicePage (){
+const ServicePage = () => {
 
     const name = "services";
 
@@ -32,3 +32,5 @@ export function ServicePage (){
     )
 
 }
+
+export default ServicePage;

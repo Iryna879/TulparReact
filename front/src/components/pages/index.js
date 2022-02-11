@@ -10,7 +10,7 @@ import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 import {SpecialistsIndex} from "../otherComponents/specialistsIndex";
 
-export function Index (){
+const  Index = () => {
 
     return (
         <div>
@@ -29,3 +29,5 @@ export function Index (){
     )
 
 }
+
+export default Index;

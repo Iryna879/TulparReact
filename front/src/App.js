@@ -1,12 +1,12 @@
-import * as React from "react";
+import * as React  from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./cssBootstrap/bootstrap.min.css";
-import {Index} from "./components/pages/index";
-import {ServicePage} from "./components/pages/servicePage";
-import {ContactPage} from "./components/pages/contactPage";
-import {CardioCenterPage} from "./components/pages/cardioCenterPage";
-import {TraumaCenterPage} from "./components/pages/traumaCenterPage";
-import {OurSpecialistsPage} from "./components/pages/ourSpecialistsPage";
+import Index from "./components/pages";
+import ServicePage from "./components/pages/servicePage";
+import ContactPage from "./components/pages/contactPage";
+import CardioCenterPage from "./components/pages/cardioCenterPage";
+import TraumaCenterPage from "./components/pages/traumaCenterPage";
+import OurSpecialistsPage from "./components/pages/ourSpecialistsPage";
 import "./style/font.css";
 import "./style/header.css";
 import "./media/mediaHeader.css";
@@ -21,7 +21,6 @@ import SelectDate from "./components/patient/selectDate";
 import BookingSlots from "./components/patient/bookingSlots";
 import Confirmation from "./components/patient/confirmation";
 import AppointmentStatus from "./components/patient/appointmentStatus";
-
 
 function App() {
   return (

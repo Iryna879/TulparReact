@@ -6,7 +6,7 @@ import Recommend from "../otherComponents/recommend";
 import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 
-export function ContactPage (){
+const ContactPage = () => {
 
     const name = "contact";
 
@@ -26,3 +26,5 @@ export function ContactPage (){
     )
 
 }
+
+export default ContactPage;

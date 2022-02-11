@@ -9,7 +9,7 @@ import Map from "../otherComponents/map";
 import Contact from "../otherComponents/contact";
 
 
-export function CardioCenterPage (){
+const  CardioCenterPage = () => {
 
     const name = "cardioCenter";
 
@@ -29,5 +29,5 @@ export function CardioCenterPage (){
             <Footer/>
         </div>
     )
-
 }
+export default CardioCenterPage;
