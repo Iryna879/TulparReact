@@ -7,7 +7,6 @@ import "./../../media/mediaFooter.css";
 
 export function Footer() {
 
-   // let scrollToTopBtn = document.getElementById("scrollToTopBtn");
     let rootElement = document.documentElement;
 
     function scrollToTop() {
@@ -17,7 +16,6 @@ export function Footer() {
             behavior: "smooth"
         });
     }
-    //scrollToTopBtn.addEventListener("click", scrollToTop);
 
     return (
         <footer className="container-fluid p-0">

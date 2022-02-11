@@ -79,10 +79,7 @@
     color: #8093AC;
     cursor: pointer;
 }
-.menuPrice li:hover {
-    border-bottom: 1px solid #E95258;
-   /* padding-bottom: 4px;*/
-}
+.menuPrice li:hover {border-bottom: 1px solid #E95258;}
 .gridServices {
     margin-bottom: 70px;
     margin-top: 50px;
