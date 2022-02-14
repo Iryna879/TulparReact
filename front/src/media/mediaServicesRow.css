@@ -25,15 +25,16 @@
         width: 15%;
         margin-left: 10px;
     }
-    .index_redInfo, .services_redInfo { width: 25%;}
-    .services_redInfo { height: 43%}
+    .index_redInfo {width: 24%}
+    .services_redInfo { height: 43%;  width: 25%;}
+
     .services_photoServ li:hover  p.heading {visibility: hidden;}
     .index_redInfo .pulse, .services_redInfo .pulse  {
         width: 100%;
         height: 93px;
     }
     .services_redInfo .pulse  {
-        height: 49.5%;
+        height: 43%;
     }
     .index_redInfo .pulse img, .services_redInfo .pulse img {
         margin-top: 35px ;
@@ -123,7 +124,7 @@
         margin-left: 43% /*76px*/ ;
     }
     .index_redInfo .redInfoText, .services_redInfo .redInfoText {height: auto;}
-    .index_redInfo .redInfoText {min-height: 8em; width: 96%;}
+    .index_redInfo .redInfoText {min-height: 8em; width: 97%;}
     .services_redInfo .redInfoText {min-height: 7em; width: 98%;}
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
         margin-left: 9px ;  margin-bottom: 10px;
@@ -171,7 +172,8 @@
         margin-bottom: 26px;
     }
     .services_photoServ {margin-bottom: 25px;}
-    .index_photoServ li, .services_photoServ li {width: 25%;}
+    .index_photoServ li {width: 26%;}
+    .services_photoServ li {width: 25%;}
     .index_photoServ li {margin-right: 10px;}
     #cardioIndex, .index_photoServ .servicesImg, .services_photoServ .servicesImg {
         width: 100%;
@@ -190,6 +192,7 @@
         margin-left: 10px;
     }
     .index_redInfo, .services_redInfo { width: 25%;}
+
     .services_photoServ li:hover  p.heading {visibility: hidden;}
 
     .services_redInfo .pulse, .index_redInfo .pulse  {
@@ -214,7 +217,8 @@
         min-height: 8em;
         width: 90%;
     }
-    .services_redInfo .redInfoText {width: 98%;}
+    .index_redInfo .redInfoText {width: 89%;}
+    .services_redInfo .redInfoText {width: 95%;}
     .index_redInfo .redInfoText p:first-child, .services_redInfo .redInfoText p:first-child {
         margin-left: 9px ;  margin-bottom: 10px;
     }

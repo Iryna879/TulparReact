@@ -62,7 +62,7 @@ export function OurServicesRow () {
                                         <div className="redInfoText">
                                             <p>Сауна вищого класу </p>
                                             <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
-                                               Дорослому населенню пропонується відновне лікування.</p>  >
+                                               Дорослому населенню пропонується відновне лікування.</p>
                                         </div>
                                     </div>
                                     <img src={sauna} alt="sauna" className="servicesImg"/>
