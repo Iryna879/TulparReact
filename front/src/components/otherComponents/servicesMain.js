@@ -18,9 +18,8 @@ export function ServicesMain () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Кардіо-реабілітаційний центр</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                           <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <p className="heading">Кардіо-реабілітаційний центр</p>
@@ -33,9 +32,8 @@ export function ServicesMain () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Травма-реабілітаційний центр</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <p className="heading">Травма-реабілітаційний центр</p>
@@ -47,9 +45,8 @@ export function ServicesMain () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Здорова  їжа для відновлення</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <p className="heading">Здорова  їжа для відновлення</p>
@@ -62,9 +59,8 @@ export function ServicesMain () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Сауна вищого класу для відновлення </p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <p className="heading">Сауна вищого класу для відновлення </p>

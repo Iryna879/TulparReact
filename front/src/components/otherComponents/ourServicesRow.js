@@ -23,9 +23,8 @@ export function OurServicesRow () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Кардіо-реабілітаційний центр</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>     
                                         </div>
                                     </div>
                                     <img id="cardioIndex" src={cardio} alt="cardio"/>
@@ -37,9 +36,8 @@ export function OurServicesRow () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Травма-реабілітаційний центр</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <img src={trauma} alt="trauma" className="servicesImg"/>
@@ -50,9 +48,8 @@ export function OurServicesRow () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Здорова та смачна їжа для відновлення</p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  
                                         </div>
                                     </div>
                                     <img src={cafe} alt="cafe" className="servicesImg"/>
@@ -64,9 +61,8 @@ export function OurServicesRow () {
                                         <div className="pulse"><img src={pulse} alt="pulse"/></div>
                                         <div className="redInfoText">
                                             <p>Сауна вищого класу </p>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <p>Являє собою сукупність відновлювальних процедур та діагностичних методик. 
+                                               Дорослому населенню пропонується відновне лікування.</p>  >
                                         </div>
                                     </div>
                                     <img src={sauna} alt="sauna" className="servicesImg"/>

@@ -47,17 +47,16 @@ const IndexHeader = (props) => {
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 cardioCentre">
                     <h6>Кардіо-реабілітаційний центр</h6>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-
+                    <p>Кардіореабілітація являє собою сукупність відновлювальних процедур та методик, 
+                       спрямованих на відновлення природної життєдіяльності пацієнтів.</p>
+                   
                     <ServiceItem services={services}  department="Кардіо-реабілітаційний центр"/>
                   <Link to='/cardioCenter'><button>Всі послуги</button></Link>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 traumaCentre">
                     <h6>Травма-реабілітаційний центр</h6>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-
+                    <p>Реабілітація пацієнтів травматолого-ортопедичного профілю включає заходи, 
+                       спрямовані на усунення наслідків травм, раніше проведених операцій тощо.</p>   
                     <ServiceItem services={services}   department="Травма-реабілітаційний центр"/>
                    <Link to='/traumaCenter'><button>Всі послуги</button></Link>
 

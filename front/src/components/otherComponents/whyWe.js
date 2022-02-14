@@ -15,18 +15,18 @@ export function WhyWe () {
                     <div className="col-12 whyWe">
                         <h6>Чому ми?</h6>
                         <ul className="benefits">
-                            <li><img src={mind} alt="mind"/><h1>Перевага 1</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text</p></li>
-                            <li><img src={bed} alt="bed"/><h1>Перевага 2</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text</p></li>
-                            <li><img src={smile} alt="smile"/><h1>Перевага 3</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text</p></li>
-                            <li><img src={like} alt="like"/><h1>Перевага 4</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text</p></li>
+                            <li><img src={mind} alt="mind"/><h1>Продумані схеми реабілітації</h1>
+                                <p>Список необхідних реабілітаційних заходів підбирається індивідуально для кожного 
+                                   пацієнта, виходячи з його діагнозу та фізичних можливостей.</p></li>
+                            <li><img src={bed} alt="bed"/><h1>Умови перебування у центрі</h1>
+                                <p> У нашому центрі людина може повною мірою зосередитись на своєму відновленні. 
+                                   Тут для кожного пацієнта забезпечується максимальний рівень побутового комфорту.</p></li>
+                            <li><img src={smile} alt="smile"/><h1>Комплексний підхід до реабілітації</h1>
+                                <p>У реабілітаційному центрі «Тулпар» використовуються різноманітні реабілітаційні 
+                                   заходи, що забезпечують пацієнту всебічне відновлення.</p></li>
+                            <li><img src={like} alt="like"/><h1>Високотехнологічне обладнання</h1>
+                                <p>Центр добре оснащений, що дозволяє застосовувати найефективніші та 
+                                   високотехнологічні процедури для відновлення пацієнтів.</p></li>
                         </ul>
                     </div>
                 </div>

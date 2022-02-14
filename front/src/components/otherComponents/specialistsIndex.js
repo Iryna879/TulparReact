@@ -31,8 +31,8 @@ export function  SpecialistsIndex ()  {
                             <li key={s._id}>
                                 <img src={s.photo} alt="doctor"/>
                                 <p>Доктор {s.surname} {s.name}</p>
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text</span>
+                                <span>Лікар уважний, чуйний, а головне - професіонал своєї справи. 
+                                      Швидко та якісно виконує свою роботу. </span>
                             </li>
                     )
                    }
